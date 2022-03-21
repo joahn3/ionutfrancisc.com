@@ -29,6 +29,8 @@ I appreciate you taking time to check out this project. Please leave a star and 
 --
 # My notes:
 
+Fork from: [https://github.com/mattwaler/mattwaler.com]
+
 ## 🛠 Setup:
 
 1. add your domain to Netlify/Vercel DNS
@@ -44,5 +46,9 @@ I appreciate you taking time to check out this project. Please leave a star and 
 4. add icons for facebook and navigation menu
 5. separate work in two sections: 1. On-going work projects; 2. Projects that i've worked on
     - add the projects in accordion?
+
+### Improvments:
+
+1. add localization (Romanian in my case)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d8cbd19c-3f64-4c44-99f4-dca205623803/deploy-status)](https://app.netlify.com/sites/ionut-francisc/deploys)
