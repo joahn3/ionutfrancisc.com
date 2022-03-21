@@ -6,15 +6,15 @@ import InstructionForm from 'sections/InstructionForm'
 import Page from 'components/Page'
 
 const seo = {
-  title: 'Instruction',
+  title: 'Consulting',
   description:
-    'Schedule a pair programming session with Ionut Francisc and learn modern web development.',
+    'Schedule a pair consulting session with Ionut Francisc and learn modern web development.',
 }
 
 const heroProps = {
-  heading: 'Schedule a personalized pair programming session.',
+  heading: 'Schedule a personalized pair consulting session.',
   paragraph:
-    'I offer pair programming sessions for developers to help sharpen their skills with modern frontend tools and frameworks. Ask questions as you work alongside a living breathing person.',
+    'I offer pair consulting sessions for start-up & business managers to help sharpen their skills with modern frontend tools and frameworks. Ask questions as you work alongside a living breathing person.',
 }
 
 export default function Instruction() {

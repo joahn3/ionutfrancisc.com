@@ -8,14 +8,14 @@ import About from 'sections/About'
 
 const seo = {
   title: 'Home',
-  description: 'Matt Waler is a web developer from Broadview Heights, Ohio.',
+  description: 'Ionut Francisc is a Ecommerce consultant and web developer from Bucharest, Romania. 🇷🇴 🇪🇺',
 }
 
 const heroProps = {
   heading: 'I build websites with modern tools and technologies.',
   paragraph:
-    "I am a frontend-focused developer from Ohio. I graduated from Ohio University in 2016 and I've been making websites ever since. I am a firm believer that simple, pragmatic, and readable code is far superior to complex abstractions.",
-  image: '/assets/tripp.jpg',
+    "Greetings! I’m Ionuț.<br/><br/>I am a frontend-focused developer from Bucharest, Romania 🇷🇴🇪🇺. <br/>I graduated from Romanian-American University in 2016 and I've been making websites ever since. I am a firm believer that simple, pragmatic, and readable code is far superior to complex abstractions.",
+  image: '/assets/logo-ionutfrancisc.com.jpeg',
 }
 
 export default function Home() {

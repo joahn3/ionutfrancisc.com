@@ -9,12 +9,25 @@ const content = [
       'A non-comprehensive list of the tools that I use day-in and day-out to get my work done:',
     image: '/assets/skills.svg',
     items: [
-      'Alpine.js',
+      'Wordpress' ,
+      'WooCommerce',
+      'Str',
       'Craft CMS',
       'Eleventy',
       'Next.js',
       'React',
       'TailwindCSS',
+    ],
+  },
+  {
+    heading: 'Marketing & Social Media',
+    subheading:
+      'Social Media & Facebook & Google Marketing',
+    image: '/assets/skills.svg',  
+    items: [
+      'Google Suite (Ads, Tag, Analytics, Merchant)',
+      'Facebook & Instagram Suite (Pages, Ads, Pixel',
+      'Stripe',
     ],
   },
   {

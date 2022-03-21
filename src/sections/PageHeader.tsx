@@ -24,7 +24,7 @@ export default function PageHeader() {
               <Logo />
             </span>
             <span className="ml-2 leading-none font-extrabold text-xl">
-              mattwaler
+              Ionut Francisc
             </span>
           </a>
         </Link>
@@ -79,7 +79,7 @@ export default function PageHeader() {
                   {name}
                 </a>
               </Link>
-              <div className="h-px bg-indigo-200" style={{ opacity: '0.2' }} />
+              <div className="h-px bg-indigo-100" style={{ opacity: '0.2' }} />
             </div>
           ))}
         </nav>

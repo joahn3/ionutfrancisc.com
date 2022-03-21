@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: 'https://mattwaler.com',
+  siteUrl: 'https://ionutfrancisc.com',
   generateRobotsTxt: true,
   outDir: '.dist',
 }

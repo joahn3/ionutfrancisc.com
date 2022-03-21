@@ -2,12 +2,13 @@ import { GitHub, LinkedIn, Instagram } from 'components/Icons'
 
 export default {
   internal: [
-    { name: 'Contact', link: '/contact' },
-    { name: 'Instruction', link: '/instruction' },
     { name: 'Work', link: '/work' },
+    { name: 'Instruction', link: '/instruction' },
+    { name: 'Consulting' , link: '/consulting' },
+    { name: 'Contact', link: '/contact' },
   ],
   external: [
-    { name: 'GitHub', icon: <GitHub />, link: 'https://github.com/mattwaler' },
+    { name: 'GitHub', icon: <GitHub />, link: 'https://github.com/joahn3' },
     {
       name: 'Instagram',
       icon: <Instagram />,
@@ -20,3 +21,7 @@ export default {
     },
   ],
 }
+
+// TO DO:
+// 1. add icon for Facebook
+// 2. add icons for navigation menu

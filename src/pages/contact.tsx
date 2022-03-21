@@ -4,13 +4,13 @@ import Page from 'components/Page'
 
 const seo = {
   title: 'Contact',
-  description: 'Get in contact with Matt Waler.',
+  description: 'Get in contact with Ionut Francisc.',
 }
 
 const heroProps = {
   heading: "Let's get in touch.",
   paragraph:
-    'Thank you for taking the time to poke around my site. If you are interested in connecting, fill out the contact form below. I will do my best to respond within 24 hours, but no guarantees!',
+    'Thank you for taking the time to poke around my site. If you are interested in connecting, fill out the contact form below. I will do my best to respond within 48 hours',
 }
 
 export default function Contact() {

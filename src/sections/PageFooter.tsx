@@ -3,7 +3,7 @@ import links from 'data/navigation'
 export default function PageFooter() {
   return (
     <footer className="container text-gray-600 mb-6 mt-8 sm:mt-16 text-sm flex flex-wrap justify-center items-center">
-      <span>Waler Media LLC | © {new Date().getFullYear()}</span>
+      <span>Firacode SRL | © {new Date().getFullYear()}</span>
       <div className="w-full flex items-center justify-center space-x-3 mt-4 md:w-auto md:mt-0 md:ml-6">
         {links.external.map((link) => (
           <a
