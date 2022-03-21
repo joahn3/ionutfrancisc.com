@@ -26,7 +26,8 @@ This project uses the following tools:
 ### 👋🏻 Thank you!
 
 I appreciate you taking time to check out this project. Please leave a star and share it if you found it useful!
-
+--
+# My notes:
 
 ## 🛠 Setup:
 
@@ -38,8 +39,10 @@ I appreciate you taking time to check out this project. Please leave a star and 
 ## TO DO:
 
 1. buy domain
-2. add ggl tag / ggl analytics / facebook pixel
+2. add ggl tag / ggl analytics / 
 3. configure email
 4. add icons for facebook and navigation menu
-5. 
+5. separate work in two sections: 1. On-going work projects; 2. Projects that i've worked on
+    - add the projects in accordion?
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d8cbd19c-3f64-4c44-99f4-dca205623803/deploy-status)](https://app.netlify.com/sites/ionut-francisc/deploys)
