@@ -3,14 +3,14 @@ import { useEffect, useState } from 'react'
 import { ArrowRightIcon, MusicNoteIcon } from '@heroicons/react/outline'
 
 let code = `
-let needsMattsHelp = true
+let needsIonutsHelp = true
 
-const contactMatt = (message) => {
+const contactIonut = (message) => {
   return alert(message)
 }
 
-if (needsMattsHelp) {
-  contactMatt("Let's get started!")
+if (needsIonutsHelp) {
+  contactIonut("Let's get started!")
 }
 `
 
