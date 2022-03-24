@@ -50,5 +50,7 @@ Fork from: [https://github.com/mattwaler/mattwaler.com]
 ### Improvments:
 
 1. add localization (Romanian in my case)
+2. add "back to top" button
+3. add footer links
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d8cbd19c-3f64-4c44-99f4-dca205623803/deploy-status)](https://app.netlify.com/sites/ionut-francisc/deploys)
