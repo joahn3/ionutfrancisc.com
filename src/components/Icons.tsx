@@ -54,4 +54,4 @@ export const Worknavigationicon = () => (
 
 // TO DO:
 // 1. add icon for Facebook
-// 2. add icons for navigation menu (work/instruction/consulting/contact)
+// 2. add icons for footer navigation menu (work/instruction/consulting/contact)
