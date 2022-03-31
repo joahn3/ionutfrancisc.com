@@ -52,6 +52,15 @@ export const Worknavigationicon = () => (
   </svg>
 )
 
+export const Facebookicon = () => ( 
+  <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d= ""
+      fill="currentColor"
+      ></path>
+  </svg>
+)     
+
 // TO DO:
 // 1. add icon for Facebook
 // 2. add icons for footer navigation menu (work/instruction/consulting/contact)

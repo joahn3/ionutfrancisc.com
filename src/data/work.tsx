@@ -99,21 +99,21 @@ export default [
     tools: ['Craft', 'Tailwind'],
   },
   {
-    title: 'Transport Services',
+    title: 'Good PC',
     description:
-      'A marketing website for a Cleveland-based full-service semi-trailer dealership.',
-    link: 'https://www.transportservices.com/',
-    image: '/assets/transport.jpg',
-    color: 'text-red-900',
-    tools: ['Kentico', 'Sass', 'Pug'],
+      'A company presentation website for a Bucharest computer-service and IT services business.',
+    link: 'https://www.goodpc.ro/',
+    image: '/assets/goodpc-full-website-capture.png',
+    color: 'text-blue-900',
+    tools: ['Netlify', 'Bootstrap', 'Google Analytics' , 'Google Tag Manager'],
   },
   {
-    title: 'Garden of Flavor',
+    title: 'Chic Roumaine',
     description:
-      'An e-commerce website for a Cleveland-based nature-first juice company.',
-    link: 'https://gardenofflavor.com',
-    image: '/assets/gardenofflavor.jpg',
-    color: 'text-green-600',
-    tools: ['Shopify'],
+      'An e-commerce website for a Romanian-based handmade-first embroiderry company.',
+    link: 'https://chicroumaine.com',
+    image: '/assets/chic-roumaine-full-website-capture.png',
+    color: 'text-red-900',
+    tools: ['Wordpress', 'WooCommerce', 'Stripe'],
   },
 ]
