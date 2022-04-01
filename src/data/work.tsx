@@ -90,19 +90,19 @@ export default [
     tools: ['Craft', 'React'],
   },
   {
-    title: 'Sexy Hair',
+    title: 'Anahicont',
     description:
-      'An e-commerce website for the hairspray & more brand Sexy Hair.',
-    link: 'https://sexyhair.com',
-    color: 'text-red-700',
+      'A presentation website and a blog for a Romanian accounting company.',
+    link: 'https://anahicont.ro',
+    color: 'text-green-700',
     image: '/assets/sexyhair.jpg',
-    tools: ['Craft', 'Tailwind'],
+    tools: ['Wordpress', 'Google Tag Manager', 'Google Analytics'],
   },
   {
     title: 'Good PC',
     description:
       'A company presentation website for a Bucharest computer-service and IT services business.',
-    link: 'https://www.goodpc.ro/',
+    link: 'https://goodpc.ro/',
     image: '/assets/goodpc-full-website-capture.png',
     color: 'text-blue-900',
     tools: ['Netlify', 'Bootstrap', 'Google Analytics' , 'Google Tag Manager'],
@@ -114,6 +114,6 @@ export default [
     link: 'https://chicroumaine.com',
     image: '/assets/chic-roumaine-full-website-capture.png',
     color: 'text-red-900',
-    tools: ['Wordpress', 'WooCommerce', 'Stripe'],
+    tools: ['Wordpress/WooCommerce/Elementor' , 'Stripe/Paypal', 'Google Analytics/Google Tag Manager'],
   },
 ]
