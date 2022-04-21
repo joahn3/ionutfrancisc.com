@@ -40,7 +40,7 @@ Fork from: [https://github.com/mattwaler/mattwaler.com]
 
 ## TO DO:
 
-1. buy domain
+1. buy domain (www.ionutfrancisc.com)
 2. add ggl tag / ggl analytics / 
 3. configure email
 4. add icons for facebook and navigation menu
