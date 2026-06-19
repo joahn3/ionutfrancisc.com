@@ -1,56 +1,44 @@
-# 🌐 My Personal Website
+# Ionut Francisc Personal Website
 
-Fork from: [https://github.com/mattwaler/mattwaler.com]
+Personal portfolio site for Johnny / Ionut Francisc, built with Next.js, TypeScript, and Tailwind CSS.
 
-My personal portfolio site, built on Next.js and Tailwind!
+The site presents security and privacy consulting, web and AI-assisted product work, active founder projects, selected business websites, educational tools, and personal experiments.
 
-## ⭐️ Requirements
+## Stack
 
-- [Node](https://nodejs.org/en/)
-- [NVM](https://github.com/nvm-sh/nvm)
+- Next.js 12
+- React 17
+- TypeScript
+- Tailwind CSS
+- Netlify static export
 
-## 🧰 Tools
+## Development
 
-This project uses the following tools:
+```bash
+npm install
+npm run dev
+```
 
-- [Next.js](https://nextjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+## Build
 
-## 🛠 Getting Started
+```bash
+npm run build
+```
 
-2. Run `nvm use` to switch to the correct Node version
-3. Run `npm i` for that big ol' `node_modules` folder
-4. Run `npm run dev` and start developing
+The build runs `next build`, exports the static site to `.dist`, and generates the sitemap.
 
-### 👋🏻 Thank you!
+## Content Model
 
-I appreciate you taking time to check out this project. Please leave a star and share it if you found it useful!
---
-# My notes:
+Core content lives in `src/data`:
 
-Fork from: [https://github.com/mattwaler/mattwaler.com]
+- `profile.ts` for identity, SEO defaults, focus areas, stack, and contact links.
+- `work.tsx` for portfolio categories and projects.
+- `services.ts` for the consulting and mentoring page content.
+- `skills.tsx` for homepage service cards.
+- `navigation.tsx` for internal and external navigation.
 
-## 🛠 Setup:
+This keeps the site easy to update without editing page markup for every content change.
 
-1. add your domain to Netlify/Vercel DNS
-2. fork github repo
-3. 
+## Original Credit
 
-
-## TO DO:
-
-1. buy domain (www.ionutfrancisc.com)
-2. add ggl tag / ggl analytics / 
-3. configure email
-4. add icons for facebook and navigation menu
-5. separate work in two sections: 1. On-going work projects; 2. Projects that i've worked on
-    - add the projects in accordion?
-
-### Improvments:
-
-1. add localization (Romanian in my case)
-2. add "back to top" button
-3. add footer links
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d8cbd19c-3f64-4c44-99f4-dca205623803/deploy-status)](https://app.netlify.com/sites/ionut-francisc/deploys)
+This site started as a fork of [mattwaler/mattwaler.com](https://github.com/mattwaler/mattwaler.com) and has since been refactored around the current Ionut Francisc profile and portfolio.

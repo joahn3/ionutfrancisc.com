@@ -1,119 +1,179 @@
-export default [
+export type WorkCategory =
+  | 'Founder / Active Businesses'
+  | 'Products & Platforms'
+  | 'Business Websites'
+  | 'Creative & Personal Experiments'
+
+export type WorkItem = {
+  title: string
+  description: string
+  link: string
+  category: WorkCategory
+  image?: string
+  color: string
+  tools: string[]
+}
+
+export const workCategories: WorkCategory[] = [
+  'Founder / Active Businesses',
+  'Products & Platforms',
+  'Business Websites',
+  'Creative & Personal Experiments',
+]
+
+const fallbackImage = '/assets/logo-ionutfrancisc.com.jpeg'
+
+const work: WorkItem[] = [
   {
-    title: 'Rev Indy',
+    title: 'ElectroVerde',
     description:
-      'A modular marketing website to bring awareness to the Rev Indy fundraising event that takes place every year.',
-    link: 'https://revindy.org/',
-    image: '/assets/rev.jpg',
-    color: 'text-red-500',
-    tools: ['Craft', 'Tailwind', 'Alpine'],
+      'Electrical and photovoltaic services company focused on solar systems, batteries, EV charging, maintenance, and B2B execution partnerships in Bucharest and Ilfov.',
+    link: 'https://electroverde.ro',
+    category: 'Founder / Active Businesses',
+    image: fallbackImage,
+    color: 'text-emerald-700',
+    tools: ['Energy Tech', 'Solar', 'Operations', 'B2B'],
   },
   {
-    title: 'Ascend Indiana',
+    title: 'firaCODE',
     description:
-      'A website that aims to help individuals find meaningful jobs or internships in the greater Indianapolis area.',
-    link: 'https://ascendindiana.com/',
-    image: '/assets/ascend.jpg',
-    color: 'text-blue-500',
-    tools: ['Craft', 'Tailwind', 'Alpine'],
+      'Web development, SEO, automation, and technical implementation studio for entrepreneurs, small businesses, and companies.',
+    link: 'https://firacode.ro',
+    category: 'Founder / Active Businesses',
+    image: fallbackImage,
+    color: 'text-indigo-700',
+    tools: ['Web Development', 'SEO', 'Automation', 'AI-assisted'],
   },
   {
-    title: 'Search Institute',
+    title: 'FiraWeb',
     description:
-      'A research-aggregate website focused on providing tools for people to promote youth development.',
-    link: 'https://searchinstitute.org',
-    image: '/assets/sea.jpg',
-    color: 'text-red-500',
-    tools: ['Craft', 'Tailwind', 'Alpine', 'React', 'Algolia'],
+      'Web design and development brand focused on fast, clean, conversion-oriented websites and digital systems.',
+    link: 'https://firaweb.ro',
+    category: 'Founder / Active Businesses',
+    image: fallbackImage,
+    color: 'text-sky-700',
+    tools: ['Web Design', 'Landing Pages', 'Lead Generation'],
   },
   {
-    title: 'Brighter Futures Indiana',
+    title: 'FiraCodeDesign',
     description:
-      'A website built to offer information for families in their search for high quality learning experiences for their children.',
-    link: 'https://brighterfuturesindiana.org',
-    image: '/assets/brighterfutures.jpg',
-    color: 'text-red-500',
-    tools: ['Craft', 'Tailwind', 'Alpine'],
-  },
-  {
-    title: 'Covid Resources',
-    description:
-      'A web tool to help business owners calculate both supplies and the maximum number of occupants they can allow.',
-    link: 'https://covid.trendyminds.com',
-    image: '/assets/covid.jpg',
-    color: 'text-green-600',
-    tools: ['Eleventy', 'Tailwind', 'Svelte'],
-  },
-  {
-    title: 'Hamilton Exhibits',
-    description:
-      'A website highlighting Hamilton Exhibits innovative brand spaces and how they can make an impact.',
-    link: 'https://www.hamilton-exhibits.com/',
-    image: '/assets/hamilton.jpg',
-    color: 'text-blue-500',
-    tools: ['Craft', 'React', 'Gatsby'],
-  },
-  {
-    title: 'Kappa Alpha Theta',
-    description:
-      'A nation-wide website to communicate and highlight the first Greek-letter fraternity for women.',
-    link: 'https://kappaalphatheta.org',
-    image: '/assets/theta.jpg',
-    color: 'text-yellow-500',
-    tools: ['Craft', 'React'],
-  },
-  {
-    title: 'IU Health',
-    description:
-      'A full-service web application for the Indiana branch of University Hospitals.',
-    link: 'https://iuhealth.org',
-    image: '/assets/iuhealth.jpg',
+      'Design-oriented web presence for branding, websites, landing pages, and digital product experiments.',
+    link: 'https://firacodesign.ro',
+    category: 'Founder / Active Businesses',
+    image: fallbackImage,
     color: 'text-rose-700',
-    tools: ['Craft', 'Tailwind', 'Alpine', 'React', 'Algolia'],
+    tools: ['Branding', 'Websites', 'Product Experiments'],
   },
   {
-    title: 'Riley Childrens',
+    title: 'TemeJoc',
     description:
-      'A monolithic web application for the Pediatric branches of University Hospitals in Indiana.',
-    link: 'https://rileychildrens.org',
-    image: '/assets/riley.jpg',
-    color: 'text-pink-800',
-    tools: ['Craft', 'Tailwind', 'Alpine', 'React', 'Algolia'],
+      'Educational platform for children, parents, and teachers, focused on homework, routines, schedules, typing, technology basics, and child-friendly learning games.',
+    link: 'https://www.temejoc.ro',
+    category: 'Products & Platforms',
+    image: fallbackImage,
+    color: 'text-amber-700',
+    tools: ['Education', 'Children', 'Parents', 'Learning Games'],
   },
   {
-    title: 'TrendyMinds',
+    title: 'MarcLab',
     description:
-      'An Indiana-based marketing agency focused on delivering digital experiences to clients that improve lives.',
-    link: 'https://trendyminds.com',
-    image: '/assets/trendyminds.jpg',
-    color: 'text-yellow-600',
-    tools: ['Craft', 'React'],
+      'Local-first educational playground for children, with modular games, progress, XP, streaks, coins, and parent-protected export.',
+    link: 'https://marclab.netlify.app/',
+    category: 'Products & Platforms',
+    image: fallbackImage,
+    color: 'text-violet-700',
+    tools: ['Local-first', 'Education', 'Progress Systems', 'Games'],
   },
   {
-    title: 'Anahicont',
+    title: 'RO Parenting',
     description:
-      'A presentation website and a blog for a Romanian accounting company.',
-    link: 'https://anahicont.ro',
-    color: 'text-green-700',
-    image: '/assets/sexyhair.jpg',
-    tools: ['Wordpress', 'Google Tag Manager', 'Google Analytics'],
+      'Simple parenting guide and crisis-mode tool for routines, reflection, consistency, and better parent-child communication.',
+    link: 'https://ro-parenting.netlify.app/',
+    category: 'Products & Platforms',
+    image: fallbackImage,
+    color: 'text-teal-700',
+    tools: ['Parenting', 'Routines', 'Reflection', 'Guides'],
   },
   {
-    title: 'Good PC',
+    title: 'Aegis Private',
     description:
-      'A company presentation website for a Bucharest computer-service and IT services business.',
-    link: 'https://goodpc.ro/',
+      'Experimental digital risk, private intelligence, and security-oriented interface concept.',
+    link: 'https://aegis-private.vercel.app/',
+    category: 'Products & Platforms',
+    image: fallbackImage,
+    color: 'text-gray-800',
+    tools: ['Security', 'Privacy', 'Risk', 'Product Concept'],
+  },
+  {
+    title: 'GoodPC',
+    description:
+      'IT service website for computer repair, laptop repair, maintenance, and B2B IT support in Bucharest.',
+    link: 'https://www.goodpc.ro',
+    category: 'Business Websites',
     image: '/assets/goodpc-full-website-capture.png',
-    color: 'text-blue-900',
-    tools: ['Netlify', 'Bootstrap', 'Google Analytics' , 'Google Tag Manager'],
+    color: 'text-blue-800',
+    tools: ['Netlify', 'Bootstrap', 'Analytics', 'Lead Generation'],
   },
   {
     title: 'Chic Roumaine',
     description:
-      'An e-commerce website for a Romanian-based handmade-first embroiderry company.',
-    link: 'https://chicroumaine.com',
+      'E-commerce and brand website for handmade Romanian traditional blouses and fashion products.',
+    link: 'https://www.chicroumaine.com',
+    category: 'Business Websites',
     image: '/assets/chic-roumaine-full-website-capture.png',
-    color: 'text-red-900',
-    tools: ['Wordpress/WooCommerce/Elementor' , 'Stripe/Paypal', 'Google Analytics/Google Tag Manager'],
+    color: 'text-red-800',
+    tools: ['WordPress', 'WooCommerce', 'Elementor', 'Payments'],
+  },
+  {
+    title: 'Security & Telecom',
+    description:
+      'Website for integrated security systems: video surveillance, alarms, access control, fire detection, automation, and IT infrastructure.',
+    link: 'https://www.security-telecom.ro',
+    category: 'Business Websites',
+    image: fallbackImage,
+    color: 'text-slate-800',
+    tools: ['Security Systems', 'B2B', 'Infrastructure', 'Local SEO'],
+  },
+  {
+    title: 'MOVE Studio Popesti-Leordeni',
+    description:
+      'Premium landing page for a Pilates Reformer studio with pricing, FAQ, booking, and local SEO structure.',
+    link: 'https://move-studio-popesti.netlify.app/',
+    category: 'Business Websites',
+    image: fallbackImage,
+    color: 'text-fuchsia-800',
+    tools: ['Landing Page', 'Pricing', 'FAQ', 'Local SEO'],
+  },
+  {
+    title: 'CORAMI',
+    description:
+      'Industrial service website for waste compacting and baling equipment maintenance.',
+    link: 'https://corami.netlify.app/',
+    category: 'Business Websites',
+    image: fallbackImage,
+    color: 'text-orange-800',
+    tools: ['Industrial Services', 'B2B', 'Maintenance', 'Web'],
+  },
+  {
+    title: 'Forest Memory',
+    description:
+      'Memory game inspired by nature, with local progress and photo challenge mechanics.',
+    link: 'https://ioana-forest-game.netlify.app/',
+    category: 'Creative & Personal Experiments',
+    image: fallbackImage,
+    color: 'text-green-800',
+    tools: ['Game', 'Local Progress', 'Challenge Mechanics'],
+  },
+  {
+    title: 'Love Game Generator',
+    description:
+      'Generator for personalized mini-game links with encoded custom messages and rewards.',
+    link: 'https://lovegenerator.netlify.app/',
+    category: 'Creative & Personal Experiments',
+    image: fallbackImage,
+    color: 'text-pink-800',
+    tools: ['Generator', 'Mini-game', 'Personalization'],
   },
 ]
+
+export default work

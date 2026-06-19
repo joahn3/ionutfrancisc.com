@@ -8,9 +8,9 @@ const seo = {
 }
 
 const heroProps = {
-  heading: 'You look lost',
+  heading: 'This page is not here.',
   paragraph:
-    "Looks like you attempted to visit a page that does not exist. Let's get you back on track.",
+    "The link may be old, renamed, or still waiting for its next iteration. Let's get you back to something useful.",
 }
 
 export default function Custom404() {

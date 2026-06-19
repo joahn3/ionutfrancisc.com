@@ -2,25 +2,33 @@ import { createElement } from 'react'
 
 interface Props {
   className?: string
-  tag?: string
+  tag?: keyof JSX.IntrinsicElements
   content: string
+  allowHtml?: boolean
+}
+
+function keepLastWordsTogether(content: string) {
+  const words = content.trim().split(/\s+/)
+
+  if (words.length < 3) {
+    return content
+  }
+
+  const lastWords = words.slice(-2).join('\u00a0')
+  return [...words.slice(0, -2), lastWords].join(' ')
 }
 
 export default function Text(props: Props) {
-  const { className, tag, content } = props
+  const { allowHtml = false, className, tag = 'span', content } = props
 
-  // Reconstruct string with break tag
-  const array = content.split(' ')
-  const length = array.length
-  const withoutLastTwo = array.slice(0, -2)
-  const lastTwoString = `${array[length - 2]}&nbsp;${array[length - 1]}`
-  const newArray = [...withoutLastTwo, lastTwoString]
-  const newString = newArray.join(' ')
+  if (allowHtml) {
+    return createElement(tag, {
+      className,
+      dangerouslySetInnerHTML: {
+        __html: content,
+      },
+    })
+  }
 
-  return createElement(tag ?? 'span', {
-    className,
-    dangerouslySetInnerHTML: {
-      __html: lastTwoString.length > 24 ? content : newString,
-    },
-  })
+  return createElement(tag, { className }, keepLastWordsTogether(content))
 }

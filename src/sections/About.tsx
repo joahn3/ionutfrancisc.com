@@ -1,47 +1,36 @@
 import Intro from 'components/Intro'
 import Text from 'components/Text'
 import { CheckCircleIcon } from '@heroicons/react/solid'
+import { profile } from 'data/profile'
 
 const content = [
   {
-    heading: 'Skills',
+    heading: 'Focus',
     subheading:
-      'A non-comprehensive list of the tools that I use day-in and day-out to get my work done:',
+      'The areas where my work naturally overlaps: security, privacy, web, automation, energy, and education.',
     image: '/assets/skills.svg',
-    items: [
-      'Wordpress' ,
-      'WooCommerce',
-      'Str',
-      'Craft CMS',
-      'Eleventy',
-      'Next.js',
-      'React',
-      'TailwindCSS',
-    ],
+    items: profile.focusAreas,
   },
   {
-    heading: 'Marketing & Social Media',
+    heading: 'What I Like Building',
     subheading:
-      'Social Media & Facebook & Google Marketing',
-    image: '/assets/skills.svg',  
-    items: [
-      'Google Suite (Ads, Tag, Analytics, Merchant)',
-      'Facebook & Instagram Suite (Pages, Ads, Pixel',
-      'Stripe',
-    ],
-  },
-  {
-    heading: 'Hobbies',
-    subheading:
-      "If I'm not writing code, then I am most likely doing one or multiple of the following:",
+      'Products and systems that can be shipped, tested, improved, and used by actual people.',
     image: '/assets/hobbies.svg',
     items: [
-      'Practicing my Tennis serve',
-      'Watching Edgar Wright movies',
-      'Losing online Chess matches',
-      'Lifting weights at Planet Fitness',
-      'Listening to Pop-punk music',
+      'Clean, fast websites for real businesses',
+      'Landing pages that can generate leads',
+      'MVPs that test business ideas quickly',
+      'Local-first apps with simple privacy models',
+      'Educational tools for children and parents',
+      'Automation systems for small teams and founders',
     ],
+  },
+  {
+    heading: 'Stack',
+    subheading:
+      'A practical mix of security thinking, web implementation, deployment, automation, and AI-assisted workflows.',
+    image: '/assets/skills.svg',
+    items: profile.stack,
   },
 ]
 
@@ -50,8 +39,8 @@ const isEven = (index: number) => index % 2 === 0
 const About = () => (
   <section className="container section-spacing">
     <Intro
-      heading="Let's get to know each other better."
-      subheading="I'll keep it really short and sweet for you."
+      heading="Built from practical overlaps."
+      subheading="The useful work usually happens where technical execution meets business reality."
     />
     {content.map((section, index) => (
       <div
@@ -75,7 +64,7 @@ const About = () => (
           <ul className="mt-4 flex flex-col gap-2">
             {section.items.map((item) => (
               <li className="flex items-center gap-2 md:text-lg" key={item}>
-                <CheckCircleIcon className="w-5 h-5 text-indigo-500" />
+                <CheckCircleIcon className="w-5 h-5 flex-shrink-0 text-emerald-600" />
                 {item}
               </li>
             ))}

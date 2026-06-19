@@ -1,16 +1,21 @@
 import Hero from 'components/Hero'
 import ContactForm from 'sections/ContactForm'
 import Page from 'components/Page'
+import { profile } from 'data/profile'
 
 const seo = {
   title: 'Contact',
-  description: 'Get in contact with Ionut Francisc.',
+  description:
+    'Contact Johnny Francisc for security, privacy, web, automation, and AI-assisted product work.',
 }
 
 const heroProps = {
-  heading: "Let's get in touch.",
-  paragraph:
-    'Thank you for taking the time to poke around my site. If you are interested in connecting, fill out the contact form below. I will do my best to respond within 48 hours',
+  eyebrow: profile.location,
+  heading: "Let's talk about what you want to build or improve.",
+  paragraph: [
+    'Use the form below for consulting, web work, product experiments, mentoring, or practical collaboration.',
+    'A useful first message includes the goal, current state, timeline, and any link I should review.',
+  ],
 }
 
 export default function Contact() {
@@ -19,7 +24,11 @@ export default function Contact() {
       <Hero {...heroProps} />
       <div className="grid items-center grid-cols-1 container section-spacing md:gap-16 md:grid-cols-2 lg:gap-32">
         <ContactForm />
-        <img className="hidden md:block" src="/assets/contact.svg" alt="Contact form illustration." />
+        <img
+          className="hidden md:block"
+          src="/assets/contact.svg"
+          alt="Contact form illustration."
+        />
       </div>
     </Page>
   )

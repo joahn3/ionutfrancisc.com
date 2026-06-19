@@ -1,17 +1,22 @@
 import Prism from 'prismjs'
 import { useEffect, useState } from 'react'
-import { ArrowRightIcon, MusicNoteIcon } from '@heroicons/react/outline'
+import { ArrowRightIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
-let code = `
-let needsIonutsHelp = true
-
-const contactIonut = (message) => {
-  return alert(message)
+const code = `
+const project = {
+  goal: 'ship something useful',
+  needs: [
+    'security',
+    'privacy',
+    'web',
+    'automation',
+  ],
 }
 
-if (needsIonutsHelp) {
-  contactIonut("Let's get started!")
-}
+const nextStep = review(project)
+  .then(plan)
+  .then(build)
 `
 
 const CodeblockCTA = () => {
@@ -29,7 +34,7 @@ const CodeblockCTA = () => {
     <section className="container flex flex-wrap items-center section-spacing">
       <div
         aria-hidden="true"
-        className="w-full lg:w-1/2 bg-gray-900 p-4 text-white rounded-lg shadow-lg text-sm sm:text-base"
+        className="w-full lg:w-1/2 overflow-hidden bg-gray-900 p-4 text-white rounded-lg shadow-lg text-sm sm:text-base"
       >
         <div className="space-x-2 flex items-center">
           <div className="rounded-full w-3 h-3 bg-red-500"></div>
@@ -37,41 +42,28 @@ const CodeblockCTA = () => {
           <div className="rounded-full w-3 h-3 bg-green-500"></div>
         </div>
         <div className="py-6">
-          <pre>
+          <pre className="overflow-x-auto">
             <code dangerouslySetInnerHTML={{ __html: highlightedCode }}></code>
           </pre>
         </div>
       </div>
       <div className="w-full max-w-2xl mx-auto mt-12 lg:mt-0 lg:w-1/2 lg:pl-16">
         <h3 className="relative inline text-2xl font-extrabold leading-tight lg:text-3xl">
-          Do you want to build a website?
-          <span
-            className="w-6 h-6 absolute lg:hidden animate-bounce"
-            style={{ top: '-32px', left: '-16px' }}
-          >
-            <MusicNoteIcon />
-          </span>
-          <span
-            className="w-8 h-8 absolute hidden lg:block animate-bounce"
-            style={{ top: '-32px', left: '-32px' }}
-          >
-            <MusicNoteIcon />
-          </span>
+          Have a digital system that needs clearer thinking?
         </h3>
         <p className="mt-2 sm:mt-4 text-sm sm:text-base lg:text-lg">
-          Don't get <strong className="font-bold italic">Frozen</strong> with a
-          site you don't love. I can refactor, refresh, or just rebuild you a
-          new website that will knock your socks off.
+          I can help review, refactor, rebuild, or plan the next version of a
+          website, product flow, automation, or security/privacy-sensitive
+          process.
         </p>
-        <a
-          className="inline-flex items-center mt-6 text-indigo-500 rounded font-bold "
-          href="/contact/"
-        >
-          Contact Me
-          <span className="w-4 h-4 ml-1">
-            <ArrowRightIcon />
-          </span>
-        </a>
+        <Link href="/contact/">
+          <a className="inline-flex items-center mt-6 text-emerald-700 rounded font-bold">
+            Contact Me
+            <span className="w-4 h-4 ml-1">
+              <ArrowRightIcon />
+            </span>
+          </a>
+        </Link>
       </div>
     </section>
   )

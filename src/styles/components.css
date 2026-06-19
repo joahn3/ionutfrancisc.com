@@ -1,17 +1,17 @@
 .button {
-  @apply inline-block text-sm px-4 py-3 rounded font-black uppercase tracking-wide bg-indigo-500 text-white;
+  @apply inline-block text-sm px-4 py-3 rounded font-black uppercase tracking-wide bg-emerald-600 text-white transition-colors hover:bg-emerald-700;
 }
 
 .h1 {
   @apply text-4xl md:text-5xl lg:text-6xl font-black leading-tight;
 }
 
-.gradient-purple {
-  @apply bg-gradient-to-r from-indigo-500 via-indigo-700 to-indigo-900;
+.brand-gradient {
+  @apply bg-gradient-to-r from-gray-950 via-zinc-900 to-emerald-950;
 }
 
 .input {
-  @apply rounded border-gray-300 text-gray-900 focus:border-indigo-500;
+  @apply rounded border-gray-300 text-gray-900 focus:border-emerald-600 focus:ring-emerald-600;
 }
 
 .section-spacing {

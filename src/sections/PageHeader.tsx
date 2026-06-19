@@ -1,30 +1,38 @@
+import clsx from 'clsx'
 import { useState, useEffect } from 'react'
 import { Logo } from 'components/Icons'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import links from 'data/navigation'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { profile } from 'data/profile'
 
 export default function PageHeader() {
   const [isNavOpen, setNavOpen] = useState(false)
   const router = useRouter()
 
   useEffect(() => {
-    router.events.on('routeChangeComplete', () => setNavOpen(false))
-  }, [])
+    const closeMenu = () => setNavOpen(false)
+
+    router.events.on('routeChangeComplete', closeMenu)
+
+    return () => {
+      router.events.off('routeChangeComplete', closeMenu)
+    }
+  }, [router.events])
 
   const isActive = (path: string) => router.pathname === path
 
   return (
-    <header className="gradient-purple text-white">
+    <header className="brand-gradient text-white">
       <div className="container py-5 flex items-center">
         <Link href="/">
           <a className="flex items-center">
-            <span className="w-6 h-6 text-indigo-200">
+            <span className="w-6 h-6 text-emerald-200">
               <Logo />
             </span>
             <span className="ml-2 leading-none font-extrabold text-xl">
-              Ionut Francisc
+              {profile.name}
             </span>
           </a>
         </Link>
@@ -33,7 +41,7 @@ export default function PageHeader() {
             <Link key={name} href={link}>
               <a
                 className={`text-sm font-semibold transition-colors duration-200 hover:text-white ${
-                  isActive(link) ? 'text-white' : 'text-indigo-200'
+                  isActive(link) ? 'text-white' : 'text-gray-300'
                 }`}
               >
                 {name}
@@ -41,14 +49,14 @@ export default function PageHeader() {
             </Link>
           ))}
         </nav>
-        <nav className="ml-auto md:ml-20 flex space-x-4 text-indigo-300">
+        <nav className="ml-auto md:ml-20 flex space-x-4 text-gray-300">
           {links.external.map((link) => (
             <a
               key={link.link}
               aria-label={`${link.name} link`}
               href={link.link}
               target="_blank"
-              rel="noopener"
+              rel="noreferrer noopener"
               className="w-5 h-5 hidden md:block transition-colors duration-200 hover:text-white"
             >
               {link.icon}
@@ -56,15 +64,17 @@ export default function PageHeader() {
           ))}
           <button
             aria-label="Toggle mobile menu"
+            aria-expanded={isNavOpen}
             className="w-6 h-6 md:hidden"
             onClick={() => setNavOpen(!isNavOpen)}
+            type="button"
           >
             {isNavOpen ? <XIcon /> : <MenuIcon />}
           </button>
         </nav>
       </div>
       <div className="container">
-        <div className="h-px bg-indigo-200" style={{ opacity: '0.2' }} />
+        <div className="h-px bg-white/20" />
       </div>
       {isNavOpen && (
         <nav className="container md:hidden">
@@ -72,14 +82,15 @@ export default function PageHeader() {
             <div key={name}>
               <Link href={link}>
                 <a
-                  className={`block py-4 font-semibold text-sm tracking-tight ${
-                    isActive(link) ? 'text-white' : 'text-indigo-200'
-                  }`}
+                  className={clsx(
+                    'block py-4 font-semibold text-sm tracking-tight',
+                    isActive(link) ? 'text-white' : 'text-gray-300'
+                  )}
                 >
                   {name}
                 </a>
               </Link>
-              <div className="h-px bg-indigo-100" style={{ opacity: '0.2' }} />
+              <div className="h-px bg-white/20" />
             </div>
           ))}
         </nav>

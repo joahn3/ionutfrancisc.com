@@ -10,7 +10,7 @@ const seo = {
 const heroProps = {
   heading: 'Something went wrong.',
   paragraph:
-    'Something went wrong on the server. Please try again or visit another page.',
+    'The server hit a problem. Please try again or visit another page while I tighten the bolts.',
 }
 
 export default function Custom500() {
