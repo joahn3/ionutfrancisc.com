@@ -10,6 +10,10 @@ import { profile } from 'data/profile'
 export default function PageHeader() {
   const [isNavOpen, setNavOpen] = useState(false)
   const router = useRouter()
+  const isRomanian =
+    router.pathname === '/ro' || router.pathname.startsWith('/ro/')
+  const internalLinks = isRomanian ? links.internalRo : links.internal
+  const homeLink = isRomanian ? '/ro' : '/'
 
   useEffect(() => {
     const closeMenu = () => setNavOpen(false)
@@ -22,11 +26,27 @@ export default function PageHeader() {
   }, [router.events])
 
   const isActive = (path: string) => router.pathname === path
+  const languagePath = () => {
+    const pairs: Record<string, string> = {
+      '/': '/ro',
+      '/work': '/ro/work',
+      '/consulting': '/ro/consultanta',
+      '/instruction': '/ro/mentorat',
+      '/contact': '/ro/contact',
+      '/ro': '/',
+      '/ro/work': '/work',
+      '/ro/consultanta': '/consulting',
+      '/ro/mentorat': '/instruction',
+      '/ro/contact': '/contact',
+    }
+
+    return pairs[router.pathname] ?? (isRomanian ? '/' : '/ro')
+  }
 
   return (
     <header className="brand-gradient text-white">
       <div className="container py-5 flex items-center">
-        <Link href="/">
+        <Link href={homeLink}>
           <a className="flex items-center">
             <span className="w-6 h-6 text-emerald-200">
               <Logo />
@@ -37,7 +57,7 @@ export default function PageHeader() {
           </a>
         </Link>
         <nav className="ml-auto space-x-4 hidden md:block">
-          {links.internal.map(({ link, name }) => (
+          {internalLinks.map(({ link, name }) => (
             <Link key={name} href={link}>
               <a
                 className={`text-sm font-semibold transition-colors duration-200 hover:text-white ${
@@ -49,7 +69,7 @@ export default function PageHeader() {
             </Link>
           ))}
         </nav>
-        <nav className="ml-auto md:ml-20 flex space-x-4 text-gray-300">
+        <nav className="ml-auto md:ml-20 flex items-center space-x-4 text-gray-300">
           {links.external.map((link) => (
             <a
               key={link.link}
@@ -62,6 +82,11 @@ export default function PageHeader() {
               {link.icon}
             </a>
           ))}
+          <Link href={languagePath()}>
+            <a className="hidden rounded border border-white/30 px-2 py-1 text-xs font-black uppercase tracking-wide text-gray-200 transition-colors hover:bg-white/10 hover:text-white md:inline-flex">
+              {isRomanian ? 'EN' : 'RO'}
+            </a>
+          </Link>
           <button
             aria-label="Toggle mobile menu"
             aria-expanded={isNavOpen}
@@ -78,7 +103,7 @@ export default function PageHeader() {
       </div>
       {isNavOpen && (
         <nav className="container md:hidden">
-          {links.internal.map(({ link, name }) => (
+          {internalLinks.map(({ link, name }) => (
             <div key={name}>
               <Link href={link}>
                 <a
@@ -93,6 +118,14 @@ export default function PageHeader() {
               <div className="h-px bg-white/20" />
             </div>
           ))}
+          <div>
+            <Link href={languagePath()}>
+              <a className="block py-4 font-semibold text-sm tracking-tight text-gray-300">
+                {isRomanian ? 'English version' : 'Versiunea în română'}
+              </a>
+            </Link>
+            <div className="h-px bg-white/20" />
+          </div>
         </nav>
       )}
     </header>

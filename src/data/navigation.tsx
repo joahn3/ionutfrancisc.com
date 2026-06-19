@@ -7,6 +7,12 @@ const navigation = {
     { name: 'Mentoring', link: '/instruction' },
     { name: 'Contact', link: '/contact' },
   ],
+  internalRo: [
+    { name: 'Proiecte', link: '/ro/work' },
+    { name: 'Consultanță', link: '/ro/consultanta' },
+    { name: 'Mentorat', link: '/ro/mentorat' },
+    { name: 'Contact', link: '/ro/contact' },
+  ],
   external: [
     {
       name: 'GitHub',

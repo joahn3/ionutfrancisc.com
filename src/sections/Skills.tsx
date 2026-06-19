@@ -1,16 +1,33 @@
 import { ArrowRightIcon } from '@heroicons/react/outline'
-import skills from 'data/skills'
+import defaultSkills from 'data/skills'
 import Intro from 'components/Intro'
 import Link from 'next/link'
+import { ReactNode } from 'react'
 
-const Skills = () => (
+export type SkillItem = {
+  name: string
+  description: string
+  icon: ReactNode
+  color: string
+  link: string
+  linkText: string
+}
+
+interface Props {
+  heading?: string
+  subheading?: string
+  items?: SkillItem[]
+}
+
+const Skills = ({
+  heading = 'Ways I Can Help',
+  subheading = 'A focused mix of consulting, implementation, teaching, and product thinking.',
+  items = defaultSkills,
+}: Props) => (
   <section className="relative container section-spacing">
-    <Intro
-      heading="Ways I Can Help"
-      subheading="A focused mix of consulting, implementation, teaching, and product thinking."
-    />
+    <Intro heading={heading} subheading={subheading} />
     <div className="mt-12 grid gap-8 sm:mt-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {skills.map((skill) => (
+      {items.map((skill) => (
         <div
           key={skill.name}
           className="flex rounded-lg border border-gray-200 bg-white p-6 shadow-sm md:flex-col"

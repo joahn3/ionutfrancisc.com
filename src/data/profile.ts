@@ -4,11 +4,14 @@ export const profile = {
   company: 'Firacode SRL',
   location: 'Bucharest, Romania',
   headline:
-    'Security & Privacy Consultant · Founder · Web & AI-assisted product builder',
+    'Security & Privacy (GRC) Consultant · Founder · Web & AI-assisted systems builder',
   description:
-    'I work at the intersection of cybersecurity, privacy, web development, automation, energy tech, and practical digital products.',
+    'I help founders and teams make websites, security and privacy controls, automations, and AI-assisted workflows clearer, safer, and more useful.',
   focusAreas: [
-    'Cybersecurity, privacy, compliance, and risk',
+    'Cybersecurity, privacy, GRC, compliance, and risk',
+    'Secure-by-design reviews, audit readiness, and control evidence',
+    'Incident governance, CSIRT/BISO coordination, and remediation follow-up',
+    'PKI, certificate lifecycle, HSM, and regulated delivery contexts',
     'Secure and privacy-aware web products',
     'AI-assisted development workflows',
     'Web development for real businesses',
@@ -32,6 +35,13 @@ export const profile = {
     'Netlify',
     'Vercel',
     'GitHub',
+    'GRC',
+    'DPIA/PIA',
+    'SPbD',
+    'CSIRT/BISO',
+    'PKI/HSM',
+    'DORA',
+    'Zero Trust',
     'Automation',
     'AI-assisted development',
   ],
@@ -49,16 +59,12 @@ export const profile = {
       href: 'https://electroverde.ro',
     },
     {
-      label: 'firaCODE',
-      href: 'https://firacode.ro',
-    },
-    {
       label: 'FiraWeb',
       href: 'https://firaweb.ro',
     },
     {
-      label: 'FiraCodeDesign',
-      href: 'https://firacodesign.ro',
+      label: 'Credly',
+      href: 'https://www.credly.com/users/ionut-iulian-francisc',
     },
   ],
 }

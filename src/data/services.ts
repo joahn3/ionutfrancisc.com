@@ -23,6 +23,8 @@ export type ServicePage = {
   packages: {
     heading: string
     description: string
+    durationLabel?: string
+    ctaLabel?: string
     items: {
       name: string
       slug: string
@@ -36,12 +38,20 @@ export type ServicePage = {
     heading: string
     description: string
     name: string
+    action?: string
     defaultType: string
     options: {
       value: string
       label: string
     }[]
     infoLabel: string
+    labels?: {
+      name: string
+      email: string
+      type: string
+      submit: string
+      honeypot: string
+    }
   }
 }
 
@@ -148,13 +158,13 @@ export const servicePages: Record<'instruction' | 'consulting', ServicePage> = {
     seo: {
       title: 'Consulting',
       description:
-        'Security, privacy, web, automation, and digital product consulting for founders and small teams.',
+        'Security, privacy, GRC, web, automation, and digital product consulting for founders and small teams.',
     },
     hero: {
       heading:
         'Tighten your web product, privacy posture, and digital systems.',
       paragraph: [
-        'I help founders and small teams inspect, plan, and improve websites, landing pages, automations, security-oriented flows, and AI-assisted product ideas.',
+        'I help founders and small teams inspect, plan, and improve websites, landing pages, automations, security-oriented flows, privacy-aware systems, and AI-assisted product ideas.',
         'The work is practical: understand the risk, simplify the system, improve the user path, and make the next implementation step obvious.',
       ],
     },
@@ -163,7 +173,7 @@ export const servicePages: Record<'instruction' | 'consulting', ServicePage> = {
         'Most small digital systems do not need more noise. They need a clearer risk map and a better execution path.',
       paragraphs: [
         'A site can look finished while lead capture, analytics, privacy notices, forms, automations, and operational handoffs are quietly working against the business.',
-        'I review both the technical and business surface: what users see, what data is collected, how the system is deployed, and where security or privacy assumptions may be weak.',
+        'I review both the technical and business surface: what users see, what data is collected, how the system is deployed, what evidence exists, and where security or privacy assumptions may be weak.',
         'The result is a practical improvement plan that a founder, internal team, or implementation partner can actually use.',
       ],
     },
@@ -175,11 +185,11 @@ export const servicePages: Record<'instruction' | 'consulting', ServicePage> = {
         {
           heading: 'Security & Privacy Review',
           description:
-            'Find weak points in forms, data flows, tracking, access, and operational habits.',
+            'Find weak points in forms, data flows, tracking, access, evidence, and operational habits.',
           bullets: [
             'Risk review',
             'Privacy-aware UX',
-            'Compliance basics',
+            'GRC basics',
             'Action plan',
           ],
         },
@@ -250,3 +260,230 @@ export const servicePages: Record<'instruction' | 'consulting', ServicePage> = {
     },
   },
 }
+
+export const servicePagesRo: Record<'instruction' | 'consulting', ServicePage> =
+  {
+    instruction: {
+      seo: {
+        title: 'Mentorat',
+        description:
+          'Mentorat practic pentru web development, frontend, tooling și workflow-uri AI-assisted.',
+      },
+      hero: {
+        heading: 'Învață web development practic, lucrând pe probleme reale.',
+        paragraph: [
+          'Ofer mentorat pentru developeri, fondatori și oameni curioși care vor mai multă claritate în React, Next.js, TypeScript, tooling, deployment și workflow-uri AI-assisted.',
+          'Nu facem încă un tutorial generic. Ne uităm la proiectul tău, la blocajele reale și la obiceiurile care te ajută să livrezi mai curat.',
+        ],
+      },
+      overview: {
+        heading:
+          'Web development-ul modern e ușor de început, dar greu de organizat bine.',
+        paragraphs: [
+          'Framework-urile, hosting-ul și tool-urile AI se mișcă repede. Viteza ajută, dar poate produce proiecte greu de întreținut dacă nu ai un mod clar de lucru.',
+          'O sesiune bună îți oferă un partener de gândire în timp ce lucrezi: putem analiza structura proiectului, depana o problemă concretă, îmbunătăți o funcționalitate sau construi un workflow de livrare.',
+          'Accentul este pe decizii practice: cod lizibil, abstracții cu sens, UI mentenabil, default-uri sigure, deployment și automatizări care chiar economisesc timp.',
+        ],
+      },
+      offerings: {
+        heading: 'Ce Putem Lucra',
+        description:
+          'Sesiunile se adaptează nivelului tău și proiectului pe care vrei să-l îmbunătățești.',
+        items: [
+          {
+            heading: 'Frontend Foundations',
+            description:
+              'Construim încredere în piesele care fac interfețele moderne mai stabile.',
+            bullets: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+          },
+          {
+            heading: 'Workflow de proiect',
+            description:
+              'Facem bucla de lucru zilnică mai clară și mai puțin repetitivă.',
+            bullets: ['Git', 'NPM', 'Netlify/Vercel', 'Code review habits'],
+          },
+          {
+            heading: 'AI-assisted Building',
+            description:
+              'Folosești AI ca ajutor practic de dezvoltare fără să pierzi controlul asupra codului.',
+            bullets: [
+              'Prompting pentru implementare',
+              'Refactorizare',
+              'Testare',
+              'Debugging',
+            ],
+          },
+        ],
+      },
+      packages: {
+        heading: 'Opțiuni Simple',
+        description:
+          'Începem mic, apoi programăm o sesiune de lucru dacă are sens.',
+        durationLabel: 'pentru',
+        ctaLabel: 'Începe aici',
+        items: [
+          {
+            name: 'Intro Call',
+            slug: 'intro',
+            price: '0',
+            duration: '15 min',
+            description:
+              'Un call scurt ca să înțeleg obiectivele, proiectul și unde ar ajuta cel mai mult o sesiune.',
+            bullets: [
+              'Fit check gratuit',
+              'Clarificăm obiectivele',
+              'Alegem tema potrivită',
+            ],
+          },
+          {
+            name: 'Working Session',
+            slug: 'session',
+            price: '49',
+            duration: '45 min',
+            description:
+              'O sesiune practică și personalizată pe codul, workflow-ul sau obiectivul tău de învățare.',
+            bullets: ['Agendă personalizată', 'Review live', 'Pași concreți'],
+          },
+        ],
+      },
+      form: {
+        heading: 'Hai Să Lucrăm Pe Blocaj',
+        description:
+          'Spune-mi ce construiești sau ce vrei să înveți, iar eu îți propun următorul pas util.',
+        name: 'mentorat',
+        action: '/ro?contact=true',
+        defaultType: 'intro',
+        options: [
+          { value: 'intro', label: 'Intro Call (15 min)' },
+          { value: 'session', label: 'Working Session (45 min)' },
+        ],
+        infoLabel: 'Ce vrei să înveți sau să îmbunătățești?',
+        labels: {
+          name: 'Nume',
+          email: 'Email',
+          type: 'Tip sesiune',
+          submit: 'Trimite',
+          honeypot: 'Nu completa acest câmp:',
+        },
+      },
+    },
+    consulting: {
+      seo: {
+        title: 'Consultanță',
+        description:
+          'Consultanță practică de security, privacy, GRC, web, automatizări și produse digitale pentru fondatori și echipe mici.',
+      },
+      hero: {
+        heading:
+          'Clarifică-ți produsul web, postura de privacy și sistemele digitale.',
+        paragraph: [
+          'Ajut fondatorii și echipele mici să analizeze, planifice și îmbunătățească website-uri, landing pages, automatizări, fluxuri security/privacy și idei de produs AI-assisted.',
+          'Lucrul este pragmatic: înțelegem riscul, simplificăm sistemul, îmbunătățim traseul utilizatorului și facem următorul pas de implementare evident.',
+        ],
+      },
+      overview: {
+        heading:
+          'Un sistem digital mic nu are nevoie de mai mult zgomot. Are nevoie de hartă de risc și de execuție clară.',
+        paragraphs: [
+          'Un website poate arăta terminat în timp ce formularele, analytics, privacy notices, lead capture, automatizările și handoff-urile operaționale lucrează împotriva business-ului.',
+          'Revizuiesc atât suprafața tehnică, cât și cea de business: ce vede utilizatorul, ce date se colectează, cum e publicat sistemul, ce dovezi există și unde pot fi slabe presupunerile de security sau privacy.',
+          'Rezultatul este un plan practic de îmbunătățire, pe care un fondator, o echipă internă sau un partener de implementare îl poate folosi imediat.',
+        ],
+      },
+      offerings: {
+        heading: 'Zone De Consultanță',
+        description:
+          'Util pentru fondatori, business-uri de servicii și echipe care au nevoie de execuție digitală clară.',
+        items: [
+          {
+            heading: 'Security & Privacy Review',
+            description:
+              'Identificăm puncte slabe în formulare, date, tracking, acces, dovezi și obiceiuri operaționale.',
+            bullets: [
+              'Risk review',
+              'Privacy-aware UX',
+              'GRC basics',
+              'Plan de acțiune',
+            ],
+          },
+          {
+            heading: 'Web & Lead Systems',
+            description:
+              'Îmbunătățim website-uri, landing pages, formulare, conversii și igiena de analytics.',
+            bullets: [
+              'Landing pages',
+              'Structură SEO',
+              'Lead capture',
+              'Tracking setup',
+            ],
+          },
+          {
+            heading: 'Automatizări & AI Workflows',
+            description:
+              'Proiectăm automatizări mici și workflow-uri AI-assisted care reduc munca manuală.',
+            bullets: [
+              'Workflow-uri pentru fondatori',
+              'Instrumente interne',
+              'Idei local-first',
+              'Planificare MVP',
+            ],
+          },
+        ],
+      },
+      packages: {
+        heading: 'Opțiuni De Consultanță',
+        description:
+          'Începem cu un call scurt de diagnostic sau cu un review focusat dacă știi deja zona.',
+        durationLabel: 'pentru',
+        ctaLabel: 'Începe aici',
+        items: [
+          {
+            name: 'Diagnostic Call',
+            slug: 'diagnostic',
+            price: '0',
+            duration: '15 min',
+            description:
+              'O discuție scurtă ca să înțeleg business-ul, sistemul și zona cu cel mai mare impact.',
+            bullets: [
+              'Fit check gratuit',
+              'Identificăm riscul principal',
+              'Definim scopul',
+            ],
+          },
+          {
+            name: 'Focused Review',
+            slug: 'review',
+            price: '99',
+            duration: '60 min',
+            description:
+              'Un review practic pentru un website, flux de produs, automatizare sau subiect security/privacy.',
+            bullets: [
+              'Review structurat',
+              'Findings prioritizate',
+              'Plan de pași următori',
+            ],
+          },
+        ],
+      },
+      form: {
+        heading: 'Începem Cu Sistemul',
+        description:
+          'Spune-mi ce vrei să analizăm și ce rezultat ar face colaborarea utilă.',
+        name: 'consultanta',
+        action: '/ro?contact=true',
+        defaultType: 'diagnostic',
+        options: [
+          { value: 'diagnostic', label: 'Diagnostic Call (15 min)' },
+          { value: 'review', label: 'Focused Review (60 min)' },
+        ],
+        infoLabel: 'Ce ar trebui să analizăm sau să îmbunătățim?',
+        labels: {
+          name: 'Nume',
+          email: 'Email',
+          type: 'Tip sesiune',
+          submit: 'Trimite',
+          honeypot: 'Nu completa acest câmp:',
+        },
+      },
+    },
+  }

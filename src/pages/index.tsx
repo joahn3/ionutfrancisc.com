@@ -6,6 +6,8 @@ import { toast } from 'react-hot-toast'
 import Page from 'components/Page'
 import About from 'sections/About'
 import { profile } from 'data/profile'
+import Credentials from 'sections/Credentials'
+import { credentialHighlights } from 'data/credentials'
 
 const seo = {
   title: 'Ionuț Francisc',
@@ -37,6 +39,12 @@ export default function Home() {
   return (
     <Page {...seo}>
       <Hero {...heroProps} />
+      <Credentials
+        heading="Security, privacy, and delivery context"
+        subheading="A few signals behind the work: enterprise GRC experience, regulated delivery, hands-on implementation, and public credential trails."
+        items={credentialHighlights}
+        linkLabel="View Credly profile"
+      />
       <About />
       <Skills />
       <ContactCTA />

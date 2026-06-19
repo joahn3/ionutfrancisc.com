@@ -3,6 +3,7 @@
 Personal portfolio site for Ionuț Francisc, built with Next.js, TypeScript, and Tailwind CSS.
 
 The site presents security and privacy consulting, web and AI-assisted product work, active founder projects, selected business websites, educational tools, and personal experiments.
+It also includes Romanian routes under `/ro` for the main pages.
 
 ## Stack
 
@@ -35,6 +36,7 @@ Core content lives in `src/data`:
 - `work.tsx` for portfolio categories and projects.
 - `services.ts` for the consulting and mentoring page content.
 - `skills.tsx` for homepage service cards.
+- `credentials.ts` for public credential and experience highlights.
 - `navigation.tsx` for internal and external navigation.
 
 This keeps the site easy to update without editing page markup for every content change.

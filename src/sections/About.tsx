@@ -3,7 +3,20 @@ import Text from 'components/Text'
 import { CheckCircleIcon } from '@heroicons/react/solid'
 import { profile } from 'data/profile'
 
-const content = [
+type AboutContentSection = {
+  heading: string
+  subheading: string
+  image: string
+  items: string[]
+}
+
+const defaultIntro = {
+  heading: 'Built from practical overlaps.',
+  subheading:
+    'The useful work usually happens where technical execution meets business reality.',
+}
+
+const defaultContent: AboutContentSection[] = [
   {
     heading: 'Focus',
     subheading:
@@ -36,12 +49,14 @@ const content = [
 
 const isEven = (index: number) => index % 2 === 0
 
-const About = () => (
+interface Props {
+  intro?: typeof defaultIntro
+  content?: AboutContentSection[]
+}
+
+const About = ({ intro = defaultIntro, content = defaultContent }: Props) => (
   <section className="container section-spacing">
-    <Intro
-      heading="Built from practical overlaps."
-      subheading="The useful work usually happens where technical execution meets business reality."
-    />
+    <Intro heading={intro.heading} subheading={intro.subheading} />
     {content.map((section, index) => (
       <div
         key={section.heading}

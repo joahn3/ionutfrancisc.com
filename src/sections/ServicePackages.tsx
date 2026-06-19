@@ -47,7 +47,7 @@ export default function ServicePackages({ formName, packages }: Props) {
             <div className="mt-8 flex items-center leading-none">
               <span className="font-black text-4xl">${item.price}</span>
               <span className="text-gray-700 text-sm ml-2">
-                for {item.duration}
+                {packages.durationLabel ?? 'for'} {item.duration}
               </span>
             </div>
             <Text
@@ -71,7 +71,7 @@ export default function ServicePackages({ formName, packages }: Props) {
               className="mt-auto button w-full text-center"
               type="button"
             >
-              Start Here
+              {packages.ctaLabel ?? 'Start Here'}
             </button>
           </div>
         ))}

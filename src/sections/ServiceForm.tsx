@@ -23,14 +23,23 @@ export default function ServiceForm({ form }: Props) {
         </div>
         <form
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
           name={form.name}
           className="mt-12 grid grid-cols-2 gap-8 max-w-4xl mx-auto"
           method="POST"
-          action="/?contact=true"
+          action={form.action ?? '/?contact=true'}
         >
           <input type="hidden" name="form-name" value={form.name} />
+          <p className="hidden" aria-hidden="true">
+            <label>
+              {form.labels?.honeypot ?? "Don't fill this out if you're human:"}
+              <input name="bot-field" tabIndex={-1} autoComplete="off" />
+            </label>
+          </p>
           <label className="col-span-2 sm:col-span-1">
-            <span className="block font-bold">Name</span>
+            <span className="block font-bold">
+              {form.labels?.name ?? 'Name'}
+            </span>
             <input
               className="input mt-2 w-full"
               type="text"
@@ -40,7 +49,9 @@ export default function ServiceForm({ form }: Props) {
             />
           </label>
           <label className="col-span-2 sm:col-span-1">
-            <span className="block font-bold">Email</span>
+            <span className="block font-bold">
+              {form.labels?.email ?? 'Email'}
+            </span>
             <input
               className="input mt-2 w-full"
               type="email"
@@ -50,7 +61,9 @@ export default function ServiceForm({ form }: Props) {
             />
           </label>
           <label className="col-span-2">
-            <span className="block font-bold">Session Type</span>
+            <span className="block font-bold">
+              {form.labels?.type ?? 'Session Type'}
+            </span>
             <select
               id={`${form.name}-type`}
               className="input mt-2 w-full"
@@ -74,7 +87,7 @@ export default function ServiceForm({ form }: Props) {
             ></textarea>
           </label>
           <button type="submit" className="button col-span-2">
-            Submit
+            {form.labels?.submit ?? 'Submit'}
           </button>
         </form>
       </div>

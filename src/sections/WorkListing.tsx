@@ -13,7 +13,29 @@ const categoryDescriptions: Record<WorkCategory, string> = {
     'Smaller experiments that test mechanics, personalization, playful flows, and local-first product ideas.',
 }
 
-export default function WorkListing() {
+const categoryLabelsRo: Record<WorkCategory, string> = {
+  'Founder / Active Businesses': 'Business-uri active / Founder',
+  'Products & Platforms': 'Produse și platforme',
+  'Business Websites': 'Website-uri pentru business-uri',
+  'Creative & Personal Experiments': 'Experimente creative și personale',
+}
+
+const categoryDescriptionsRo: Record<WorkCategory, string> = {
+  'Founder / Active Businesses':
+    'Branduri și inițiative active unde contează execuția, poziționarea, sistemele și livrarea.',
+  'Products & Platforms':
+    'Produse digitale și concepte orientate spre educație, privacy, risc și workflow-uri practice.',
+  'Business Websites':
+    'Website-uri și landing pages pentru servicii, SEO local, lead generation și nevoi operaționale reale.',
+  'Creative & Personal Experiments':
+    'Experimente mai mici care testează mecanici, personalizare, flow-uri ludice și idei local-first.',
+}
+
+interface Props {
+  language?: 'en' | 'ro'
+}
+
+export default function WorkListing({ language = 'en' }: Props) {
   const groupedWork = workCategories
     .map((category) => ({
       category,
@@ -29,12 +51,18 @@ export default function WorkListing() {
             <Text
               tag="h2"
               className="text-2xl md:text-3xl font-extrabold leading-tight"
-              content={category}
+              content={
+                language === 'ro' ? categoryLabelsRo[category] : category
+              }
             />
             <Text
               tag="p"
               className="mt-2 text-gray-700 md:text-lg"
-              content={categoryDescriptions[category]}
+              content={
+                language === 'ro'
+                  ? categoryDescriptionsRo[category]
+                  : categoryDescriptions[category]
+              }
             />
           </div>
           <div className="mt-8 grid gap-8 lg:grid-cols-2">
@@ -74,7 +102,11 @@ export default function WorkListing() {
                   <Text
                     tag="p"
                     className="text-base text-gray-700 mt-4"
-                    content={item.description}
+                    content={
+                      language === 'ro'
+                        ? item.descriptionRo ?? item.description
+                        : item.description
+                    }
                   />
                   <ul className="flex flex-wrap items-center gap-2 mt-5">
                     {item.tools.map((tool) => (
@@ -92,7 +124,9 @@ export default function WorkListing() {
                     rel="noreferrer noopener"
                     className={`inline-flex items-center mt-6 ${item.color} font-bold`}
                   >
-                    <span className="leading-none">Visit {item.title}</span>
+                    <span className="leading-none">
+                      {language === 'ro' ? 'Vizitează' : 'Visit'} {item.title}
+                    </span>
                     <span className="w-4 ml-1">
                       <ArrowRightIcon />
                     </span>
