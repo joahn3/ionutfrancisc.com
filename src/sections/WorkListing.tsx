@@ -41,24 +41,24 @@ export default function WorkListing() {
             {items.map((item) => (
               <article
                 key={item.title}
-                className="grid overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm md:grid-cols-5"
+                className="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
               >
                 <a
                   target="_blank"
                   href={item.link}
                   rel="noreferrer noopener"
-                  className="block bg-gray-200 md:col-span-2"
+                  className="block bg-gray-200"
                 >
                   <img
                     alt={`${item.title} preview`}
-                    className="h-56 w-full object-cover object-top md:h-full"
+                    className="h-56 w-full object-cover object-top"
                     src={item.image}
                     loading="lazy"
                     width="592"
                     height="288"
                   />
                 </a>
-                <div className="flex flex-col p-6 md:col-span-3">
+                <div className="flex flex-1 flex-col p-6">
                   <a target="_blank" href={item.link} rel="noreferrer noopener">
                     <Text
                       tag="h3"

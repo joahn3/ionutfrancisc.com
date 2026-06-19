@@ -13,7 +13,7 @@ const heroProps = {
 const seo = {
   title: 'Work',
   description:
-    'Selected work by Ionut Francisc across web development, security and privacy concepts, educational tools, business websites, automation, and digital products.',
+    'Selected work by Ionuț Francisc across web development, security and privacy concepts, educational tools, business websites, automation, and digital products.',
 }
 
 export default function Work() {

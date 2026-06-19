@@ -6,7 +6,7 @@ import { profile } from 'data/profile'
 const seo = {
   title: 'Contact',
   description:
-    'Contact Johnny Francisc for security, privacy, web, automation, and AI-assisted product work.',
+    'Contact Ionuț Francisc for security, privacy, web, automation, and AI-assisted product work.',
 }
 
 const heroProps = {

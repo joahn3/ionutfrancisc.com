@@ -20,7 +20,7 @@ function focusForm(formName: string, value: string) {
 export default function ServicePackages({ formName, packages }: Props) {
   return (
     <section id="packages" className="section-spacing relative">
-      <div className="bg-gray-950 absolute w-full h-full top-0 left-0 z-0 lg:h-4/6"></div>
+      <div className="bg-gray-900 absolute w-full h-full top-0 left-0 z-0 lg:h-4/6"></div>
       <div className="relative container text-white z-20">
         <div className="lg:text-center">
           <Text

@@ -1,6 +1,6 @@
-# Ionut Francisc Personal Website
+# Ionuț Francisc Personal Website
 
-Personal portfolio site for Johnny / Ionut Francisc, built with Next.js, TypeScript, and Tailwind CSS.
+Personal portfolio site for Ionuț Francisc, built with Next.js, TypeScript, and Tailwind CSS.
 
 The site presents security and privacy consulting, web and AI-assisted product work, active founder projects, selected business websites, educational tools, and personal experiments.
 
@@ -41,4 +41,4 @@ This keeps the site easy to update without editing page markup for every content
 
 ## Original Credit
 
-This site started as a fork of [mattwaler/mattwaler.com](https://github.com/mattwaler/mattwaler.com) and has since been refactored around the current Ionut Francisc profile and portfolio.
+This site started as a fork of [mattwaler/mattwaler.com](https://github.com/mattwaler/mattwaler.com) and has since been refactored around the current Ionuț Francisc profile and portfolio.

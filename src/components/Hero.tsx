@@ -49,7 +49,7 @@ export default function Hero(props: Props) {
                       'inline-flex items-center rounded px-5 py-3 text-sm font-black uppercase tracking-wide transition-colors',
                       action.variant === 'secondary'
                         ? 'border border-white/40 text-white hover:bg-white/10'
-                        : 'bg-white text-gray-950 hover:bg-emerald-100'
+                        : 'bg-white text-gray-900 hover:bg-emerald-100'
                     )}
                   >
                     {action.label}

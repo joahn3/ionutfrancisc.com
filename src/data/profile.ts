@@ -1,6 +1,6 @@
 export const profile = {
-  name: 'Johnny Francisc',
-  siteName: 'Ionut Francisc',
+  name: 'Ionuț Francisc',
+  siteName: 'Ionuț Francisc',
   company: 'Firacode SRL',
   location: 'Bucharest, Romania',
   headline:
@@ -66,5 +66,5 @@ export const profile = {
 export const defaultSeo = {
   title: profile.siteName,
   description: profile.description,
-  image: '/assets/logo-ionutfrancisc.com.jpeg',
+  image: '/assets/profile-ionut-francisc.jpg',
 }

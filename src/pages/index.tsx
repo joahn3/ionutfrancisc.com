@@ -8,7 +8,7 @@ import About from 'sections/About'
 import { profile } from 'data/profile'
 
 const seo = {
-  title: 'Ionut Francisc',
+  title: 'Ionuț Francisc',
   description: profile.description,
 }
 
@@ -19,7 +19,7 @@ const heroProps = {
     profile.description,
     'My work spans practical security and privacy reviews, conversion-focused websites, educational tools, founder workflows, automation systems, and AI-assisted product experiments.',
   ],
-  image: '/assets/logo-ionutfrancisc.com.jpeg',
+  image: '/assets/profile-ionut-francisc.jpg',
   imageAlt: `${profile.name} portrait`,
   actions: [
     { href: '/work', label: 'View Work' },
