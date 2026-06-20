@@ -5,13 +5,15 @@ import {
   Instagram,
   LinkedIn,
   TikTok,
+  WhatsApp,
 } from 'components/Icons'
+import { profile } from 'data/profile'
 
 const external = [
   {
     name: 'GitHub',
     icon: <GitHub />,
-    link: 'https://github.com/joahn3',
+    link: profile.github,
   },
   {
     name: 'Instagram',
@@ -21,18 +23,20 @@ const external = [
   {
     name: 'LinkedIn',
     icon: <LinkedIn />,
-    link: 'https://www.linkedin.com/in/ionutfrancisc',
+    link: profile.linkedin,
   },
 ]
 
 const navigation = {
   internal: [
+    { name: 'Security & Privacy', link: '/security-privacy' },
     { name: 'Work', link: '/work' },
     { name: 'Consulting', link: '/consulting' },
     { name: 'Mentoring', link: '/instruction' },
     { name: 'Contact', link: '/contact' },
   ],
   internalRo: [
+    { name: 'Security & Privacy', link: '/ro/securitate-confidentialitate' },
     { name: 'Proiecte', link: '/ro/work' },
     { name: 'Consultanță', link: '/ro/consultanta' },
     { name: 'Mentorat', link: '/ro/mentorat' },
@@ -50,6 +54,11 @@ const navigation = {
       name: 'TikTok',
       icon: <TikTok />,
       link: 'https://www.tiktok.com/@me.joahne',
+    },
+    {
+      name: 'WhatsApp',
+      icon: <WhatsApp />,
+      link: profile.whatsapp,
     },
     {
       name: 'Credly badges',

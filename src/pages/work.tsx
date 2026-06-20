@@ -1,6 +1,7 @@
 import Hero from 'components/Hero'
 import WorkListing from 'sections/WorkListing'
 import Page from 'components/Page'
+import CaseStudies from 'sections/CaseStudies'
 
 const heroProps = {
   heading: 'Production work, prototypes, experiments, and learning projects.',
@@ -20,6 +21,7 @@ export default function Work() {
   return (
     <Page {...seo}>
       <Hero {...heroProps} />
+      <CaseStudies />
       <WorkListing />
     </Page>
   )

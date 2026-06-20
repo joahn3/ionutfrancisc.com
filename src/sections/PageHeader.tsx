@@ -6,70 +6,64 @@ import links from 'data/navigation'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { profile } from 'data/profile'
+import { getLanguagePath, isRomanianPath } from 'data/routes'
 
 export default function PageHeader() {
   const [isNavOpen, setNavOpen] = useState(false)
   const router = useRouter()
-  const isRomanian =
-    router.pathname === '/ro' || router.pathname.startsWith('/ro/')
+  const isRomanian = isRomanianPath(router.pathname)
   const internalLinks = isRomanian ? links.internalRo : links.internal
   const homeLink = isRomanian ? '/ro' : '/'
 
   useEffect(() => {
     const closeMenu = () => setNavOpen(false)
+    const closeWithEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setNavOpen(false)
+    }
 
     router.events.on('routeChangeComplete', closeMenu)
+    document.addEventListener('keydown', closeWithEscape)
 
     return () => {
       router.events.off('routeChangeComplete', closeMenu)
+      document.removeEventListener('keydown', closeWithEscape)
     }
   }, [router.events])
 
   const isActive = (path: string) => router.pathname === path
-  const languagePath = () => {
-    const pairs: Record<string, string> = {
-      '/': '/ro',
-      '/work': '/ro/work',
-      '/consulting': '/ro/consultanta',
-      '/instruction': '/ro/mentorat',
-      '/contact': '/ro/contact',
-      '/ro': '/',
-      '/ro/work': '/work',
-      '/ro/consultanta': '/consulting',
-      '/ro/mentorat': '/instruction',
-      '/ro/contact': '/contact',
-    }
-
-    return pairs[router.pathname] ?? (isRomanian ? '/' : '/ro')
-  }
 
   return (
-    <header className="brand-gradient text-white">
+    <header className="brand-surface text-white">
       <div className="container py-5 flex items-center">
-        <Link href={homeLink}>
-          <a className="flex items-center">
-            <span className="w-8 h-8 text-emerald-200">
-              <Logo />
-            </span>
-            <span className="ml-2 leading-none font-extrabold text-xl">
-              {profile.name}
-            </span>
-          </a>
+        <Link className="flex items-center" href={homeLink}>
+          <span className="w-8 h-8 text-emerald-200">
+            <Logo />
+          </span>
+          <span className="ml-2 leading-none font-extrabold text-xl">
+            {profile.name}
+          </span>
         </Link>
-        <nav className="ml-auto space-x-4 hidden md:block">
+        <nav
+          aria-label="Primary navigation"
+          className="ml-auto hidden items-center gap-4 lg:flex"
+        >
           {internalLinks.map(({ link, name }) => (
-            <Link key={name} href={link}>
-              <a
-                className={`text-sm font-semibold transition-colors duration-200 hover:text-white ${
-                  isActive(link) ? 'text-white' : 'text-gray-300'
-                }`}
-              >
-                {name}
-              </a>
+            <Link
+              aria-current={isActive(link) ? 'page' : undefined}
+              className={`text-sm font-semibold transition-colors duration-200 hover:text-white ${
+                isActive(link) ? 'text-white' : 'text-gray-300'
+              }`}
+              href={link}
+              key={name}
+            >
+              {name}
             </Link>
           ))}
         </nav>
-        <nav className="ml-auto md:ml-20 flex items-center space-x-4 text-gray-300">
+        <nav
+          aria-label="Social and language navigation"
+          className="ml-auto flex items-center gap-1 text-gray-300 lg:ml-5"
+        >
           {links.external.map((link) => (
             <a
               key={link.link}
@@ -78,20 +72,36 @@ export default function PageHeader() {
               target="_blank"
               rel="noreferrer noopener"
               title={link.name}
-              className="w-5 h-5 hidden md:block transition-colors duration-200 hover:text-white"
+              className={clsx(
+                'h-9 w-9 items-center justify-center p-2 transition-colors duration-200 hover:text-white',
+                link.name === 'Instagram'
+                  ? 'hidden xl:inline-flex'
+                  : 'hidden lg:inline-flex'
+              )}
             >
               {link.icon}
             </a>
           ))}
-          <Link href={languagePath()}>
-            <a className="hidden rounded border border-white/30 px-2 py-1 text-xs font-black uppercase tracking-wide text-gray-200 transition-colors hover:bg-white/10 hover:text-white md:inline-flex">
-              {isRomanian ? 'EN' : 'RO'}
-            </a>
+          <Link
+            aria-label={isRomanian ? 'English version' : 'Versiunea în română'}
+            className="hidden rounded border border-white/30 px-2 py-1 text-xs font-black uppercase text-gray-200 transition-colors hover:bg-white/10 hover:text-white lg:inline-flex"
+            href={getLanguagePath(router.pathname)}
+          >
+            {isRomanian ? 'EN' : 'RO'}
           </Link>
           <button
-            aria-label="Toggle mobile menu"
+            aria-controls="mobile-navigation"
+            aria-label={
+              isNavOpen
+                ? isRomanian
+                  ? 'Închide meniul'
+                  : 'Close menu'
+                : isRomanian
+                  ? 'Deschide meniul'
+                  : 'Open menu'
+            }
             aria-expanded={isNavOpen}
-            className="w-6 h-6 md:hidden"
+            className="w-6 h-6 lg:hidden"
             onClick={() => setNavOpen(!isNavOpen)}
             type="button"
           >
@@ -103,29 +113,55 @@ export default function PageHeader() {
         <div className="h-px bg-white/20" />
       </div>
       {isNavOpen && (
-        <nav className="container md:hidden">
+        <nav
+          aria-label="Mobile navigation"
+          className="container lg:hidden"
+          id="mobile-navigation"
+        >
           {internalLinks.map(({ link, name }) => (
             <div key={name}>
-              <Link href={link}>
-                <a
-                  className={clsx(
-                    'block py-4 font-semibold text-sm tracking-tight',
-                    isActive(link) ? 'text-white' : 'text-gray-300'
-                  )}
-                >
-                  {name}
-                </a>
+              <Link
+                aria-current={isActive(link) ? 'page' : undefined}
+                className={clsx(
+                  'block py-4 font-semibold text-sm',
+                  isActive(link) ? 'text-white' : 'text-gray-300'
+                )}
+                href={link}
+              >
+                {name}
               </Link>
               <div className="h-px bg-white/20" />
             </div>
           ))}
           <div>
-            <Link href={languagePath()}>
-              <a className="block py-4 font-semibold text-sm tracking-tight text-gray-300">
-                {isRomanian ? 'English version' : 'Versiunea în română'}
-              </a>
+            <Link
+              className="block py-4 font-semibold text-sm text-gray-300"
+              href={getLanguagePath(router.pathname)}
+            >
+              {isRomanian ? 'English version' : 'Versiunea în română'}
             </Link>
             <div className="h-px bg-white/20" />
+          </div>
+          <div className="py-4">
+            <p className="mb-3 text-xs font-bold uppercase text-emerald-200">
+              {isRomanian ? 'Profiluri publice' : 'Public profiles'}
+            </p>
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+              {links.footer.map((link) => (
+                <a
+                  className="inline-flex items-center gap-2 py-2 text-sm font-semibold text-gray-300 hover:text-white"
+                  href={link.link}
+                  key={link.link}
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <span className="h-5 w-5" aria-hidden="true">
+                    {link.icon}
+                  </span>
+                  {link.name}
+                </a>
+              ))}
+            </div>
           </div>
         </nav>
       )}

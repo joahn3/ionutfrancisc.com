@@ -13,7 +13,7 @@ export const skillsEn = [
     description:
       'Practical GRC, secure-by-design, audit readiness, forms, data flows, tracking, access, and privacy-aware product reviews.',
     icon: <ShieldCheckIcon />,
-    color: 'text-emerald-600',
+    color: 'text-emerald-700',
     link: '/consulting',
     linkText: 'Plan a Review',
   },
@@ -31,7 +31,7 @@ export const skillsEn = [
     description:
       'Small operational systems, AI-assisted workflows, and handoffs that reduce manual work for founders and teams.',
     icon: <CogIcon />,
-    color: 'text-sky-600',
+    color: 'text-sky-700',
     link: '/consulting',
     linkText: 'Improve Systems',
   },
@@ -40,7 +40,7 @@ export const skillsEn = [
     icon: <AcademicCapIcon />,
     description:
       'Child-friendly tools, routines, typing practice, progress systems, and parent-facing learning flows.',
-    color: 'text-amber-600',
+    color: 'text-amber-700',
     link: '/work',
     linkText: 'Explore Projects',
   },
@@ -70,7 +70,7 @@ export const skillsRo = [
     description:
       'Review-uri practice pentru GRC, secure-by-design, audit readiness, formulare, fluxuri de date, tracking, acces și decizii de produs orientate spre privacy.',
     icon: <ShieldCheckIcon />,
-    color: 'text-emerald-600',
+    color: 'text-emerald-700',
     link: '/ro/consultanta',
     linkText: 'Planifică un review',
   },
@@ -88,7 +88,7 @@ export const skillsRo = [
     description:
       'Sisteme operaționale mici, fluxuri AI-assisted și handoff-uri care reduc munca manuală pentru fondatori și echipe.',
     icon: <CogIcon />,
-    color: 'text-sky-600',
+    color: 'text-sky-700',
     link: '/ro/consultanta',
     linkText: 'Îmbunătățește sistemele',
   },
@@ -97,7 +97,7 @@ export const skillsRo = [
     icon: <AcademicCapIcon />,
     description:
       'Instrumente pentru copii, rutine, tastare, progres, jocuri educaționale și fluxuri utile pentru părinți.',
-    color: 'text-amber-600',
+    color: 'text-amber-700',
     link: '/ro/work',
     linkText: 'Explorează proiectele',
   },

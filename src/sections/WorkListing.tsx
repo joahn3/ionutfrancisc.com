@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from '@heroicons/react/outline'
 import work, { workCategories, WorkCategory } from 'data/work'
 import Text from 'components/Text'
+import Image from 'next/image'
 
 const categoryDescriptions: Record<WorkCategory, string> = {
   'Founder / Active Businesses':
@@ -77,13 +78,13 @@ export default function WorkListing({ language = 'en' }: Props) {
                   rel="noreferrer noopener"
                   className="block bg-gray-200"
                 >
-                  <img
+                  <Image
                     alt={`${item.title} preview`}
                     className="h-56 w-full object-cover object-top"
                     src={item.image}
-                    loading="lazy"
-                    width="592"
-                    height="288"
+                    width={1200}
+                    height={675}
+                    sizes="(min-width: 1024px) 50vw, 100vw"
                   />
                 </a>
                 <div className="flex flex-1 flex-col p-6">
@@ -104,7 +105,7 @@ export default function WorkListing({ language = 'en' }: Props) {
                     className="text-base text-gray-700 mt-4"
                     content={
                       language === 'ro'
-                        ? item.descriptionRo ?? item.description
+                        ? (item.descriptionRo ?? item.description)
                         : item.description
                     }
                   />
@@ -112,7 +113,7 @@ export default function WorkListing({ language = 'en' }: Props) {
                     {item.tools.map((tool) => (
                       <li
                         key={tool}
-                        className="text-xs tracking-tight font-bold uppercase bg-gray-200 text-gray-800 px-3 py-1 rounded"
+                        className="text-xs font-bold uppercase bg-gray-200 text-gray-800 px-3 py-1 rounded"
                       >
                         {tool}
                       </li>

@@ -2,11 +2,26 @@
   "name": "ionut-francisc-portfolio",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "postcss": "$postcss"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o .dist && next-sitemap",
+    "build": "next build && next-sitemap",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "check": "npm run typecheck && npm run lint && npm run build",
+    "test:e2e": "playwright test",
+    "audit:lighthouse": "node scripts/audit-lighthouse.mjs",
+    "audit:a11y": "playwright test tests/accessibility.spec.ts --project=desktop-chrome",
+    "audit:axe": "npm run audit:a11y",
+    "audit:links": "linkinator ./out --recurse --clean-urls --skip 'ionut-francisc\\.netlify\\.app|linkedin\\.com|facebook\\.com|instagram\\.com|tiktok\\.com|wa\\.me' --verbosity error",
+    "audit:all": "npm run check && npm run test:e2e && npm run audit:links && npm run audit:lighthouse",
     "format": "prettier --write .",
-    "start": "next start"
+    "start": "serve out"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -14,26 +29,33 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.4",
-    "clsx": "^1.1.1",
-    "next": "^12.0.7",
-    "prismjs": "^1.24.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-hot-toast": "^2.1.0"
+    "@heroicons/react": "^1.0.6",
+    "clsx": "^2.1.1",
+    "next": "^16.2.9",
+    "prismjs": "^1.30.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-hot-toast": "^2.6.0"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.4.0",
-    "@types/node": "^17.0.18",
-    "@types/prismjs": "^1.16.6",
-    "@types/react": "^17.0.38",
-    "autoprefixer": "^10.4.1",
-    "next-sitemap": "^2.5.10",
-    "postcss": "^8.3.6",
-    "postcss-import": "^14.0.2",
-    "prettier": "^2.3.2",
-    "tailwindcss": "^3.0.8",
-    "tailwindcss-debug-screens": "^2.1.0",
-    "typescript": "^4.5.4"
+    "@axe-core/playwright": "^4.11.3",
+    "@playwright/test": "^1.61.0",
+    "@tailwindcss/forms": "^0.5.11",
+    "@types/node": "^24.13.2",
+    "@types/prismjs": "^1.26.6",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.9",
+    "eslint-config-prettier": "^10.1.8",
+    "linkinator": "^7.6.1",
+    "next-sitemap": "^4.2.3",
+    "postcss": "^8.5.15",
+    "postcss-import": "^16.1.1",
+    "prettier": "^3.8.4",
+    "serve": "^14.2.5",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
   }
 }

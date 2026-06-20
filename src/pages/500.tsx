@@ -15,7 +15,7 @@ const heroProps = {
 
 export default function Custom500() {
   return (
-    <Page {...seo}>
+    <Page {...seo} noIndex>
       <Hero {...heroProps} />
       <CodeblockCTA />
     </Page>

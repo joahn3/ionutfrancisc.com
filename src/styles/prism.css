@@ -42,7 +42,7 @@ pre[class*='language-'] {
 .token.property,
 .token.keyword,
 .token.tag {
-  @apply text-indigo-500;
+  @apply text-indigo-300;
 }
 
 .token.class-name {

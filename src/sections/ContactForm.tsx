@@ -1,9 +1,13 @@
+import Link from 'next/link'
+
 type ContactFormLabels = {
   name: string
   email: string
   message: string
   submit: string
   honeypot: string
+  privacy: string
+  privacyLink: string
 }
 
 const defaultLabels: ContactFormLabels = {
@@ -12,18 +16,22 @@ const defaultLabels: ContactFormLabels = {
   message: 'What should we work on?',
   submit: 'Send Message',
   honeypot: "Don't fill this out if you're human:",
+  privacy: 'I agree that my details may be used to respond to this request.',
+  privacyLink: 'Privacy notice',
 }
 
 interface Props {
   action?: string
   formName?: string
   labels?: Partial<ContactFormLabels>
+  privacyPath?: string
 }
 
 export default function ContactForm({
   action = '/?contact=true',
   formName = 'contact',
   labels,
+  privacyPath = '/privacy',
 }: Props) {
   const copy = { ...defaultLabels, ...labels }
 
@@ -43,7 +51,7 @@ export default function ContactForm({
         </label>
       </p>
       <label className="block">
-        <p className="font-bold">{copy.name}</p>
+        <span className="block font-bold">{copy.name}</span>
         <input
           name="name"
           type="text"
@@ -53,7 +61,7 @@ export default function ContactForm({
         />
       </label>
       <label className="block pt-6">
-        <p className="font-bold">{copy.email}</p>
+        <span className="block font-bold">{copy.email}</span>
         <input
           name="email"
           type="email"
@@ -63,13 +71,31 @@ export default function ContactForm({
         />
       </label>
       <label className="block pt-6">
-        <p className="font-bold">{copy.message}</p>
+        <span className="block font-bold">{copy.message}</span>
         <textarea
           name="message"
           rows={7}
           required
           className="mt-2 input w-full"
         ></textarea>
+      </label>
+      <label className="mt-5 flex items-start gap-3 text-sm text-gray-700">
+        <input
+          className="mt-1"
+          name="privacy-consent"
+          required
+          type="checkbox"
+          value="accepted"
+        />
+        <span>
+          {copy.privacy}{' '}
+          <Link
+            className="font-bold text-emerald-700 underline"
+            href={privacyPath}
+          >
+            {copy.privacyLink}
+          </Link>
+        </span>
       </label>
       <div className="block pt-4">
         <button type="submit" className="button ml-auto">

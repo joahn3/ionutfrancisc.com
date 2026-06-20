@@ -10,6 +10,7 @@ import Credentials from 'sections/Credentials'
 import { credentialHighlights } from 'data/credentials'
 import { journey } from 'data/journey'
 import Journey from 'sections/Journey'
+import Resume from 'sections/Resume'
 
 const seo = {
   title: 'Ionuț Francisc',
@@ -18,16 +19,17 @@ const seo = {
 
 const heroProps = {
   eyebrow: profile.headline,
-  heading: 'I build secure, useful digital products for real businesses.',
+  heading:
+    'Security, privacy, and governance for systems that have to work in the real world.',
   paragraph: [
-    profile.description,
-    'My work spans practical security and privacy reviews, conversion-focused websites, educational tools, founder workflows, automation systems, and AI-assisted product experiments.',
+    'I am a security, privacy, and GRC professional with 10+ years across governance, risk, controls, incident coordination, and regulated delivery.',
+    'I also build web products and automations, giving me a practical view of how requirements become systems, workflows, evidence, and outcomes.',
   ],
-  image: '/assets/profile-ionut-francisc.jpg',
+  image: '/assets/profile-ionut-francisc.webp',
   imageAlt: `${profile.name} portrait`,
   actions: [
-    { href: '/work', label: 'View Work' },
-    { href: '/consulting', label: 'Consulting', variant: 'secondary' as const },
+    { href: '/security-privacy', label: 'For Recruiters' },
+    { href: '/work', label: 'View Work', variant: 'secondary' as const },
   ],
 }
 
@@ -52,6 +54,7 @@ export default function Home() {
         subheading="The same thread runs through the work: build the system, understand the constraints, support the people using it, and improve what happens next."
         items={journey}
       />
+      <Resume />
       <About />
       <Skills />
       <ContactCTA />

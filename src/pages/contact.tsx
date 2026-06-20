@@ -2,6 +2,8 @@ import Hero from 'components/Hero'
 import ContactForm from 'sections/ContactForm'
 import Page from 'components/Page'
 import { profile } from 'data/profile'
+import ContactChannels from 'sections/ContactChannels'
+import Image from 'next/image'
 
 const seo = {
   title: 'Contact',
@@ -22,12 +24,15 @@ export default function Contact() {
   return (
     <Page {...seo}>
       <Hero {...heroProps} />
+      <ContactChannels />
       <div className="grid items-center grid-cols-1 container section-spacing md:gap-16 md:grid-cols-2 lg:gap-32">
         <ContactForm />
-        <img
+        <Image
           className="hidden md:block"
           src="/assets/contact.svg"
           alt="Contact form illustration."
+          height={512}
+          width={512}
         />
       </div>
     </Page>

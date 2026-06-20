@@ -1,5 +1,5 @@
 import Prism from 'prismjs'
-import { useEffect, useState } from 'react'
+import { useMemo } from 'react'
 import { ArrowRightIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
@@ -34,15 +34,11 @@ const CodeblockCTA = ({
   linkText = 'Contact Me',
   codeSnippet = defaultCode,
 }: Props) => {
-  const [highlightedCode, setHighlightedCode] = useState('')
-  useEffect(() => {
-    const newCode = Prism.highlight(
-      codeSnippet,
-      Prism.languages.javascript,
-      'javascript'
-    )
-    setHighlightedCode(newCode)
-  }, [codeSnippet])
+  const highlightedCode = useMemo(
+    () =>
+      Prism.highlight(codeSnippet, Prism.languages.javascript, 'javascript'),
+    [codeSnippet]
+  )
 
   return (
     <section className="container flex flex-wrap items-center section-spacing">
@@ -68,13 +64,14 @@ const CodeblockCTA = ({
         <p className="mt-2 sm:mt-4 text-sm sm:text-base lg:text-lg">
           {paragraph}
         </p>
-        <Link href={linkHref}>
-          <a className="inline-flex items-center mt-6 text-emerald-700 rounded font-bold">
-            {linkText}
-            <span className="w-4 h-4 ml-1">
-              <ArrowRightIcon />
-            </span>
-          </a>
+        <Link
+          className="inline-flex items-center mt-6 text-emerald-700 rounded font-bold"
+          href={linkHref}
+        >
+          {linkText}
+          <span className="w-4 h-4 ml-1">
+            <ArrowRightIcon />
+          </span>
         </Link>
       </div>
     </section>

@@ -15,10 +15,14 @@ export default function Credentials(props: Props) {
     <section className="bg-gray-50">
       <div className="container section-spacing">
         <Intro heading={props.heading} subheading={props.subheading} />
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {props.items.map((item) => (
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {props.items.map((item, index) => (
             <article
-              className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+              className={`rounded-lg border border-gray-200 bg-white p-6 shadow-sm ${
+                props.items.length % 3 === 2 && index === props.items.length - 1
+                  ? 'lg:col-start-2'
+                  : ''
+              }`}
               key={item.heading}
             >
               <Text

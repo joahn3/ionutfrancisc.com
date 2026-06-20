@@ -2,6 +2,13 @@
 .DS_Store
 .env
 .env.*
+!.env.example
 .next
+out
 node_modules
 npm-debug.log*
+playwright-report
+test-results
+tmp
+lighthouse-report.json
+tsconfig.tsbuildinfo

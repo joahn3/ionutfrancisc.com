@@ -51,6 +51,8 @@ export type ServicePage = {
       type: string
       submit: string
       honeypot: string
+      privacy?: string
+      privacyLink?: string
     }
   }
 }

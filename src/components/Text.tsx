@@ -1,10 +1,9 @@
-import { createElement } from 'react'
+import { createElement, type JSX } from 'react'
 
 interface Props {
   className?: string
   tag?: keyof JSX.IntrinsicElements
   content: string
-  allowHtml?: boolean
 }
 
 function keepLastWordsTogether(content: string) {
@@ -19,16 +18,7 @@ function keepLastWordsTogether(content: string) {
 }
 
 export default function Text(props: Props) {
-  const { allowHtml = false, className, tag = 'span', content } = props
-
-  if (allowHtml) {
-    return createElement(tag, {
-      className,
-      dangerouslySetInnerHTML: {
-        __html: content,
-      },
-    })
-  }
+  const { className, tag = 'span', content } = props
 
   return createElement(tag, { className }, keepLastWordsTogether(content))
 }

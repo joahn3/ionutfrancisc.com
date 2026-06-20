@@ -1,9 +1,9 @@
 /about/                        /work/
-/blog/my-site-redesign/       /blog/rebuilding-website-tea-stack/
+/blog/my-site-redesign/       /work/                              301
 /contact                      /contact/
-/IonutFrancisc.pdf            /work/
-/posts/                       /blog/
-/posts/*                      /blog/
+/IonutFrancisc.pdf            /cv/ionut-francisc-cv-en.pdf       301
+/posts/                       /work/                              301
+/posts/*                      /work/                              301
 /projects/                    /work/
 /sites/                       /work/
 /skills/                      /work/

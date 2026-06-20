@@ -1,6 +1,8 @@
 import ContactForm from 'sections/ContactForm'
 import Hero from 'components/Hero'
 import Page from 'components/Page'
+import ContactChannels from 'sections/ContactChannels'
+import Image from 'next/image'
 
 const seo = {
   title: 'Contact',
@@ -21,6 +23,7 @@ export default function ContactRo() {
   return (
     <Page {...seo}>
       <Hero {...heroProps} />
+      <ContactChannels language="ro" />
       <div className="grid items-center grid-cols-1 container section-spacing md:gap-16 md:grid-cols-2 lg:gap-32">
         <ContactForm
           action="/ro?contact=true"
@@ -31,12 +34,18 @@ export default function ContactRo() {
             message: 'La ce ar trebui să lucrăm?',
             submit: 'Trimite mesaj',
             honeypot: 'Nu completa acest câmp:',
+            privacy:
+              'Sunt de acord ca datele mele să fie folosite pentru a primi un răspuns.',
+            privacyLink: 'Notă de confidențialitate',
           }}
+          privacyPath="/ro/confidentialitate"
         />
-        <img
+        <Image
           className="hidden md:block"
           src="/assets/contact.svg"
           alt="Ilustrație formular de contact."
+          height={512}
+          width={512}
         />
       </div>
     </Page>

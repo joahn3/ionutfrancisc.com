@@ -43,15 +43,14 @@ const Skills = ({
             </h2>
             <p className="mt-2 md:mt-3 text-gray-600">{skill.description}</p>
             <span className="block h-4"></span>
-            <Link href={skill.link}>
-              <a
-                className={`mt-auto flex md:justify-center items-center font-extrabold ${skill.color}`}
-              >
-                {skill.linkText}
-                <span className="ml-1 w-4 h-4">
-                  <ArrowRightIcon />
-                </span>
-              </a>
+            <Link
+              className={`mt-auto flex md:justify-center items-center font-extrabold ${skill.color}`}
+              href={skill.link}
+            >
+              {skill.linkText}
+              <span className="ml-1 w-4 h-4">
+                <ArrowRightIcon />
+              </span>
             </Link>
           </div>
         </div>

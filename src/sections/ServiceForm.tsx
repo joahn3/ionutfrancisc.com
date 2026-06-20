@@ -1,11 +1,14 @@
 import Text from 'components/Text'
 import { ServicePage } from 'data/services'
+import Link from 'next/link'
 
 interface Props {
   form: ServicePage['form']
 }
 
 export default function ServiceForm({ form }: Props) {
+  const isRomanian = form.action?.startsWith('/ro')
+
   return (
     <section id={`${form.name}-schedule`} className="section-spacing">
       <div className="container">
@@ -85,6 +88,28 @@ export default function ServiceForm({ form }: Props) {
               rows={8}
               required
             ></textarea>
+          </label>
+          <label className="col-span-2 flex items-start gap-3 text-sm text-gray-700">
+            <input
+              className="mt-1"
+              name="privacy-consent"
+              required
+              type="checkbox"
+              value="accepted"
+            />
+            <span>
+              {form.labels?.privacy ??
+                (isRomanian
+                  ? 'Sunt de acord ca datele mele să fie folosite pentru a primi un răspuns.'
+                  : 'I agree that my details may be used to respond to this request.')}{' '}
+              <Link
+                className="font-bold text-emerald-700 underline"
+                href={isRomanian ? '/ro/confidentialitate' : '/privacy'}
+              >
+                {form.labels?.privacyLink ??
+                  (isRomanian ? 'Notă de confidențialitate' : 'Privacy notice')}
+              </Link>
+            </span>
           </label>
           <button type="submit" className="button col-span-2">
             {form.labels?.submit ?? 'Submit'}

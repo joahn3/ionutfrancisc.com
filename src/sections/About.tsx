@@ -2,6 +2,7 @@ import Intro from 'components/Intro'
 import Text from 'components/Text'
 import { CheckCircleIcon } from '@heroicons/react/solid'
 import { profile } from 'data/profile'
+import Image from 'next/image'
 
 type AboutContentSection = {
   heading: string
@@ -63,10 +64,12 @@ const About = ({ intro = defaultIntro, content = defaultContent }: Props) => (
         className="mt-16 grid items-center gap-8 grid-cols-1 md:mt-32 md:grid-cols-2 md:gap-24"
       >
         <div className={!isEven(index) ? 'order-1 md:order-2' : ''}>
-          <img
+          <Image
             className="w-2/3 mx-auto md:w-full"
             src={section.image}
             alt={`${section.heading} illustration.`}
+            height={360}
+            width={480}
           />
         </div>
         <div className={!isEven(index) ? 'order-2 md:order-1' : ''}>

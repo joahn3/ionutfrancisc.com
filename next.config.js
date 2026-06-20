@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
-  reactStrictMode: false,
+  output: 'export',
+  reactStrictMode: true,
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 }

@@ -10,7 +10,7 @@ export type WorkItem = {
   descriptionRo?: string
   link: string
   category: WorkCategory
-  image?: string
+  image: string
   color: string
   tools: string[]
 }

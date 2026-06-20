@@ -3,5 +3,5 @@
 module.exports = {
   siteUrl: 'https://ionut-francisc.netlify.app',
   generateRobotsTxt: true,
-  outDir: '.dist',
+  outDir: 'out',
 }

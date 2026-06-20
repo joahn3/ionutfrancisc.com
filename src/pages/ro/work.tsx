@@ -1,6 +1,8 @@
 import Hero from 'components/Hero'
 import Page from 'components/Page'
 import WorkListing from 'sections/WorkListing'
+import CaseStudies from 'sections/CaseStudies'
+import { caseStudiesRo } from 'data/caseStudies'
 
 const heroProps = {
   heading:
@@ -21,6 +23,12 @@ export default function WorkRo() {
   return (
     <Page {...seo}>
       <Hero {...heroProps} />
+      <CaseStudies
+        heading="Studii de caz selectate"
+        subheading="Context, problemă, contribuție și rezultat, nu doar un screenshot."
+        items={caseStudiesRo}
+        language="ro"
+      />
       <WorkListing language="ro" />
     </Page>
   )

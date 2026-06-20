@@ -11,6 +11,7 @@ import { profile } from 'data/profile'
 import { skillsRo } from 'data/skills'
 import { journeyRo } from 'data/journey'
 import Journey from 'sections/Journey'
+import Resume from 'sections/Resume'
 
 const seo = {
   title: 'Ionuț Francisc',
@@ -20,20 +21,23 @@ const seo = {
 
 const heroProps = {
   eyebrow:
-    'Security & Privacy (GRC) Consultant · Founder · Web & AI-assisted systems builder',
+    'Security, Privacy & GRC Consultant · Governance · Risk · Secure digital systems',
   heading:
-    'Construiesc și securizez sisteme digitale utile pentru afaceri reale.',
+    'Security, privacy și governance pentru sisteme care trebuie să funcționeze în lumea reală.',
   paragraph: [
-    'Ajut fondatorii și echipele să facă website-uri, controale security/privacy, automatizări și workflow-uri AI-assisted mai clare, mai sigure și mai utile.',
-    'Lucrez la intersecția dintre GRC, privacy-by-design, web development, SEO, produse educaționale, energie și sisteme practice pentru echipe mici.',
+    'Sunt un profesionist de security, privacy și GRC cu peste 10 ani de experiență în governance, risc, controale, incident coordination și livrare reglementată.',
+    'Construiesc și produse web și automatizări, ceea ce mă ajută să văd practic cum cerințele devin sisteme, workflow-uri, dovezi și rezultate.',
   ],
-  image: '/assets/profile-ionut-francisc.jpg',
+  image: '/assets/profile-ionut-francisc.webp',
   imageAlt: `${profile.name} portret`,
   actions: [
-    { href: '/ro/work', label: 'Vezi Proiectele' },
     {
-      href: '/ro/consultanta',
-      label: 'Consultanță',
+      href: '/ro/securitate-confidentialitate',
+      label: 'Pentru Recrutori',
+    },
+    {
+      href: '/ro/work',
+      label: 'Vezi Proiectele',
       variant: 'secondary' as const,
     },
   ],
@@ -115,6 +119,7 @@ export default function HomeRo() {
         subheading="Același fir leagă toate etapele: construiesc sistemul, înțeleg constrângerile, ajut oamenii care îl folosesc și îmbunătățesc ce urmează."
         items={journeyRo}
       />
+      <Resume language="ro" />
       <About
         intro={{
           heading: 'Construit din suprapuneri practice.',
