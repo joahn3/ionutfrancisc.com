@@ -22,7 +22,7 @@ const heroProps = {
   heading:
     'Security, privacy, and governance for systems that have to work in the real world.',
   paragraph: [
-    'I am a security, privacy, and GRC professional with 10+ years across governance, risk, controls, incident coordination, and regulated delivery.',
+    'I am a security, privacy, and GRC professional with more than 10 years of experience spanning governance, risk, controls, incident coordination, and regulated delivery.',
     'I also build web products and automations, giving me a practical view of how requirements become systems, workflows, evidence, and outcomes.',
   ],
   image: '/assets/profile-ionut-francisc.webp',
@@ -45,7 +45,7 @@ export default function Home() {
       <Hero {...heroProps} />
       <Credentials
         heading="Security, privacy, and delivery context"
-        subheading="A few signals behind the work: enterprise GRC experience, regulated delivery, hands-on implementation, and public credential trails."
+        subheading="A few signals behind the work: enterprise GRC experience, regulated delivery, hands-on implementation, and publicly verifiable credentials."
         items={credentialHighlights}
         linkLabel="View Credly profile"
       />

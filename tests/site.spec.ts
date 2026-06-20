@@ -122,3 +122,15 @@ test('llms.txt exposes the primary public professional sources', async ({
   expect(content).toContain('/security-privacy/')
   expect(content).toContain('linkedin.com/in/ionut-iulian-francisc')
 })
+
+test('work attribution separates ownership from launch contributions', async ({
+  page,
+}) => {
+  await page.goto('/work/')
+
+  await expect(page.getByText('Founder & owner · Strategic partnership with Earthlink / SolarLink')).toBeVisible()
+  await expect(page.getByText('Launch contributor · Earthlink partner ecosystem')).toBeVisible()
+  await expect(page.getByText('Launch contributor · Earthlink venture')).toBeVisible()
+  await expect(page.locator('a[href="https://solarlink.ro"]')).toHaveCount(3)
+  await expect(page.locator('a[href="https://www.tsty.ro"]')).toHaveCount(3)
+})

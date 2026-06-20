@@ -13,14 +13,16 @@ export const profile = {
     updated: 'June 2026',
   },
   headline:
-    'Security, Privacy & GRC Consultant · Governance · Risk · Secure digital systems',
+    'Security, Privacy & GRC Consultant · Governance · Risk · Secure Digital Systems',
   description:
-    'Security, privacy, and GRC professional with 10+ years across governance, risk, controls, incident coordination, regulated delivery, and secure digital systems.',
+    'Security, privacy, and GRC professional with more than 10 years of experience spanning governance, risk, controls, incident coordination, regulated delivery, and secure digital systems.',
   focusAreas: [
     'Cybersecurity, privacy, GRC, compliance, and risk',
     'Secure-by-design reviews, audit readiness, and control evidence',
     'Incident governance, CSIRT/BISO coordination, and remediation follow-up',
     'PKI, certificate lifecycle, HSM, and regulated delivery contexts',
+    'Linux administration foundations and infrastructure troubleshooting',
+    'Level III electrician qualification and photovoltaic systems specialization',
     'Secure and privacy-aware web products',
     'AI-assisted development workflows',
     'Web development for real businesses',
@@ -52,6 +54,9 @@ export const profile = {
     'DORA',
     'Zero Trust',
     'Microsoft SC-900',
+    'Linux Administration',
+    'LPIC-1 / LPIC-2 (historical)',
+    'Electrical Systems',
     'Automation',
     'AI-assisted development',
   ],

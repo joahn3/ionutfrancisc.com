@@ -22,7 +22,7 @@ export default function Resume({ language = 'en' }: Props) {
           </h2>
           <p className="mt-4 max-w-2xl text-gray-700 sm:text-lg">
             {isRomanian
-              ? 'CV în limba engleză, actualizat pentru profilul meu curent de security, privacy, GRC, consultanță și proiecte digitale.'
+              ? 'CV în limba engleză, actualizat pentru profilul meu profesional din securitate, protecția datelor, GRC, consultanță și produse digitale.'
               : 'An English resume updated for my current security, privacy, GRC, consulting, and digital product profile.'}
           </p>
           <p className="mt-2 text-sm text-gray-500">

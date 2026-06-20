@@ -6,6 +6,8 @@ import Image from 'next/image'
 const categoryDescriptions: Record<WorkCategory, string> = {
   'Founder / Active Businesses':
     'Operating brands and business efforts where execution, positioning, systems, and delivery all matter.',
+  'Launch Collaborations':
+    'Brands owned by strategic partners where I contributed to launch work without claiming ownership of the venture.',
   'Products & Platforms':
     'Digital products and product concepts shaped around education, privacy, risk, and practical user workflows.',
   'Business Websites':
@@ -15,21 +17,24 @@ const categoryDescriptions: Record<WorkCategory, string> = {
 }
 
 const categoryLabelsRo: Record<WorkCategory, string> = {
-  'Founder / Active Businesses': 'Business-uri active / Founder',
+  'Founder / Active Businesses': 'Companii și inițiative proprii',
+  'Launch Collaborations': 'Colaborări la lansare',
   'Products & Platforms': 'Produse și platforme',
-  'Business Websites': 'Website-uri pentru business-uri',
+  'Business Websites': 'Site-uri pentru companii',
   'Creative & Personal Experiments': 'Experimente creative și personale',
 }
 
 const categoryDescriptionsRo: Record<WorkCategory, string> = {
   'Founder / Active Businesses':
     'Branduri și inițiative active unde contează execuția, poziționarea, sistemele și livrarea.',
+  'Launch Collaborations':
+    'Branduri deținute de parteneri strategici, la lansarea cărora am contribuit fără a pretinde că dețin proiectele respective.',
   'Products & Platforms':
-    'Produse digitale și concepte orientate spre educație, privacy, risc și workflow-uri practice.',
+    'Produse digitale și concepte orientate spre educație, protecția datelor, risc și fluxuri de lucru practice.',
   'Business Websites':
-    'Website-uri și landing pages pentru servicii, SEO local, lead generation și nevoi operaționale reale.',
+    'Site-uri și pagini de prezentare pentru servicii, SEO local, atragerea clienților și nevoi operaționale reale.',
   'Creative & Personal Experiments':
-    'Experimente mai mici care testează mecanici, personalizare, flow-uri ludice și idei local-first.',
+    'Experimente mai mici care testează mecanici, personalizare, parcursuri ludice și idei local-first.',
 }
 
 interface Props {
@@ -47,7 +52,7 @@ export default function WorkListing({ language = 'en' }: Props) {
   return (
     <section className="container section-spacing space-y-16">
       {groupedWork.map(({ category, items }) => (
-        <div key={category}>
+        <div data-work-category={category} key={category}>
           <div className="max-w-3xl">
             <Text
               tag="h2"
@@ -79,7 +84,11 @@ export default function WorkListing({ language = 'en' }: Props) {
                   className="block bg-gray-200"
                 >
                   <Image
-                    alt={`${item.title} preview`}
+                    alt={
+                      language === 'ro'
+                        ? `Captură de ecran ${item.title}`
+                        : `${item.title} preview`
+                    }
                     className="h-56 w-full object-cover object-top"
                     src={item.image}
                     width={1200}
@@ -94,6 +103,17 @@ export default function WorkListing({ language = 'en' }: Props) {
                       className="text-xl md:text-2xl font-extrabold leading-tight"
                       content={item.title}
                     />
+                    {item.role && (
+                      <Text
+                        tag="p"
+                        className="mt-2 text-xs font-extrabold uppercase text-gray-600"
+                        content={
+                          language === 'ro'
+                            ? (item.roleRo ?? item.role)
+                            : item.role
+                        }
+                      />
+                    )}
                     <Text
                       tag="p"
                       className={`mt-1 text-sm font-medium underline ${item.color}`}

@@ -6,7 +6,7 @@ import CaseStudies from 'sections/CaseStudies'
 const heroProps = {
   heading: 'Production work, prototypes, experiments, and learning projects.',
   paragraph: [
-    'My portfolio is intentionally mixed: some projects are polished, some are rough, and most exist because they helped test an idea, ship a service, or improve a real business workflow.',
+    'My portfolio is intentionally varied: some projects are polished, others are exploratory, and most exist because they helped test an idea, deliver a service, or improve a real business workflow.',
     'Here are selected businesses, products, websites, and experiments across security, education, energy, automation, and web development.',
   ],
 }

@@ -18,7 +18,7 @@ export const caseStudies: CaseStudy[] = [
     contribution:
       'Structured secure-by-design and privacy-by-design reviews, clarified control expectations, documented findings, and aligned actions with owners and timelines.',
     result:
-      'Produced decision-ready review outputs and clearer remediation follow-up across architecture, security, and delivery stakeholders.',
+      'Produced clear, decision-ready review records and improved remediation tracking across architecture, security, and delivery stakeholders.',
   },
   {
     title: 'FiraWeb Brand Consolidation',
@@ -48,39 +48,39 @@ export const caseStudies: CaseStudy[] = [
 
 export const caseStudiesRo: CaseStudy[] = [
   {
-    title: 'Enterprise Security & Privacy by Design',
-    category: 'Security / Privacy / Controls · anonimizat',
+    title: 'Securitate și protecția datelor prin proiectare',
+    category: 'Securitate / Protecția datelor / Controale · anonimizat',
     context:
-      'Tool-uri și aplicații noi aveau nevoie de security și privacy review într-un mediu enterprise de consultanță.',
+      'Instrumentele și aplicațiile noi necesitau evaluări de securitate și protecția datelor într-un mediu de consultanță pentru companii.',
     problem:
-      'Cerințele, controalele, dovezile, constatările, ownership-ul și constrângerile de livrare trebuiau făcute explicite și trasabile.',
+      'Cerințele, controalele, dovezile, constatările, responsabilitățile și constrângerile de livrare trebuiau formulate explicit și urmărite în mod clar.',
     contribution:
-      'Am structurat secure-by-design și privacy-by-design reviews, am clarificat așteptările de control și am aliniat acțiunile cu owneri și termene.',
+      'Am structurat evaluările secure-by-design și privacy-by-design, am clarificat cerințele de control și am atribuit acțiunile responsabililor, cu termene precise.',
     result:
-      'Am produs rezultate clare pentru decizie și un remediation follow-up mai ușor de urmărit între architecture, security și delivery.',
+      'Am produs documente clare pentru luarea deciziilor și am îmbunătățit urmărirea remedierii între echipele de arhitectură, securitate și livrare.',
   },
   {
     title: 'Consolidarea brandului FiraWeb',
-    category: 'Lead generation / SEO / web systems',
+    category: 'Atragerea clienților / SEO / sisteme web',
     context:
       'Mai multe domenii Fira redirecționate și o ofertă largă aveau nevoie de o singură destinație publică credibilă.',
     problem:
-      'Naming-ul fragmentat și serviciile suprapuse făceau poziționarea, descoperirea și traseul clientului mai greu de înțeles.',
+      'Identitatea fragmentată și serviciile suprapuse făceau mai greu de înțeles poziționarea, oferta și parcursul clientului.',
     contribution:
-      'Am consolidat domeniile sub FiraWeb și am organizat serviciile de web development, SEO, automatizare și lead generation într-o structură focusată.',
+      'Am consolidat domeniile sub FiraWeb și am organizat serviciile de dezvoltare web, SEO, automatizare și atragere a clienților într-o structură coerentă.',
     result:
       'A rezultat un singur brand canonic și un traseu mai clar de la descoperirea serviciilor la conversația despre proiect.',
   },
   {
-    title: 'Customer journey pentru BaffiCafe',
-    category: 'Business local / conținut / conversie',
+    title: 'Parcursul clientului pentru BaffiCafe',
+    category: 'Afacere locală / Conținut / Conversie',
     context:
-      'Un restaurant local avea nevoie de un website practic pentru clienții care pregătesc o vizită sau o comandă.',
+      'Un restaurant local avea nevoie de un site practic pentru clienții care planifică o vizită sau doresc să comande.',
     problem:
-      'Meniurile, ofertele zilei, evenimentele, rezervările, takeaway și trust signals trebuiau să funcționeze într-un singur flow concis.',
+      'Meniurile, ofertele zilei, evenimentele, rezervările, comenzile la pachet și elementele de încredere trebuiau reunite într-un parcurs simplu și coerent.',
     contribution:
-      'Am structurat site-ul în jurul informațiilor și acțiunilor importante pentru clienții locali, cu atenție la mobil și local discovery.',
+      'Am structurat site-ul în jurul informațiilor și acțiunilor importante pentru clienții locali, cu atenție la utilizarea pe mobil și la vizibilitatea în căutările locale.',
     result:
-      'Am livrat o singură destinație publică pentru meniu, rezervări, takeaway, evenimente și recenzii.',
+      'Am creat o singură destinație publică pentru meniu, rezervări, comenzi la pachet, evenimente și recenzii.',
   },
 ]

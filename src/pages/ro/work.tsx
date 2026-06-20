@@ -8,15 +8,15 @@ const heroProps = {
   heading:
     'Proiecte de producție, prototipuri, experimente și produse în lucru.',
   paragraph: [
-    'Portofoliul este intenționat mixt: unele proiecte sunt mature, altele sunt experimente, iar cele mai multe există pentru că au testat o idee, au livrat un serviciu sau au îmbunătățit un workflow real.',
-    'Mai jos sunt proiecte selectate din security, educație, energie, automatizări, web development și produse digitale.',
+    'Portofoliul este în mod intenționat divers: unele proiecte sunt mature, altele sunt exploratorii, iar cele mai multe au fost create pentru a testa o idee, a livra un serviciu sau a îmbunătăți un flux de lucru real.',
+    'Mai jos sunt proiecte selectate din securitate, educație, energie, automatizări, dezvoltare web și produse digitale.',
   ],
 }
 
 const seo = {
   title: 'Proiecte',
   description:
-    'Proiecte selectate de Ionuț Francisc: web development, security și privacy, educație, business websites, automatizări și produse digitale.',
+    'Proiecte selectate de Ionuț Francisc din dezvoltare web, securitate, protecția datelor, educație, site-uri pentru companii, automatizări și produse digitale.',
 }
 
 export default function WorkRo() {
@@ -25,7 +25,7 @@ export default function WorkRo() {
       <Hero {...heroProps} />
       <CaseStudies
         heading="Studii de caz selectate"
-        subheading="Context, problemă, contribuție și rezultat, nu doar un screenshot."
+        subheading="Context, problemă, contribuție și rezultat, nu doar o captură de ecran."
         items={caseStudiesRo}
         language="ro"
       />

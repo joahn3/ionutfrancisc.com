@@ -12,7 +12,7 @@ import Resume from 'sections/Resume'
 const seo = {
   title: 'Security & Privacy',
   description:
-    'Security, privacy, GRC, risk, controls, incident governance, PKI, and regulated delivery experience from Ionuț Francisc.',
+    'An overview of Ionuț Francisc’s experience in security, privacy, GRC, risk, controls, incident governance, PKI, and regulated delivery.',
 }
 
 const heroProps = {
@@ -20,8 +20,8 @@ const heroProps = {
   heading:
     'Security, privacy, and governance experience for complex, regulated environments.',
   paragraph: [
-    'I bring 10+ years across security risk, privacy-by-design, secure-by-design reviews, control evidence, incident governance, PKI, and HSM contexts.',
-    'My hands-on systems and founder experience helps me connect governance requirements with what delivery teams can actually implement and evidence.',
+    'I bring more than 10 years of experience across security risk, privacy-by-design, secure-by-design reviews, control evidence, incident governance, PKI, and HSM contexts.',
+    'My hands-on experience building systems and companies helps me connect governance requirements with what delivery teams can implement and demonstrate in practice.',
   ],
   actions: [
     { href: profile.resume.href, label: 'Open CV' },

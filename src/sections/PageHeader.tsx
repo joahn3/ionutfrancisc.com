@@ -44,7 +44,7 @@ export default function PageHeader() {
           </span>
         </Link>
         <nav
-          aria-label="Primary navigation"
+          aria-label={isRomanian ? 'Navigare principală' : 'Primary navigation'}
           className="ml-auto hidden items-center gap-4 lg:flex"
         >
           {internalLinks.map(({ link, name }) => (
@@ -61,7 +61,11 @@ export default function PageHeader() {
           ))}
         </nav>
         <nav
-          aria-label="Social and language navigation"
+          aria-label={
+            isRomanian
+              ? 'Profiluri sociale și selectarea limbii'
+              : 'Social and language navigation'
+          }
           className="ml-auto flex items-center gap-1 text-gray-300 lg:ml-5"
         >
           {links.external.map((link) => (
@@ -83,7 +87,9 @@ export default function PageHeader() {
             </a>
           ))}
           <Link
-            aria-label={isRomanian ? 'English version' : 'Versiunea în română'}
+            aria-label={
+              isRomanian ? 'Versiunea în engleză' : 'Romanian version'
+            }
             className="hidden rounded border border-white/30 px-2 py-1 text-xs font-black uppercase text-gray-200 transition-colors hover:bg-white/10 hover:text-white lg:inline-flex"
             href={getLanguagePath(router.pathname)}
           >
@@ -114,7 +120,7 @@ export default function PageHeader() {
       </div>
       {isNavOpen && (
         <nav
-          aria-label="Mobile navigation"
+          aria-label={isRomanian ? 'Navigare pe mobil' : 'Mobile navigation'}
           className="container lg:hidden"
           id="mobile-navigation"
         >
@@ -138,7 +144,7 @@ export default function PageHeader() {
               className="block py-4 font-semibold text-sm text-gray-300"
               href={getLanguagePath(router.pathname)}
             >
-              {isRomanian ? 'English version' : 'Versiunea în română'}
+              {isRomanian ? 'Versiunea în engleză' : 'Romanian version'}
             </Link>
             <div className="h-px bg-white/20" />
           </div>

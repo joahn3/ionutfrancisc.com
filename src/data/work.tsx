@@ -1,5 +1,6 @@
 export type WorkCategory =
   | 'Founder / Active Businesses'
+  | 'Launch Collaborations'
   | 'Products & Platforms'
   | 'Business Websites'
   | 'Creative & Personal Experiments'
@@ -8,6 +9,8 @@ export type WorkItem = {
   title: string
   description: string
   descriptionRo?: string
+  role?: string
+  roleRo?: string
   link: string
   category: WorkCategory
   image: string
@@ -17,6 +20,7 @@ export type WorkItem = {
 
 export const workCategories: WorkCategory[] = [
   'Founder / Active Businesses',
+  'Launch Collaborations',
   'Products & Platforms',
   'Business Websites',
   'Creative & Personal Experiments',
@@ -26,9 +30,12 @@ const work: WorkItem[] = [
   {
     title: 'ElectroVerde',
     description:
-      'Electrical and photovoltaic services company focused on solar systems, batteries, EV charging, maintenance, and B2B execution partnerships in Bucharest and Ilfov.',
+      'The electrical and photovoltaic services company I founded and own, focused on solar systems, batteries, EV charging, maintenance, and B2B delivery in Bucharest and Ilfov.',
     descriptionRo:
-      'Companie de servicii electrice și fotovoltaice, cu focus pe sisteme solare, baterii, stații EV, mentenanță și parteneriate B2B în București și Ilfov.',
+      'Compania de servicii electrice și fotovoltaice pe care am fondat-o și o dețin, specializată în sisteme solare, baterii, stații de încărcare pentru vehicule electrice, mentenanță și lucrări B2B în București și Ilfov.',
+    role: 'Founder & Owner · Strategic partnership with Earthlink / SolarLink',
+    roleRo:
+      'Fondator și proprietar · Parteneriat strategic cu Earthlink / SolarLink',
     link: 'https://electroverde.ro',
     category: 'Founder / Active Businesses',
     image: '/assets/work/electroverde.jpg',
@@ -40,12 +47,42 @@ const work: WorkItem[] = [
     description:
       'Technical studio for web development, SEO, automations, and lead-generation systems. It consolidates the redirected Fira domains into one focused brand.',
     descriptionRo:
-      'Studio tehnic pentru web development, SEO, automatizări și sisteme de lead generation. Reunește domeniile Fira redirecționate într-un singur brand.',
+      'Studio tehnic pentru dezvoltare web, SEO, automatizări și sisteme de atragere a clienților. Reunește domeniile Fira redirecționate sub un singur brand coerent.',
+    role: 'Founder · Strategy, systems, and delivery',
+    roleRo: 'Fondator · Strategie, sisteme și livrare',
     link: 'https://firaweb.ro',
     category: 'Founder / Active Businesses',
     image: '/assets/work/firaweb.jpg',
     color: 'text-sky-700',
     tools: ['Web Development', 'SEO', 'Automation', 'Lead Generation'],
+  },
+  {
+    title: 'SolarLink',
+    description:
+      'Earthlink renewable-energy brand for premium photovoltaic systems, HJT technology, residential and commercial installations, Casa Verde, and Electric Up. I contributed to the project launch and public digital presence.',
+    descriptionRo:
+      'Brandul de energie regenerabilă Earthlink pentru sisteme fotovoltaice premium, tehnologie HJT, instalări rezidențiale și comerciale, Casa Verde și Electric Up. Am contribuit la lansarea proiectului și prezența sa digitală publică.',
+    role: 'Launch contributor · Earthlink partner ecosystem',
+    roleRo: 'Contribuție la lansare · Ecosistemul partenerului Earthlink',
+    link: 'https://solarlink.ro',
+    category: 'Launch Collaborations',
+    image: '/assets/work/solarlink.jpg',
+    color: 'text-orange-800',
+    tools: ['Solar Energy', 'HJT', 'Casa Verde', 'Launch'],
+  },
+  {
+    title: 'TSTY',
+    description:
+      'Earthlink e-commerce venture for premium Italian ingredients and a pilot for end-to-end supply-chain automation. I contributed to the project launch.',
+    descriptionRo:
+      'Proiect de comerț electronic al Earthlink pentru ingrediente italiene premium și program-pilot pentru automatizarea integrală a lanțului de aprovizionare. Am contribuit la lansarea proiectului.',
+    role: 'Launch contributor · Earthlink venture',
+    roleRo: 'Contribuție la lansare · Proiect Earthlink',
+    link: 'https://www.tsty.ro',
+    category: 'Launch Collaborations',
+    image: '/assets/work/tsty.jpg',
+    color: 'text-lime-800',
+    tools: ['E-commerce', 'Supply Chain', 'Automation', 'Launch'],
   },
   {
     title: 'TemeJoc',
@@ -64,7 +101,7 @@ const work: WorkItem[] = [
     description:
       'Local-first educational playground for children, with modular games, progress, XP, streaks, coins, and parent-protected export.',
     descriptionRo:
-      'Playground educațional local-first pentru copii, cu jocuri modulare, progres, XP, streak-uri, monede și export protejat pentru părinți.',
+      'Spațiu educațional local-first pentru copii, cu jocuri modulare, progres, XP, serii de activitate, monede și export protejat pentru părinți.',
     link: 'https://marclab.netlify.app/',
     category: 'Products & Platforms',
     image: '/assets/work/marclab.jpg',
@@ -88,7 +125,7 @@ const work: WorkItem[] = [
     description:
       'Experimental digital risk, private intelligence, and security-oriented interface concept.',
     descriptionRo:
-      'Concept experimental pentru risc digital, private intelligence și interfețe orientate spre securitate.',
+      'Concept experimental pentru analiza riscului digital, informații private și interfețe orientate spre securitate.',
     link: 'https://aegis-private.vercel.app/',
     category: 'Products & Platforms',
     image: '/assets/work/aegis-private.jpg',
@@ -100,7 +137,7 @@ const work: WorkItem[] = [
     description:
       'Restaurant website for BaffiCafe in Bragadiru, presenting the menu, daily menu, events, reservations, takeaway, and local customer reviews.',
     descriptionRo:
-      'Website pentru BaffiCafe din Bragadiru, cu meniu, meniul zilei, evenimente, rezervări, takeaway și recenzii locale.',
+      'Site pentru BaffiCafe din Bragadiru, cu meniu, oferta zilei, evenimente, rezervări, comenzi la pachet și recenzii locale.',
     link: 'https://bafficafe.ro',
     category: 'Business Websites',
     image: '/assets/work/baffi-cafe.jpg',
@@ -112,7 +149,7 @@ const work: WorkItem[] = [
     description:
       'IT service website for computer repair, laptop repair, maintenance, and B2B IT support in Bucharest.',
     descriptionRo:
-      'Website de servicii IT pentru reparații calculatoare, reparații laptopuri, mentenanță și suport IT B2B în București.',
+      'Site de servicii IT pentru repararea calculatoarelor și laptopurilor, mentenanță și asistență IT B2B în București.',
     link: 'https://www.goodpc.ro',
     category: 'Business Websites',
     image: '/assets/work/goodpc.jpg',
@@ -124,7 +161,7 @@ const work: WorkItem[] = [
     description:
       'E-commerce and brand website for handmade Romanian traditional blouses and fashion products.',
     descriptionRo:
-      'Website de brand și e-commerce pentru ii românești handmade și produse de modă cu inspirație tradițională.',
+      'Site de brand și magazin online pentru ii românești lucrate manual și produse de modă cu inspirație tradițională.',
     link: 'https://www.chicroumaine.com',
     category: 'Business Websites',
     image: '/assets/work/chic-roumaine.jpg',
@@ -136,7 +173,7 @@ const work: WorkItem[] = [
     description:
       'Website for integrated security systems: video surveillance, alarms, access control, fire detection, automation, and IT infrastructure.',
     descriptionRo:
-      'Website pentru sisteme integrate de securitate: supraveghere video, alarme, control acces, detecție incendiu, automatizări și infrastructură IT.',
+      'Site pentru sisteme integrate de securitate: supraveghere video, alarme, control al accesului, detectarea incendiilor, automatizări și infrastructură IT.',
     link: 'https://www.security-telecom.ro',
     category: 'Business Websites',
     image: '/assets/work/security-telecom.jpg',
@@ -148,7 +185,7 @@ const work: WorkItem[] = [
     description:
       'Premium landing page for a Pilates Reformer studio with pricing, FAQ, booking, and local SEO structure.',
     descriptionRo:
-      'Landing page premium pentru studio Pilates Reformer, cu prețuri, FAQ, booking și structură pentru SEO local.',
+      'Pagină de prezentare premium pentru un studio de Pilates Reformer, cu tarife, întrebări frecvente, programări și structură SEO locală.',
     link: 'https://move-studio-popesti.netlify.app/',
     category: 'Business Websites',
     image: '/assets/work/move-studio-popesti-leordeni.jpg',
@@ -160,7 +197,7 @@ const work: WorkItem[] = [
     description:
       'Industrial service website for waste compacting and baling equipment maintenance.',
     descriptionRo:
-      'Website de servicii industriale pentru mentenanța echipamentelor de compactare și balotare a deșeurilor.',
+      'Site de servicii industriale pentru mentenanța echipamentelor de compactare și balotare a deșeurilor.',
     link: 'https://corami.netlify.app/',
     category: 'Business Websites',
     image: '/assets/work/corami.jpg',
@@ -172,7 +209,7 @@ const work: WorkItem[] = [
     description:
       'Memory game inspired by nature, with local progress and photo challenge mechanics.',
     descriptionRo:
-      'Joc de memorie inspirat de natură, cu progres local și mecanici de tip photo challenge.',
+      'Joc de memorie inspirat de natură, cu progres salvat local și mecanici bazate pe provocări fotografice.',
     link: 'https://ioana-forest-game.netlify.app/',
     category: 'Creative & Personal Experiments',
     image: '/assets/work/forest-memory.jpg',

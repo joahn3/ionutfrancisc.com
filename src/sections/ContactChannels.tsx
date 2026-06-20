@@ -12,7 +12,9 @@ export default function ContactChannels({ language = 'en' }: Props) {
     <section className="border-b border-gray-200 bg-white">
       <div className="container flex flex-col gap-3 py-6 sm:flex-row sm:items-center">
         <p className="font-bold text-gray-900">
-          {isRomanian ? 'Alternative la formular' : 'Alternatives to the form'}
+          {isRomanian
+            ? 'Alte modalități de contact'
+            : 'Alternatives to the form'}
         </p>
         <div className="flex flex-wrap gap-3 sm:ml-auto">
           <a

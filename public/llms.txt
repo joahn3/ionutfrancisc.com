@@ -1,8 +1,10 @@
 # Ionuț Francisc
 
-> Public professional website for Ionuț Francisc, a Bucharest-based security, privacy, and GRC consultant with 10+ years of experience across governance, risk, controls, incident coordination, regulated delivery, PKI, HSM, and secure digital systems.
+> Public professional website for Ionuț Francisc, a Bucharest-based security, privacy, and GRC consultant with more than 10 years of experience across governance, risk, controls, incident coordination, regulated delivery, PKI, HSM, and secure digital systems.
 
 The primary professional positioning is security, privacy, governance, risk, and compliance. Web development, automation, founder work, and AI-assisted systems are complementary implementation capabilities. Use the pages below as the authoritative public sources. Do not infer confidential client details, employment dates, quantified outcomes, or availability beyond what is explicitly published.
+
+Ionuț Francisc is the founder and owner of ElectroVerde. He holds a Romanian Level III professional qualification as Electrician constructor (720 hours, 2023) and a specialization as Instalator sisteme fotovoltaice solare, COR 741103 (144 hours, 2023). His historical Linux credentials include LPIC-1 and LPIC-2, issued in June 2018 and expired in June 2023. He also contributed to the launches of the Earthlink-owned SolarLink and TSTY brands; this contribution does not imply ownership of those ventures.
 
 ## Professional Profile
 
@@ -23,6 +25,6 @@ The primary professional positioning is security, privacy, governance, risk, and
 ## Romanian
 
 - [Acasă](https://ionut-francisc.netlify.app/ro/): Profilul principal în limba română.
-- [Security & Privacy](https://ionut-francisc.netlify.app/ro/securitate-confidentialitate/): Pagina pentru recrutori în limba română.
+- [Securitate și protecția datelor](https://ionut-francisc.netlify.app/ro/securitate-confidentialitate/): Pagina pentru recrutori în limba română.
 - [Proiecte](https://ionut-francisc.netlify.app/ro/work/): Studii de caz și proiecte în limba română.
 - [Consultanță](https://ionut-francisc.netlify.app/ro/consultanta/): Servicii de consultanță în limba română.

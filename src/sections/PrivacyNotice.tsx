@@ -14,7 +14,7 @@ export default function PrivacyNotice({ language = 'en' }: Props) {
           </h2>
           <p className="mt-3">
             {isRomanian
-              ? 'Ionuț Francisc gestionează datele trimise prin acest website. Pentru întrebări sau solicitări privind datele, folosește formularul de contact și menționează „Privacy request”.'
+              ? 'Ionuț Francisc gestionează datele trimise prin acest site. Pentru întrebări sau solicitări privind datele cu caracter personal, folosește formularul de contact și menționează „Solicitare privind datele personale”.'
               : 'Ionuț Francisc handles the data submitted through this website. For data questions or requests, use the contact form and mention “Privacy request”.'}
           </p>
         </div>
@@ -32,11 +32,13 @@ export default function PrivacyNotice({ language = 'en' }: Props) {
 
         <div>
           <h2 className="text-2xl font-extrabold text-gray-900">
-            {isRomanian ? 'Analytics și cookies' : 'Analytics and cookies'}
+            {isRomanian
+              ? 'Analiza traficului și module cookie'
+              : 'Analytics and cookies'}
           </h2>
           <p className="mt-3">
             {isRomanian
-              ? 'Google Analytics este opțional și se încarcă numai după accept. Preferința este salvată local în browser. Nu sunt activate tag-uri pentru publicitate sau personalizare.'
+              ? 'Google Analytics este opțional și se încarcă numai după acceptarea explicită. Preferința este salvată local în browser. Nu sunt activate etichete pentru publicitate sau personalizare.'
               : 'Google Analytics is optional and loads only after acceptance. Your preference is stored locally in the browser. Advertising and personalization tags are not enabled.'}
           </p>
         </div>
@@ -64,7 +66,9 @@ export default function PrivacyNotice({ language = 'en' }: Props) {
         </div>
 
         <p className="border-t border-gray-200 pt-6 text-sm text-gray-600">
-          {isRomanian ? 'Ultima actualizare' : 'Last updated'}: 20 June 2026
+          {isRomanian
+            ? 'Ultima actualizare: 20 iunie 2026'
+            : 'Last updated: 20 June 2026'}
         </p>
       </div>
     </section>

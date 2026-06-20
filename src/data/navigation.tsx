@@ -36,7 +36,7 @@ const navigation = {
     { name: 'Contact', link: '/contact' },
   ],
   internalRo: [
-    { name: 'Security & Privacy', link: '/ro/securitate-confidentialitate' },
+    { name: 'Securitate & GRC', link: '/ro/securitate-confidentialitate' },
     { name: 'Proiecte', link: '/ro/work' },
     { name: 'Consultanță', link: '/ro/consultanta' },
     { name: 'Mentorat', link: '/ro/mentorat' },

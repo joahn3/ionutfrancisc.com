@@ -21,7 +21,7 @@ export default function PageFooter() {
           </p>
           <p className="mt-2 text-gray-500">
             {isRomanian
-              ? 'Security, privacy, GRC și sisteme digitale sigure.'
+              ? 'Securitate, protecția datelor, GRC și sisteme digitale sigure.'
               : 'Security, privacy, GRC, and secure digital systems.'}
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function PageFooter() {
                 : '/security-privacy'
             }
           >
-            Security & Privacy
+            {isRomanian ? 'Securitate & GRC' : 'Security & Privacy'}
           </Link>
           <a download href={profile.resume.href}>
             CV
@@ -56,7 +56,9 @@ export default function PageFooter() {
               }
               type="button"
             >
-              {isRomanian ? 'Preferințe cookies' : 'Cookie settings'}
+              {isRomanian
+                ? 'Preferințe pentru module cookie'
+                : 'Cookie settings'}
             </button>
           )}
         </nav>

@@ -7,15 +7,15 @@ import Image from 'next/image'
 const seo = {
   title: 'Contact',
   description:
-    'Contactează-l pe Ionuț Francisc pentru security, privacy, web, automatizări și produse AI-assisted.',
+    'Contactează-l pe Ionuț Francisc pentru securitate, protecția datelor, web, automatizări și produse asistate de AI.',
 }
 
 const heroProps = {
-  eyebrow: 'București, România · remote-first',
+  eyebrow: 'București, România · colaborare preponderent la distanță',
   heading: 'Hai să vorbim despre ce vrei să construiești sau să îmbunătățești.',
   paragraph: [
     'Folosește formularul pentru consultanță, proiecte web, experimente de produs, mentorat sau colaborări practice.',
-    'Un prim mesaj util include obiectivul, starea actuală, timeline-ul și orice link pe care ar trebui să-l verific.',
+    'Un prim mesaj util include obiectivul, starea actuală, calendarul estimat și orice link pe care ar trebui să-l verific.',
   ],
 }
 

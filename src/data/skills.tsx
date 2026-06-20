@@ -45,13 +45,13 @@ export const skillsEn = [
     linkText: 'Explore Projects',
   },
   {
-    name: 'AI-assisted Building',
+    name: 'AI-assisted Development',
     description:
       'Using AI as a disciplined development partner for research, refactoring, testing, and product iteration.',
     icon: <LightningBoltIcon />,
     color: 'text-violet-600',
     link: '/instruction',
-    linkText: 'Learn Workflow',
+    linkText: 'Learn the Workflow',
   },
   {
     name: 'Implementation',
@@ -66,18 +66,18 @@ export const skillsEn = [
 
 export const skillsRo = [
   {
-    name: 'Security & Privacy',
+    name: 'Securitate și protecția datelor',
     description:
-      'Review-uri practice pentru GRC, secure-by-design, audit readiness, formulare, fluxuri de date, tracking, acces și decizii de produs orientate spre privacy.',
+      'Evaluări practice pentru GRC, secure-by-design, pregătire pentru audit, formulare, fluxuri de date, monitorizare, acces și decizii de produs care respectă viața privată.',
     icon: <ShieldCheckIcon />,
     color: 'text-emerald-700',
     link: '/ro/consultanta',
-    linkText: 'Planifică un review',
+    linkText: 'Planifică o evaluare',
   },
   {
-    name: 'Web Products',
+    name: 'Produse web',
     description:
-      'Website-uri rapide, landing pages, MVP-uri și sisteme de lead generation construite pentru business-uri reale.',
+      'Site-uri rapide, pagini de prezentare, produse minime viabile și sisteme de atragere a clienților, construite pentru companii reale.',
     icon: <TerminalIcon />,
     color: 'text-indigo-600',
     link: '/ro/work',
@@ -86,7 +86,7 @@ export const skillsRo = [
   {
     name: 'Automatizări',
     description:
-      'Sisteme operaționale mici, fluxuri AI-assisted și handoff-uri care reduc munca manuală pentru fondatori și echipe.',
+      'Sisteme operaționale compacte, fluxuri de lucru asistate de AI și transferuri clare între etape, care reduc munca manuală pentru fondatori și echipe.',
     icon: <CogIcon />,
     color: 'text-sky-700',
     link: '/ro/consultanta',
@@ -102,18 +102,18 @@ export const skillsRo = [
     linkText: 'Explorează proiectele',
   },
   {
-    name: 'AI-assisted Building',
+    name: 'Dezvoltare asistată de AI',
     description:
-      'AI folosit disciplinat ca partener de dezvoltare pentru research, refactorizare, testare și iterare de produs.',
+      'Folosirea disciplinată a inteligenței artificiale pentru documentare, refactorizare, testare și îmbunătățirea iterativă a produselor.',
     icon: <LightningBoltIcon />,
     color: 'text-violet-600',
     link: '/ro/mentorat',
-    linkText: 'Învață workflow-ul',
+    linkText: 'Învață fluxul de lucru',
   },
   {
     name: 'Implementare',
     description:
-      'Structură SEO, analytics, deployment, WordPress, React, Next.js, Netlify, Vercel și workflow-uri GitHub.',
+      'Structură SEO, analizarea traficului, publicare, WordPress, React, Next.js, Netlify, Vercel și fluxuri de lucru în GitHub.',
     icon: <TemplateIcon />,
     color: 'text-rose-600',
     link: '/ro/contact',

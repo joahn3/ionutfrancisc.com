@@ -16,7 +16,7 @@ const heroProps = {
   heading: "Let's talk about what you want to build or improve.",
   paragraph: [
     'Use the form below for consulting, web work, product experiments, mentoring, or practical collaboration.',
-    'A useful first message includes the goal, current state, timeline, and any link I should review.',
+    'A useful first message includes the goal, current state, expected timeline, and any link I should review.',
   ],
 }
 

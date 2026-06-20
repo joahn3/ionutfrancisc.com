@@ -205,10 +205,11 @@ def build():
         Paragraph("PROFILE", styles["section"]),
         bullets(
             [
-                "Security, Privacy, and GRC professional with 10+ years across risk assessments, privacy-by-design, secure-by-design reviews, audit readiness, incident governance, and control evidence.",
+                "Security, Privacy, and GRC professional with more than 10 years of experience spanning risk assessments, privacy-by-design, secure-by-design reviews, audit readiness, incident governance, and control evidence.",
                 "CSIRT-facing BISO delegate experience coordinating intake, stakeholders, remediation actions, closure criteria, and lessons learned.",
-                "Hands-on exposure to PKI, certificate lifecycle management, key exchanges, and Gemalto Cloud HSM in a regulated banking and blockchain context.",
-                "Founder and systems builder combining security thinking with web products, automation, and AI-assisted delivery for real businesses.",
+                "Hands-on experience with PKI, certificate lifecycle management, key exchanges, and Gemalto Cloud HSM in a regulated banking and blockchain context.",
+                "Linux administration foundation supported by historical LPIC-1 and LPIC-2 certifications (issued 2018, expired 2023).",
+                "Founder and owner of ElectroVerde, supported by Romanian qualifications in electrical construction and photovoltaic solar system installation.",
             ],
             styles["body"],
         ),
@@ -216,16 +217,17 @@ def build():
         Paragraph(
             "<b>Security &amp; assurance:</b> risk assessments, control interpretation, control-to-evidence mapping, ITGC concepts, audit readiness, remediation follow-up.<br/>"
             "<b>Privacy &amp; governance:</b> DPIA / PIA support, privacy-by-design, GDPR awareness, data classification, incident governance.<br/>"
-            "<b>Technical delivery:</b> PKI, certificates, HSM, Zero Trust principles, React, Next.js, TypeScript, Netlify, WordPress, automation, AI-assisted development.",
+            "<b>Technical delivery:</b> Linux administration, PKI, certificates, HSM, Zero Trust principles, electrical and photovoltaic systems, React, Next.js, TypeScript, Netlify, WordPress, automation, AI-assisted development.",
             styles["compact"],
         ),
         Paragraph("PROFESSIONAL EXPERIENCE", styles["section"]),
         role(
-            "Independent Consultant & Founder",
-            "Security, privacy, web products, automation, and founder-led delivery | Current",
+            "Independent Consultant & Founder / Owner - ElectroVerde",
+            "Security, privacy, electrical and photovoltaic systems, web products, automation | Current",
             [
                 "Review and build privacy-aware websites, digital products, automation flows, and practical systems for founders and small teams.",
-                "Operate and develop business initiatives including FiraWeb and ElectroVerde, connecting technical delivery with real operational needs.",
+                "Own and develop ElectroVerde and operate FiraWeb, connecting technical delivery with real electrical, photovoltaic, and business operations.",
+                "Contributed to the launches of Earthlink-owned SolarLink and TSTY within a strategic partner ecosystem, without ownership claims over those ventures.",
             ],
             styles,
         ),
@@ -294,6 +296,10 @@ def build():
         bullets(
             [
                 "Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900).",
+                "LPIC-1 Certified Linux Administrator - issued Jun 2018, expired Jun 2023 (historical credential).",
+                "LPIC-2 Certified Linux Engineer - issued Jun 2018, expired Jun 2023 (historical credential).",
+                "Electrician constructor - Romanian Level III professional qualification, 720 hours (2023).",
+                "Instalator sisteme fotovoltaice solare - professional specialization, COR 741103, 144 hours (2023).",
                 "Digital Operational Resilience Act (DORA) & IBM Technology (2025).",
                 "IBM Security Zero Trust Principles (2025).",
                 "Privacy Foundations (2021).",

@@ -32,7 +32,7 @@ const defaultContent: AboutContentSection[] = [
     image: '/assets/hobbies.svg',
     items: [
       'Clean, fast websites for real businesses',
-      'Landing pages that can generate leads',
+      'Landing pages designed to generate qualified leads',
       'MVPs that test business ideas quickly',
       'Local-first apps with simple privacy models',
       'Educational tools for children and parents',

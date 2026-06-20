@@ -32,15 +32,17 @@ const content = {
           'Risk assessments, audit readiness, and control evidence',
           'Incident governance and remediation follow-up',
           'PKI, certificate lifecycle, and HSM exposure',
+          'Linux administration foundations; former LPIC-1/2',
         ],
       },
       {
         label: 'Delivery context',
         items: [
-          '10+ years across IBM Consulting roles',
+          'More than 10 years across IBM Consulting roles',
           'Regulated banking and blockchain environments',
           'International stakeholder and assessment work',
           'Founder and hands-on digital systems experience',
+          'Electrical and photovoltaic qualifications; ElectroVerde founder',
         ],
       },
     ],
@@ -55,43 +57,45 @@ const content = {
   ro: {
     heading: 'Profil rapid pentru recrutori',
     subheading:
-      'Versiunea scurtă: roluri relevante, dovezi și context de lucru, fără formulări vagi de assurance.',
+      'Versiunea scurtă: roluri relevante, dovezi și context profesional, fără formulări vagi despre nivelul de încredere.',
     columns: [
       {
         label: 'Roluri relevante',
         items: [
-          'Security governance și GRC',
-          'Privacy, compliance și controale',
-          'Cybersecurity risk și assurance',
-          'Security advisory și coordonare de programe',
+          'Guvernanța securității și GRC',
+          'Protecția datelor, conformitate și controale',
+          'Risc de securitate cibernetică și asigurarea controalelor',
+          'Consultanță de securitate și coordonarea programelor',
         ],
       },
       {
         label: 'Experiență relevantă',
         items: [
-          'Secure-by-design și privacy-by-design reviews',
-          'Risk assessments, audit readiness și control evidence',
-          'Incident governance și remediation follow-up',
-          'PKI, certificate lifecycle și expunere HSM',
+          'Evaluări secure-by-design și privacy-by-design',
+          'Evaluări de risc, pregătire pentru audit și documentarea controalelor',
+          'Guvernanța incidentelor și urmărirea remedierii',
+          'PKI, ciclul de viață al certificatelor și experiență HSM',
+          'Administrare Linux; certificări LPIC-1/2 din istoricul profesional',
         ],
       },
       {
         label: 'Context de livrare',
         items: [
-          '10+ ani în roluri IBM Consulting',
-          'Medii reglementate de banking și blockchain',
-          'Stakeholderi internaționali și assessment work',
-          'Experiență hands-on ca fondator și systems builder',
+          'Peste 10 ani în roluri IBM Consulting',
+          'Medii reglementate din domeniile bancar și blockchain',
+          'Colaborare internațională și activități de evaluare',
+          'Experiență practică de fondator și constructor de sisteme',
+          'Calificări în domeniul electric și fotovoltaic; fondator ElectroVerde',
         ],
       },
     ],
     details:
-      'București, România. Română nativ, engleză fluent, italiană nivel bun. Master în Informatică Economică și licență în Informatică Managerială.',
+      'București, România. Limba română: nativ; limba engleză: fluent; limba italiană: nivel bun. Masterat în Informatică Economică și licență în Informatică Managerială.',
     principle:
       'Prefer munca clară, pragmatică și susținută de dovezi în locul abstracțiilor complexe și al limbajului vag de control.',
     cv: 'Descarcă CV',
     linkedin: 'Profil LinkedIn',
-    credly: 'Badge-uri verificate',
+    credly: 'Certificări verificate',
   },
 }
 
@@ -104,7 +108,10 @@ export default function RecruiterOverview({ language = 'en' }: Props) {
         <Intro heading={copy.heading} subheading={copy.subheading} />
         <div className="mt-10 grid gap-8 md:grid-cols-3 lg:mt-14">
           {copy.columns.map((column) => (
-            <div className="border-l-4 border-emerald-600 pl-5" key={column.label}>
+            <div
+              className="border-l-4 border-emerald-600 pl-5"
+              key={column.label}
+            >
               <h2 className="text-xl font-extrabold">{column.label}</h2>
               <ul className="mt-4 space-y-2 text-gray-700">
                 {column.items.map((item) => (
@@ -124,7 +131,11 @@ export default function RecruiterOverview({ language = 'en' }: Props) {
             <p className="mt-3 font-semibold text-gray-900">{copy.principle}</p>
           </div>
           <div className="flex flex-wrap items-start gap-3 lg:justify-end">
-            <a className="button inline-flex items-center gap-2" download href={profile.resume.href}>
+            <a
+              className="button inline-flex items-center gap-2"
+              download
+              href={profile.resume.href}
+            >
               <DownloadIcon className="h-4 w-4" />
               {copy.cv}
             </a>

@@ -121,18 +121,22 @@ export default function Analytics() {
       {choice === null && (
         <div
           aria-label={
-            isRomanian ? 'Preferințe pentru analytics' : 'Analytics preferences'
+            isRomanian
+              ? 'Preferințe pentru analiza traficului'
+              : 'Analytics preferences'
           }
           aria-live="polite"
           className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-2xl border border-gray-700 bg-gray-900 p-5 text-white shadow-2xl"
           role="dialog"
         >
           <p className="font-extrabold">
-            {isRomanian ? 'Analytics opțional' : 'Optional analytics'}
+            {isRomanian
+              ? 'Analiză opțională a traficului'
+              : 'Optional analytics'}
           </p>
           <p className="mt-2 text-sm text-gray-200">
             {isRomanian
-              ? 'Google Analytics se încarcă numai dacă accepți. Nu folosesc tag-uri publicitare.'
+              ? 'Google Analytics se încarcă numai dacă accepți. Nu folosesc etichete publicitare.'
               : 'Google Analytics loads only if you accept. I do not use advertising tags.'}{' '}
             <Link
               className="font-bold text-emerald-200 underline"
@@ -147,7 +151,7 @@ export default function Analytics() {
               onClick={() => saveChoice('accepted')}
               type="button"
             >
-              {isRomanian ? 'Acceptă analytics' : 'Accept analytics'}
+              {isRomanian ? 'Acceptă analiza traficului' : 'Accept analytics'}
             </button>
             <button
               className="button-secondary-dark"
