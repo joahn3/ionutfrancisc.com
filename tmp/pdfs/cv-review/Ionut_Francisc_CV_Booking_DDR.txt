@@ -1,0 +1,98 @@
+IONUT IULIAN FRANCISC
+Information Security Specialist | Incident Governance | Secure-by-Design | PKI / HSM |
+Audit Readiness
+Romania (open to hybrid/remote) | iif.ionut@gmail.com | +40 725969006 | linkedin.com/in/ionut-iulian-
+francisc
+
+PROFILE SUMMARY
+• Security and Privacy professional with almost 11 years of experience across security assurance, risk
+assessments, secure-by-design reviews, audit readiness, and incident governance in regulated
+environments.
+• CSIRT-facing experience coordinating incident intake, stakeholder alignment, action tracking, closure
+criteria, and post-incident follow-up in complex, deadline-driven contexts.
+• Hands-on exposure to PKI, certificate lifecycle management, encryption key ceremonies/exchanges, and
+Cloud HSM support (Gemalto) in a banking / blockchain platform environment.
+• Strong at translating security requirements into practical actions, evidence expectations, remediation
+steps, and clear updates for both technical and non-technical stakeholders.
+
+RELEVANCE FOR SECURITY ENGINEER – DATA DETECTION & RESPONSE
+
+      Area                           Relevant experience
+
+                                     Incident intake coordination, action tracking, closure criteria, and
+      Operational security
+                                     structured follow-up with security and technology stakeholders.
+
+                                     CSIRT-facing governance experience, post-incident reviews,
+      Detection / response support   remediation follow-up, and evidence/documentation quality in high-
+                                     pressure situations.
+
+                                     Privacy-by-design and security reviews for new tools/applications, with
+      Data protection & controls
+                                     emphasis on control expectations, data handling, and audit readiness.
+
+                                     Certificate lifecycle ownership, key ceremonies/exchanges, Cloud HSM
+      PKI / HSM / encryption
+                                     support, and encryption-related operational documentation.
+
+                                     Worked with access/support processes, Zero Trust principles
+      Cloud / identity exposure      awareness, and security requirements alignment for delivery and
+                                     architecture teams.
+
+
+
+CORE SKILLS
+Security Operations & Incident Handling: Incident intake coordination, action tracking, closure criteria,
+issue follow-up, post-incident review support, stakeholder communication.
+Security Controls & Assurance: Control-to-evidence mapping, security assurance, audit readiness,
+findings/remediation follow-up, ITGC concepts.
+Secure-by-Design & Risk: Security requirements clarification, secure-by-design reviews, risk assessments,
+remediation planning, dependency management.
+Crypto / PKI / HSM: Certificate lifecycle management, key ceremonies/exchanges, Gemalto Cloud HSM
+support, encryption-related governance and audit procedures.
+Operational Reporting: Executive-ready summaries, trackers, documentation quality, deadline
+management, cross-team coordination in regulated environments.
+
+PROFESSIONAL EXPERIENCE
+IBM Consulting — Romania (Global/Remote) Security & Privacy by Design (SPbD) Consultant —
+Architecture & Assurance | Jul 2024 – Oct 2025
+• Performed security and privacy-by-design reviews for new tools/applications; clarified security
+requirements and defined control and evidence expectations for audit readiness.
+• Produced structured risk assessment outputs including security findings, rationale, remediation actions,
+owners, and timelines; supported architecture and governance decision-making.
+• Aligned requirements with architecture and delivery constraints; provided concise updates on risks,
+actions, and dependencies to technical and non-technical stakeholders.
+IBM Consulting — Romania (Global/Remote) CSIRT Consulting — BISO Delegate | Jun 2020 – Jul 2024
+• Coordinated incidents as a CSIRT-facing BISO delegate: intake, stakeholder alignment, action tracking,
+escalation support, and follow-up through closure across security and technology teams.
+• Maintained documentation quality and traceability (case notes, action owners, closure criteria) to support
+governance, investigations, and audit needs.
+• Translated findings into remediation tasks, control/process updates, and clear follow-up actions; improved
+consistency of communication during high-pressure events.
+IBM (we.trade) — Romania Security & Privacy Consultant | Sep 2018 – Sep 2020
+• Supported security and privacy compliance for a blockchain banking platform; performed security
+reviews and documented remediation recommendations for secure operations.
+• Owned certificate lifecycle activities, including PKI requirements, issuance / QA, governance, and
+automation considerations.
+• Supported Gemalto Cloud HSM: key exchanges, troubleshooting, upgrades, and operational
+documentation under strict audit procedures in a regulated environment.
+IBM (GBS DS&P) — Romania Security Risk Analyst / Advisor / Coordinator | Jun 2015 – Jun 2018
+• Delivered security risk assessments and control reviews across UK&I, CEE, and Italy portfolios; guided
+teams on documentation quality and evidence expectations.
+• Coordinated assessment operations (planning, assignment, tracking, status reporting) and administered
+access/support for internal tooling and related control processes.
+• Performed AUP-style ITGC internal testing in SAP environments for external review readiness (SSAE16
+context), working with multiple stakeholders and deadlines.
+
+EDUCATION & CERTIFICATIONS
+• Master’s degree, Economic IT — Romanian American University
+• Bachelor’s degree, Computer Science for Business Management / General Economy — Romanian American
+University
+• Training: DORA & IBM Technology (2025), IBM Security Zero Trust Principles (2025), Privacy Foundations
+(2021), Microsoft SC-900 and AZ-900 in progress
+• Credly badges: credly.com/users/ionut-iulian-francisc/badges
+LANGUAGES
+• Romanian (native)
+• English (fluent)
+• Italian (good)
+

@@ -96,6 +96,18 @@ const work: WorkItem[] = [
     tools: ['Security', 'Privacy', 'Risk', 'Product Concept'],
   },
   {
+    title: 'BaffiCafe & Restaurant',
+    description:
+      'Restaurant website for BaffiCafe in Bragadiru, presenting the menu, daily menu, events, reservations, takeaway, and local customer reviews.',
+    descriptionRo:
+      'Website pentru BaffiCafe din Bragadiru, cu meniu, meniul zilei, evenimente, rezervări, takeaway și recenzii locale.',
+    link: 'https://bafficafe.ro',
+    category: 'Business Websites',
+    image: '/assets/work/baffi-cafe.jpg',
+    color: 'text-cyan-800',
+    tools: ['WordPress', 'Restaurant', 'Local SEO', 'Reservations'],
+  },
+  {
     title: 'GoodPC',
     description:
       'IT service website for computer repair, laptop repair, maintenance, and B2B IT support in Bucharest.',

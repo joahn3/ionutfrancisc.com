@@ -1,4 +1,29 @@
-import { GitHub, LinkedIn, Instagram } from 'components/Icons'
+import {
+  Credly,
+  Facebook,
+  GitHub,
+  Instagram,
+  LinkedIn,
+  TikTok,
+} from 'components/Icons'
+
+const external = [
+  {
+    name: 'GitHub',
+    icon: <GitHub />,
+    link: 'https://github.com/joahn3',
+  },
+  {
+    name: 'Instagram',
+    icon: <Instagram />,
+    link: 'https://www.instagram.com/joahn3',
+  },
+  {
+    name: 'LinkedIn',
+    icon: <LinkedIn />,
+    link: 'https://www.linkedin.com/in/ionutfrancisc',
+  },
+]
 
 const navigation = {
   internal: [
@@ -13,21 +38,23 @@ const navigation = {
     { name: 'Mentorat', link: '/ro/mentorat' },
     { name: 'Contact', link: '/ro/contact' },
   ],
-  external: [
+  external,
+  footer: [
+    ...external,
     {
-      name: 'GitHub',
-      icon: <GitHub />,
-      link: 'https://github.com/joahn3',
+      name: 'Facebook',
+      icon: <Facebook />,
+      link: 'https://www.facebook.com/joahn328',
     },
     {
-      name: 'Instagram',
-      icon: <Instagram />,
-      link: 'https://www.instagram.com/joahn3',
+      name: 'TikTok',
+      icon: <TikTok />,
+      link: 'https://www.tiktok.com/@me.joahne',
     },
     {
-      name: 'LinkedIn',
-      icon: <LinkedIn />,
-      link: 'https://www.linkedin.com/in/ionutfrancisc',
+      name: 'Credly badges',
+      icon: <Credly />,
+      link: 'https://www.credly.com/users/ionut-iulian-francisc',
     },
   ],
 }

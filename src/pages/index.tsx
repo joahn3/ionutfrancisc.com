@@ -8,6 +8,8 @@ import About from 'sections/About'
 import { profile } from 'data/profile'
 import Credentials from 'sections/Credentials'
 import { credentialHighlights } from 'data/credentials'
+import { journey } from 'data/journey'
+import Journey from 'sections/Journey'
 
 const seo = {
   title: 'Ionuț Francisc',
@@ -44,6 +46,11 @@ export default function Home() {
         subheading="A few signals behind the work: enterprise GRC experience, regulated delivery, hands-on implementation, and public credential trails."
         items={credentialHighlights}
         linkLabel="View Credly profile"
+      />
+      <Journey
+        heading="From operator to consultant and founder"
+        subheading="The same thread runs through the work: build the system, understand the constraints, support the people using it, and improve what happens next."
+        items={journey}
       />
       <About />
       <Skills />

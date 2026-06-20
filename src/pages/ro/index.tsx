@@ -9,6 +9,8 @@ import Skills from 'sections/Skills'
 import { credentialHighlightsRo } from 'data/credentials'
 import { profile } from 'data/profile'
 import { skillsRo } from 'data/skills'
+import { journeyRo } from 'data/journey'
+import Journey from 'sections/Journey'
 
 const seo = {
   title: 'Ionuț Francisc',
@@ -20,7 +22,7 @@ const heroProps = {
   eyebrow:
     'Security & Privacy (GRC) Consultant · Founder · Web & AI-assisted systems builder',
   heading:
-    'Construiesc și securizez sisteme digitale utile pentru business-uri reale.',
+    'Construiesc și securizez sisteme digitale utile pentru afaceri reale.',
   paragraph: [
     'Ajut fondatorii și echipele să facă website-uri, controale security/privacy, automatizări și workflow-uri AI-assisted mai clare, mai sigure și mai utile.',
     'Lucrez la intersecția dintre GRC, privacy-by-design, web development, SEO, produse educaționale, energie și sisteme practice pentru echipe mici.',
@@ -107,6 +109,11 @@ export default function HomeRo() {
         subheading="Câteva semnale din spatele muncii: experiență enterprise GRC, contexte reglementate, implementare hands-on și badge-uri publice."
         items={credentialHighlightsRo}
         linkLabel="Vezi profilul Credly"
+      />
+      <Journey
+        heading="De la operator la consultant și fondator"
+        subheading="Același fir leagă toate etapele: construiesc sistemul, înțeleg constrângerile, ajut oamenii care îl folosesc și îmbunătățesc ce urmează."
+        items={journeyRo}
       />
       <About
         intro={{

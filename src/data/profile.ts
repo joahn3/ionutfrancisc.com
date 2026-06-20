@@ -1,7 +1,6 @@
 export const profile = {
   name: 'Ionuț Francisc',
   siteName: 'Ionuț Francisc',
-  company: 'Firacode SRL',
   location: 'Bucharest, Romania',
   headline:
     'Security & Privacy (GRC) Consultant · Founder · Web & AI-assisted systems builder',
@@ -42,6 +41,7 @@ export const profile = {
     'PKI/HSM',
     'DORA',
     'Zero Trust',
+    'Microsoft SC-900',
     'Automation',
     'AI-assisted development',
   ],
@@ -65,6 +65,18 @@ export const profile = {
     {
       label: 'Credly',
       href: 'https://www.credly.com/users/ionut-iulian-francisc',
+    },
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/joahn3',
+    },
+    {
+      label: 'Facebook',
+      href: 'https://www.facebook.com/joahn328',
+    },
+    {
+      label: 'TikTok',
+      href: 'https://www.tiktok.com/@me.joahne',
     },
   ],
 }

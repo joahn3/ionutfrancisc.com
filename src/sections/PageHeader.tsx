@@ -48,7 +48,7 @@ export default function PageHeader() {
       <div className="container py-5 flex items-center">
         <Link href={homeLink}>
           <a className="flex items-center">
-            <span className="w-6 h-6 text-emerald-200">
+            <span className="w-8 h-8 text-emerald-200">
               <Logo />
             </span>
             <span className="ml-2 leading-none font-extrabold text-xl">
@@ -77,6 +77,7 @@ export default function PageHeader() {
               href={link.link}
               target="_blank"
               rel="noreferrer noopener"
+              title={link.name}
               className="w-5 h-5 hidden md:block transition-colors duration-200 hover:text-white"
             >
               {link.icon}

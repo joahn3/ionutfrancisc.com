@@ -20,9 +20,15 @@ export const credentialHighlights: CredentialHighlight[] = [
       'Hands-on certificate lifecycle, key exchange, and Gemalto Cloud HSM support in a regulated banking/blockchain platform context.',
   },
   {
+    heading:
+      'Microsoft Certified: Security, Compliance, and Identity Fundamentals',
+    description:
+      'SC-900 certification covering foundational Microsoft security, compliance, identity, access, and trust concepts.',
+  },
+  {
     heading: 'Verified learning signals',
     description:
-      'Public Credly badges include IBM Security Zero Trust Principles, DORA & IBM Technology, Trustworthy AI and AI Ethics, IBM watsonx, IBM Generative & Agentic AI Foundation, and ISC2 Candidate.',
+      'The public Credly trail includes IBM Security Zero Trust Principles, DORA & IBM Technology, Trustworthy AI and AI Ethics, IBM watsonx, IBM Generative & Agentic AI Foundation, and ISC2 Candidate.',
   },
 ]
 
@@ -43,8 +49,14 @@ export const credentialHighlightsRo: CredentialHighlight[] = [
       'Expunere hands-on pe certificate lifecycle, key exchange și Gemalto Cloud HSM într-un context banking/blockchain reglementat.',
   },
   {
+    heading:
+      'Microsoft Certified: Security, Compliance, and Identity Fundamentals',
+    description:
+      'Certificare SC-900 pentru fundamente Microsoft de security, compliance, identity, access și trust.',
+  },
+  {
     heading: 'Validare prin badge-uri publice',
     description:
-      'Badge-urile Credly includ IBM Security Zero Trust Principles, DORA & IBM Technology, Trustworthy AI and AI Ethics, IBM watsonx, IBM Generative & Agentic AI Foundation și ISC2 Candidate.',
+      'Traseul public Credly include IBM Security Zero Trust Principles, DORA & IBM Technology, Trustworthy AI and AI Ethics, IBM watsonx, IBM Generative & Agentic AI Foundation și ISC2 Candidate.',
   },
 ]
