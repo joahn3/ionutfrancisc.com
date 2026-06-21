@@ -18,10 +18,10 @@ const seo = {
 const heroProps = {
   eyebrow: 'Pentru recrutori și lideri din securitate',
   heading:
-    'Experiență în securitate, protecția datelor și guvernanță pentru medii complexe și reglementate.',
+    'Experiență în securitate, protecția datelor și GRC care conectează guvernanța cu livrarea.',
   paragraph: [
-    'Am peste 10 ani de experiență în gestionarea riscurilor de securitate, evaluări privacy-by-design și secure-by-design, documentarea controalelor, guvernanța incidentelor, PKI și contexte HSM.',
-    'Experiența practică în construirea sistemelor și a companiilor mă ajută să conectez cerințele de guvernanță cu ceea ce echipele pot implementa și demonstra în practică.',
+    'Am peste 10 ani de experiență în riscuri de securitate, evaluări privacy-by-design și secure-by-design, asigurarea controalelor, guvernanța incidentelor, PKI și livrare asociată HSM în medii complexe.',
+    'Transform așteptările de guvernanță în controale proporționale, dovezi solide, responsabilități clare și acțiuni pe care echipele tehnice le pot implementa.',
   ],
   actions: [
     { href: profile.resume.href, label: 'Deschide CV' },
@@ -40,21 +40,21 @@ export default function SecurityPrivacyRo() {
       <RecruiterOverview language="ro" />
       <Credentials
         heading="Dovezi din spatele profilului"
-        subheading="Domenii selectate în care guvernanța, livrarea, controalele și contextul tehnic se completează."
+        subheading="Experiență și certificări selectate din guvernanță, controale, livrare reglementată și operațiuni tehnice."
         items={credentialHighlightsRo}
         linkLabel="Vezi profilul Credly"
       />
       <Journey
-        heading="O carieră construită în operațiuni, consultanță și antreprenoriat"
-        subheading="Firul comun este munca reglementată, responsabilitatea operațională și gândirea practică de sistem."
+        heading="O carieră în operațiuni, consultanță și antreprenoriat"
+        subheading="Firul comun este responsabilitatea: înțeleg sistemul, formulez explicit riscul, aliniez părțile implicate și urmăresc acțiunile până la rezultat."
         items={journeyRo}
       />
       <Resume language="ro" />
       <ContactCTA
-        heading="Cauți experiență în securitate, protecția datelor sau GRC, susținută de înțelegerea implementării?"
-        paragraph="Folosește formularul pentru un rol, un proiect sau o discuție concentrată. Un mesaj util include rolul, contextul echipei, modelul de lucru și calendarul estimat."
+        heading="Ai nevoie de experiență în securitate, protecția datelor sau GRC, conectată la livrare?"
+        paragraph="Pentru un rol sau un mandat de consultanță, descrie contextul deciziei, echipa, modelul de lucru, rezultatele așteptate și calendarul. Voi răspunde cu o evaluare clară a compatibilității și a pașilor următori."
         linkHref="/ro/contact"
-        linkText="Începe o conversație"
+        linkText="Discută mandatul"
       />
     </Page>
   )

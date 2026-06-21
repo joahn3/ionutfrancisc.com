@@ -5,18 +5,17 @@ import CaseStudies from 'sections/CaseStudies'
 import { caseStudiesRo } from 'data/caseStudies'
 
 const heroProps = {
-  heading:
-    'Proiecte de producție, prototipuri, experimente și produse în lucru.',
+  heading: 'Afaceri, consultanță, produse digitale și platforme selectate.',
   paragraph: [
-    'Portofoliul este în mod intenționat divers: unele proiecte sunt mature, altele sunt exploratorii, iar cele mai multe au fost create pentru a testa o idee, a livra un serviciu sau a îmbunătăți un flux de lucru real.',
-    'Mai jos sunt proiecte selectate din securitate, educație, energie, automatizări, dezvoltare web și produse digitale.',
+    'Portofoliul reflectă diversitatea activității mele: companii proprii, colaborări la lansare, sisteme operaționale, site-uri comerciale și experimente de produs.',
+    'Fiecare proiect selectat evidențiază o altă parte a ciclului de livrare, de la poziționare și decizii de risc la implementare, măsurare și operațiuni continue.',
   ],
 }
 
 const seo = {
   title: 'Proiecte',
   description:
-    'Proiecte selectate de Ionuț Francisc din dezvoltare web, securitate, protecția datelor, educație, site-uri pentru companii, automatizări și produse digitale.',
+    'Afaceri, proiecte de consultanță, produse digitale, site-uri, automatizări și colaborări la lansare selectate de Ionuț Francisc.',
 }
 
 export default function WorkRo() {

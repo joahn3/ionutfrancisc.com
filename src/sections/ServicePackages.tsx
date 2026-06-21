@@ -35,7 +35,11 @@ export default function ServicePackages({ formName, packages }: Props) {
           />
         </div>
       </div>
-      <div className="relative mt-16 container grid gap-8 grid-cols-1 lg:grid-cols-2">
+      <div
+        className={`relative mt-16 container grid gap-8 grid-cols-1 ${
+          packages.items.length === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'
+        }`}
+      >
         {packages.items.map((item) => (
           <div
             key={item.name}
@@ -44,10 +48,12 @@ export default function ServicePackages({ formName, packages }: Props) {
             <span className="bg-emerald-100 text-emerald-700 px-4 py-2 rounded font-bold">
               {item.name}
             </span>
-            <div className="mt-8 flex items-center leading-none">
-              <span className="font-black text-4xl">${item.price}</span>
-              <span className="text-gray-700 text-sm ml-2">
-                {packages.durationLabel ?? 'for'} {item.duration}
+            <div className="mt-8 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-2xl font-black leading-tight text-gray-900">
+                {item.investment}
+              </span>
+              <span className="text-sm font-semibold text-gray-600">
+                · {item.duration}
               </span>
             </div>
             <Text

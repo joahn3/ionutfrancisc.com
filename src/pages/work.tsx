@@ -4,17 +4,17 @@ import Page from 'components/Page'
 import CaseStudies from 'sections/CaseStudies'
 
 const heroProps = {
-  heading: 'Production work, prototypes, experiments, and learning projects.',
+  heading: 'Selected ventures, advisory work, digital products, and platforms.',
   paragraph: [
-    'My portfolio is intentionally varied: some projects are polished, others are exploratory, and most exist because they helped test an idea, deliver a service, or improve a real business workflow.',
-    'Here are selected businesses, products, websites, and experiments across security, education, energy, automation, and web development.',
+    'This portfolio reflects the range of my work: founder-led businesses, launch collaborations, operational systems, commercial websites, and product experiments.',
+    'Each selected project demonstrates a different part of the delivery cycle—from positioning and risk decisions to implementation, measurement, and ongoing operations.',
   ],
 }
 
 const seo = {
   title: 'Work',
   description:
-    'Selected work by Ionuț Francisc across web development, security and privacy concepts, educational tools, business websites, automation, and digital products.',
+    'Selected ventures, advisory work, digital products, websites, automation systems, and launch collaborations by Ionuț Francisc.',
 }
 
 export default function Work() {

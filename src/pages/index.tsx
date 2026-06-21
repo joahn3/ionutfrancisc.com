@@ -20,16 +20,20 @@ const seo = {
 const heroProps = {
   eyebrow: profile.headline,
   heading:
-    'Security, privacy, and governance for systems that have to work in the real world.',
+    'I turn security, privacy, and governance requirements into practical delivery.',
   paragraph: [
-    'I am a security, privacy, and GRC professional with more than 10 years of experience spanning governance, risk, controls, incident coordination, and regulated delivery.',
-    'I also build web products and automations, giving me a practical view of how requirements become systems, workflows, evidence, and outcomes.',
+    'I help organizations clarify risk, strengthen controls, prepare defensible evidence, and move complex work forward in regulated environments.',
+    'More than 10 years in IBM Consulting, combined with founder and technical delivery experience, allow me to connect governance expectations with systems that teams can operate, improve, and demonstrate.',
   ],
   image: '/assets/profile-ionut-francisc.webp',
   imageAlt: `${profile.name} portrait`,
   actions: [
-    { href: '/security-privacy', label: 'For Recruiters' },
-    { href: '/work', label: 'View Work', variant: 'secondary' as const },
+    { href: '/security-privacy', label: 'View Security Profile' },
+    {
+      href: '/contact',
+      label: 'Discuss an Engagement',
+      variant: 'secondary' as const,
+    },
   ],
 }
 
@@ -44,19 +48,19 @@ export default function Home() {
     <Page {...seo}>
       <Hero {...heroProps} />
       <Credentials
-        heading="Security, privacy, and delivery context"
-        subheading="A few signals behind the work: enterprise GRC experience, regulated delivery, hands-on implementation, and publicly verifiable credentials."
+        heading="Credibility grounded in regulated delivery"
+        subheading="Enterprise GRC experience, operational accountability, technical depth, and publicly verifiable credentials."
         items={credentialHighlights}
         linkLabel="View Credly profile"
       />
+      <About />
+      <Skills />
       <Journey
-        heading="From operator to consultant and founder"
-        subheading="The same thread runs through the work: build the system, understand the constraints, support the people using it, and improve what happens next."
+        heading="Operational depth behind the advisory work"
+        subheading="My career spans infrastructure, regulated operations, enterprise consulting, and founder-led delivery, so recommendations remain connected to execution."
         items={journey}
       />
       <Resume />
-      <About />
-      <Skills />
       <ContactCTA />
     </Page>
   )

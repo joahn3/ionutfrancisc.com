@@ -5,36 +5,44 @@ import Image from 'next/image'
 
 const categoryDescriptions: Record<WorkCategory, string> = {
   'Founder / Active Businesses':
-    'Operating brands and business efforts where execution, positioning, systems, and delivery all matter.',
+    'Businesses I founded and operate, with direct accountability for positioning, systems, delivery, and commercial execution.',
   'Launch Collaborations':
-    'Brands owned by strategic partners where I contributed to launch work without claiming ownership of the venture.',
+    'Strategic-partner ventures where I contributed to launch and digital delivery without claiming ownership.',
   'Products & Platforms':
-    'Digital products and product concepts shaped around education, privacy, risk, and practical user workflows.',
+    'Digital products and platform concepts designed around education, privacy, risk, and practical user workflows.',
   'Business Websites':
-    'Websites and landing pages built for service businesses, local SEO, lead generation, and real operational needs.',
+    'Commercial websites and conversion journeys built around discoverability, qualified demand, and operational needs.',
   'Creative & Personal Experiments':
-    'Smaller experiments that test mechanics, personalization, playful flows, and local-first product ideas.',
+    'Focused R&D experiments used to test interaction models, personalization, and local-first product ideas.',
+}
+
+const categoryLabels: Record<WorkCategory, string> = {
+  'Founder / Active Businesses': 'Founder-led businesses',
+  'Launch Collaborations': 'Launch collaborations',
+  'Products & Platforms': 'Products and platforms',
+  'Business Websites': 'Commercial websites',
+  'Creative & Personal Experiments': 'Product R&D',
 }
 
 const categoryLabelsRo: Record<WorkCategory, string> = {
-  'Founder / Active Businesses': 'Companii și inițiative proprii',
+  'Founder / Active Businesses': 'Companii fondate și operate',
   'Launch Collaborations': 'Colaborări la lansare',
   'Products & Platforms': 'Produse și platforme',
-  'Business Websites': 'Site-uri pentru companii',
-  'Creative & Personal Experiments': 'Experimente creative și personale',
+  'Business Websites': 'Site-uri comerciale',
+  'Creative & Personal Experiments': 'Cercetare și dezvoltare de produs',
 }
 
 const categoryDescriptionsRo: Record<WorkCategory, string> = {
   'Founder / Active Businesses':
-    'Branduri și inițiative active unde contează execuția, poziționarea, sistemele și livrarea.',
+    'Companii pe care le-am fondat și le operez, cu responsabilitate directă pentru poziționare, sisteme, livrare și execuție comercială.',
   'Launch Collaborations':
-    'Branduri deținute de parteneri strategici, la lansarea cărora am contribuit fără a pretinde că dețin proiectele respective.',
+    'Proiecte ale unor parteneri strategici la a căror lansare și livrare digitală am contribuit, fără a pretinde că le dețin.',
   'Products & Platforms':
     'Produse digitale și concepte orientate spre educație, protecția datelor, risc și fluxuri de lucru practice.',
   'Business Websites':
-    'Site-uri și pagini de prezentare pentru servicii, SEO local, atragerea clienților și nevoi operaționale reale.',
+    'Site-uri comerciale și parcursuri de conversie construite pentru vizibilitate, cerere calificată și nevoi operaționale reale.',
   'Creative & Personal Experiments':
-    'Experimente mai mici care testează mecanici, personalizare, parcursuri ludice și idei local-first.',
+    'Experimente de cercetare și dezvoltare folosite pentru a testa modele de interacțiune, personalizare și idei local-first.',
 }
 
 interface Props {
@@ -58,7 +66,9 @@ export default function WorkListing({ language = 'en' }: Props) {
               tag="h2"
               className="text-2xl md:text-3xl font-extrabold leading-tight"
               content={
-                language === 'ro' ? categoryLabelsRo[category] : category
+                language === 'ro'
+                  ? categoryLabelsRo[category]
+                  : categoryLabels[category]
               }
             />
             <Text

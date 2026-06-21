@@ -205,7 +205,7 @@ def build():
         Paragraph("PROFILE", styles["section"]),
         bullets(
             [
-                "Security, Privacy, and GRC professional with more than 10 years of experience spanning risk assessments, privacy-by-design, secure-by-design reviews, audit readiness, incident governance, and control evidence.",
+                "Security, Privacy, and GRC consultant with more than 10 years of experience turning governance requirements into proportionate controls, defensible evidence, and delivery decisions.",
                 "CSIRT-facing BISO delegate experience coordinating intake, stakeholders, remediation actions, closure criteria, and lessons learned.",
                 "Hands-on experience with PKI, certificate lifecycle management, key exchanges, and Gemalto Cloud HSM in a regulated banking and blockchain context.",
                 "Linux administration foundation supported by historical LPIC-1 and LPIC-2 certifications (issued 2018, expired 2023).",
@@ -225,7 +225,7 @@ def build():
             "Independent Consultant & Founder / Owner - ElectroVerde",
             "Security, privacy, electrical and photovoltaic systems, web products, automation | Current",
             [
-                "Review and build privacy-aware websites, digital products, automation flows, and practical systems for founders and small teams.",
+                "Assess and build privacy-aware websites, digital products, automation workflows, and operational systems for organizations, founders, and delivery teams.",
                 "Own and develop ElectroVerde and operate FiraWeb, connecting technical delivery with real electrical, photovoltaic, and business operations.",
                 "Contributed to the launches of Earthlink-owned SolarLink and TSTY within a strategic partner ecosystem, without ownership claims over those ventures.",
             ],

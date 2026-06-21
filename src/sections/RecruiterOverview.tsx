@@ -14,7 +14,7 @@ const content = {
   en: {
     heading: 'Recruiter quick view',
     subheading:
-      'The short version: relevant roles, evidence, and working context without vague assurance language.',
+      'A concise view of relevant roles, delivery depth, and the evidence behind the profile.',
     columns: [
       {
         label: 'Target roles',
@@ -31,7 +31,7 @@ const content = {
           'Secure-by-design and privacy-by-design reviews',
           'Risk assessments, audit readiness, and control evidence',
           'Incident governance and remediation follow-up',
-          'PKI, certificate lifecycle, and HSM exposure',
+          'PKI, certificate lifecycle, and HSM support',
           'Linux administration foundations; former LPIC-1/2',
         ],
       },
@@ -40,24 +40,24 @@ const content = {
         items: [
           'More than 10 years across IBM Consulting roles',
           'Regulated banking and blockchain environments',
-          'International stakeholder and assessment work',
-          'Founder and hands-on digital systems experience',
+          'International stakeholder and assessment experience',
+          'Founder-led and hands-on digital systems delivery',
           'Electrical and photovoltaic qualifications; ElectroVerde founder',
         ],
       },
     ],
     details:
-      'Based in Bucharest, Romania. Romanian native, English fluent, Italian good. Master’s degree in Economic IT and bachelor’s degree in Computer Science for Business Management.',
+      'Based in Bucharest, Romania. Native Romanian, fluent English, and a good command of Italian. Master’s degree in Economic IT and bachelor’s degree in Computer Science for Business Management.',
     principle:
-      'I prefer clear, pragmatic, evidence-backed work over complex abstractions and vague control language.',
+      'My working style is direct and evidence-led: make the risk explicit, clarify ownership, and leave teams with decisions they can execute.',
     cv: 'Download CV',
     linkedin: 'LinkedIn profile',
     credly: 'Verified badges',
   },
   ro: {
-    heading: 'Profil rapid pentru recrutori',
+    heading: 'Rezumat profesional pentru recrutori',
     subheading:
-      'Versiunea scurtă: roluri relevante, dovezi și context profesional, fără formulări vagi despre nivelul de încredere.',
+      'O prezentare concisă a rolurilor relevante, a experienței de livrare și a dovezilor care susțin profilul.',
     columns: [
       {
         label: 'Roluri relevante',
@@ -84,15 +84,15 @@ const content = {
           'Peste 10 ani în roluri IBM Consulting',
           'Medii reglementate din domeniile bancar și blockchain',
           'Colaborare internațională și activități de evaluare',
-          'Experiență practică de fondator și constructor de sisteme',
+          'Experiență de fondator și livrare practică a sistemelor digitale',
           'Calificări în domeniul electric și fotovoltaic; fondator ElectroVerde',
         ],
       },
     ],
     details:
-      'București, România. Limba română: nativ; limba engleză: fluent; limba italiană: nivel bun. Masterat în Informatică Economică și licență în Informatică Managerială.',
+      'București, România. Română nativă, engleză fluentă și italiană la nivel bun. Masterat în Informatică Economică și licență în Informatică Managerială.',
     principle:
-      'Prefer munca clară, pragmatică și susținută de dovezi în locul abstracțiilor complexe și al limbajului vag de control.',
+      'Lucrez direct și pe baza dovezilor: formulez explicit riscul, clarific responsabilitățile și las echipelor decizii pe care le pot pune în practică.',
     cv: 'Descarcă CV',
     linkedin: 'Profil LinkedIn',
     credly: 'Certificări verificate',

@@ -16,28 +16,28 @@ import Resume from 'sections/Resume'
 const seo = {
   title: 'Ionuț Francisc',
   description:
-    'Consultanță în securitate cibernetică, protecția datelor, GRC, web, automatizări și sisteme asistate de AI pentru fondatori și echipe mici.',
+    'Consultanță în securitate, protecția datelor și GRC, cu experiență în medii reglementate, control assurance și implementarea sistemelor digitale.',
 }
 
 const heroProps = {
   eyebrow:
     'Consultant în securitate, protecția datelor și GRC · Guvernanță · Risc · Sisteme digitale sigure',
   heading:
-    'Securitate, protecția datelor și guvernanță pentru sisteme care trebuie să funcționeze în lumea reală.',
+    'Transform cerințele de securitate, protecția datelor și guvernanță în livrare practică.',
   paragraph: [
-    'Sunt un profesionist în securitate, protecția datelor și GRC, cu peste 10 ani de experiență în guvernanță, risc, controale, coordonarea incidentelor și livrare în medii reglementate.',
-    'Construiesc și produse web și automatizări, ceea ce îmi oferă o perspectivă practică asupra modului în care cerințele devin sisteme, fluxuri de lucru, dovezi și rezultate.',
+    'Ajut organizațiile să clarifice riscurile, să consolideze controalele, să pregătească dovezi solide și să avanseze proiecte complexe în medii reglementate.',
+    'Peste 10 ani în IBM Consulting, completați de experiența de fondator și de livrare tehnică, mă ajută să conectez cerințele de guvernanță cu sisteme pe care echipele le pot opera, îmbunătăți și demonstra.',
   ],
   image: '/assets/profile-ionut-francisc.webp',
   imageAlt: `${profile.name} portret`,
   actions: [
     {
       href: '/ro/securitate-confidentialitate',
-      label: 'Pentru Recrutori',
+      label: 'Vezi Profilul de Securitate',
     },
     {
-      href: '/ro/work',
-      label: 'Vezi Proiectele',
+      href: '/ro/contact',
+      label: 'Discută o Colaborare',
       variant: 'secondary' as const,
     },
   ],
@@ -45,38 +45,35 @@ const heroProps = {
 
 const aboutContentRo = [
   {
-    heading: 'Domenii de interes',
+    heading: 'Domenii de consultanță',
     subheading:
-      'Domeniile în care experiența mea se completează firesc: securitate, protecția datelor, web, automatizări, energie și educație.',
-    image: '/assets/skills.svg',
+      'Mandate în care sunt esențiale controalele clare, judecata profesională și urmărirea consecventă a acțiunilor.',
     items: [
-      'Securitate cibernetică, protecția datelor, GRC, conformitate și risc',
-      'Evaluări secure-by-design, pregătire pentru audit și documentarea controalelor',
-      'Guvernanța incidentelor, coordonare CSIRT/BISO și urmărirea remedierii',
-      'PKI, ciclul de viață al certificatelor, HSM și contexte reglementate',
-      'Site-uri rapide, orientate spre conversie și proiectate cu respectarea vieții private',
-      'Fluxuri de lucru asistate de AI pentru dezvoltare și operațiuni',
+      'Guvernanța securității, protecția datelor, GRC și risc',
+      'Evaluări secure-by-design și privacy-by-design',
+      'Asigurarea controalelor și pregătirea pentru audit',
+      'Guvernanța incidentelor și remediere',
+      'PKI, ciclul de viață al certificatelor și HSM',
+      'Livrare reglementată și colaborare interdisciplinară',
     ],
   },
   {
-    heading: 'Ce îmi place să construiesc',
+    heading: 'Sisteme pe care le livrez',
     subheading:
-      'Produse și sisteme care pot fi livrate, testate, îmbunătățite și folosite de oameni reali.',
-    image: '/assets/hobbies.svg',
+      'Sisteme digitale utile, măsurabile, ușor de întreținut și pregătite pentru operațiuni reale.',
     items: [
-      'Site-uri curate și rapide pentru companii reale',
-      'Pagini de prezentare și sisteme de atragere a clienților',
-      'Produse minime viabile care testează rapid idei de afaceri',
-      'Aplicații local-first cu modele simple de protecție a datelor',
-      'Instrumente educaționale pentru copii și părinți',
-      'Automatizări pentru fondatori și echipe mici',
+      'Site-uri de încredere și platforme de servicii digitale',
+      'Parcursuri de conversie și sisteme de atragere a clienților',
+      'MVP-uri care validează ipoteze comerciale',
+      'Aplicații local-first care respectă viața privată',
+      'Automatizări operaționale și instrumente interne',
+      'Produse educaționale pentru familii și școli',
     ],
   },
   {
-    heading: 'Instrumente și tehnologii',
+    heading: 'Capabilități și tehnologii',
     subheading:
-      'O combinație practică de gândire orientată spre securitate, implementare web, publicare, automatizare și fluxuri de lucru asistate de AI.',
-    image: '/assets/skills.svg',
+      'Disciplinele și tehnologiile pe care le folosesc pentru a trece de la evaluare la implementare.',
     items: profile.stack,
   },
 ]
@@ -109,35 +106,35 @@ export default function HomeRo() {
     <Page {...seo}>
       <Hero {...heroProps} />
       <Credentials
-        heading="Context de securitate, protecția datelor și livrare"
-        subheading="Câteva repere profesionale: experiență GRC în companii mari, contexte reglementate, implementare practică și certificări verificabile public."
+        heading="Credibilitate construită în medii reglementate"
+        subheading="Experiență GRC în organizații complexe, responsabilitate operațională, profunzime tehnică și certificări verificabile public."
         items={credentialHighlightsRo}
         linkLabel="Vezi profilul Credly"
       />
-      <Journey
-        heading="De la operator la consultant și fondator"
-        subheading="Același fir leagă toate etapele: construiesc sistemul, înțeleg constrângerile, ajut oamenii care îl folosesc și îmbunătățesc ce urmează."
-        items={journeyRo}
-      />
-      <Resume language="ro" />
       <About
         intro={{
-          heading: 'Construit din suprapuneri practice.',
+          heading: 'Acolo unde strategia întâlnește livrarea.',
           subheading:
-            'Munca utilă apare de obicei acolo unde execuția tehnică se întâlnește cu realitatea unei companii.',
+            'Un profil interdisciplinar pentru proiecte care trebuie să răspundă simultan cerințelor de guvernanță, realității tehnice și obiectivelor comerciale.',
         }}
         content={aboutContentRo}
       />
       <Skills
         heading="Cum pot ajuta"
-        subheading="O combinație coerentă de consultanță, implementare, mentorat și gândire de produs."
+        subheading="Consultanță și implementare pentru organizații care au nevoie de decizii clare, sisteme solide și progres măsurabil."
         items={skillsRo}
       />
+      <Journey
+        heading="Experiență operațională în spatele consultanței"
+        subheading="Cariera mea acoperă infrastructură, operațiuni reglementate, consultanță pentru companii și livrare antreprenorială, astfel încât recomandările rămân conectate la execuție."
+        items={journeyRo}
+      />
+      <Resume language="ro" />
       <ContactCTA
-        heading="Ai un sistem digital care are nevoie de mai multă claritate?"
-        paragraph="Pot ajuta cu evaluarea, refactorizarea, reconstrucția sau planificarea următoarei versiuni a unui site, flux de produs, proces automatizat ori sistem sensibil la securitate și protecția datelor."
+        heading="Ai un mandat care trebuie transformat într-un plan executabil?"
+        paragraph="Pot evalua riscurile, clarifica prioritățile și structura următoarea etapă pentru un sistem digital, un proces sensibil la securitate sau un program de îmbunătățire a controalelor."
         linkHref="/ro/contact"
-        linkText="Scrie-mi"
+        linkText="Discută mandatul"
         codeSnippet={roCode}
       />
     </Page>

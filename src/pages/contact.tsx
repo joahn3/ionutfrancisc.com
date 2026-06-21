@@ -8,15 +8,15 @@ import Image from 'next/image'
 const seo = {
   title: 'Contact',
   description:
-    'Contact Ionuț Francisc for security, privacy, web, automation, and AI-assisted product work.',
+    'Contact Ionuț Francisc to discuss a security, privacy, GRC, digital systems, or advisory engagement.',
 }
 
 const heroProps = {
   eyebrow: profile.location,
-  heading: "Let's talk about what you want to build or improve.",
+  heading: "Let's clarify the mandate and the outcome that matters.",
   paragraph: [
-    'Use the form below for consulting, web work, product experiments, mentoring, or practical collaboration.',
-    'A useful first message includes the goal, current state, expected timeline, and any link I should review.',
+    'Use the form for an advisory mandate, a security or privacy role, a digital systems engagement, or a focused technical collaboration.',
+    'A strong first message includes the decision or outcome required, current constraints, key stakeholders, expected timeline, and any material I should review.',
   ],
 }
 

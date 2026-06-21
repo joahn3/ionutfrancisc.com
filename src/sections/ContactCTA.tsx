@@ -28,10 +28,10 @@ interface Props {
 }
 
 const CodeblockCTA = ({
-  heading = 'Have a digital system that needs clearer thinking?',
-  paragraph = 'I can help review, refactor, rebuild, or plan the next version of a website, product flow, automation, or security/privacy-sensitive process.',
+  heading = 'Have a mandate that needs a clear path from risk to execution?',
+  paragraph = 'I can help clarify the decision, assess the system, prioritize the material issues, and structure a delivery plan with accountable next steps.',
   linkHref = '/contact/',
-  linkText = 'Contact Me',
+  linkText = 'Discuss the Mandate',
   codeSnippet = defaultCode,
 }: Props) => {
   const highlightedCode = useMemo(

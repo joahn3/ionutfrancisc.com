@@ -12,13 +12,13 @@ export const caseStudies: CaseStudy[] = [
     title: 'Enterprise Security & Privacy by Design',
     category: 'Security / Privacy / Controls · anonymized',
     context:
-      'New tools and applications needed security and privacy review in an enterprise consulting environment.',
+      'New tools and applications required security and privacy assessment within a complex enterprise consulting environment.',
     problem:
-      'Requirements, controls, evidence, findings, ownership, and delivery constraints needed to be made explicit and traceable.',
+      'Requirements, controls, evidence, findings, ownership, and delivery constraints had to become explicit, proportionate, and traceable.',
     contribution:
       'Structured secure-by-design and privacy-by-design reviews, clarified control expectations, documented findings, and aligned actions with owners and timelines.',
     result:
-      'Produced clear, decision-ready review records and improved remediation tracking across architecture, security, and delivery stakeholders.',
+      'Established decision-ready review records and a clearer remediation path across architecture, security, and delivery stakeholders.',
   },
   {
     title: 'FiraWeb Brand Consolidation',
@@ -30,7 +30,7 @@ export const caseStudies: CaseStudy[] = [
     contribution:
       'Consolidated the domains under FiraWeb and organized web development, SEO, automation, and lead-generation services into one focused structure.',
     result:
-      'Created one canonical brand and a clearer route from service discovery to project conversation.',
+      'Established one canonical brand and a clearer path from service discovery to a qualified project conversation.',
   },
   {
     title: 'BaffiCafe Customer Journey',
@@ -42,7 +42,7 @@ export const caseStudies: CaseStudy[] = [
     contribution:
       'Structured the website around the information and actions local customers need most, with mobile use and local discovery in mind.',
     result:
-      'Delivered a single public destination for menu discovery, reservations, takeaway information, events, and customer reviews.',
+      'Created one coherent public destination for menu discovery, reservations, takeaway information, events, and customer reviews.',
   },
 ]
 
@@ -51,13 +51,13 @@ export const caseStudiesRo: CaseStudy[] = [
     title: 'Securitate și protecția datelor prin proiectare',
     category: 'Securitate / Protecția datelor / Controale · anonimizat',
     context:
-      'Instrumentele și aplicațiile noi necesitau evaluări de securitate și protecția datelor într-un mediu de consultanță pentru companii.',
+      'Instrumentele și aplicațiile noi necesitau evaluări de securitate și protecția datelor într-un mediu complex de consultanță pentru companii.',
     problem:
-      'Cerințele, controalele, dovezile, constatările, responsabilitățile și constrângerile de livrare trebuiau formulate explicit și urmărite în mod clar.',
+      'Cerințele, controalele, dovezile, constatările, responsabilitățile și constrângerile de livrare trebuiau să devină explicite, proporționale și trasabile.',
     contribution:
       'Am structurat evaluările secure-by-design și privacy-by-design, am clarificat cerințele de control și am atribuit acțiunile responsabililor, cu termene precise.',
     result:
-      'Am produs documente clare pentru luarea deciziilor și am îmbunătățit urmărirea remedierii între echipele de arhitectură, securitate și livrare.',
+      'Am stabilit documente pregătite pentru decizie și un traseu mai clar al remedierii între echipele de arhitectură, securitate și livrare.',
   },
   {
     title: 'Consolidarea brandului FiraWeb',
@@ -69,7 +69,7 @@ export const caseStudiesRo: CaseStudy[] = [
     contribution:
       'Am consolidat domeniile sub FiraWeb și am organizat serviciile de dezvoltare web, SEO, automatizare și atragere a clienților într-o structură coerentă.',
     result:
-      'A rezultat un singur brand canonic și un traseu mai clar de la descoperirea serviciilor la conversația despre proiect.',
+      'Am stabilit un singur brand canonic și un traseu mai clar de la descoperirea serviciilor la o conversație calificată despre proiect.',
   },
   {
     title: 'Parcursul clientului pentru BaffiCafe',
@@ -81,6 +81,6 @@ export const caseStudiesRo: CaseStudy[] = [
     contribution:
       'Am structurat site-ul în jurul informațiilor și acțiunilor importante pentru clienții locali, cu atenție la utilizarea pe mobil și la vizibilitatea în căutările locale.',
     result:
-      'Am creat o singură destinație publică pentru meniu, rezervări, comenzi la pachet, evenimente și recenzii.',
+      'Am creat o destinație publică coerentă pentru meniu, rezervări, comenzi la pachet, evenimente și recenzii.',
   },
 ]

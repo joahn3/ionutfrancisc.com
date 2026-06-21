@@ -36,9 +36,9 @@ export const credentialHighlights: CredentialHighlight[] = [
       'Romanian Level III qualification as Electrician constructor (2023) and specialization as Instalator sisteme fotovoltaice solare, COR 741103 (2023). These qualifications support my practical work as the founder of ElectroVerde.',
   },
   {
-    heading: 'Verified learning signals',
+    heading: 'Continuous professional development',
     description:
-      'The public Credly trail includes IBM Security Zero Trust Principles, DORA & IBM Technology, Trustworthy AI and AI Ethics, IBM watsonx, IBM Generative & Agentic AI Foundation, and ISC2 Candidate.',
+      'Publicly verifiable learning includes IBM Security Zero Trust Principles, DORA & IBM Technology, Trustworthy AI and AI Ethics, IBM watsonx, IBM Generative & Agentic AI Foundation, and ISC2 Candidate.',
   },
 ]
 
@@ -75,8 +75,8 @@ export const credentialHighlightsRo: CredentialHighlight[] = [
       'Calificare profesională de nivel III ca „Electrician constructor” (720 de ore, 2023) și specializare „Instalator sisteme fotovoltaice solare”, cod COR 741103 (144 de ore, 2023). Aceste calificări susțin activitatea mea practică în calitate de fondator al ElectroVerde.',
   },
   {
-    heading: 'Certificări și insigne digitale verificabile',
+    heading: 'Dezvoltare profesională continuă',
     description:
-      'Traseul public Credly include IBM Security Zero Trust Principles, DORA & IBM Technology, Trustworthy AI and AI Ethics, IBM watsonx, IBM Generative & Agentic AI Foundation și ISC2 Candidate.',
+      'Formarea verificabilă public include IBM Security Zero Trust Principles, DORA & IBM Technology, Trustworthy AI and AI Ethics, IBM watsonx, IBM Generative & Agentic AI Foundation și statutul ISC2 Candidate.',
   },
 ]

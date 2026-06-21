@@ -1,54 +1,54 @@
 import Intro from 'components/Intro'
 import Text from 'components/Text'
-import { CheckCircleIcon } from '@heroicons/react/solid'
+import {
+  CheckCircleIcon,
+  LightningBoltIcon,
+  ShieldCheckIcon,
+  TerminalIcon,
+} from '@heroicons/react/outline'
 import { profile } from 'data/profile'
-import Image from 'next/image'
 
 type AboutContentSection = {
   heading: string
   subheading: string
-  image: string
   items: string[]
 }
 
 const defaultIntro = {
-  heading: 'Built from practical overlaps.',
+  heading: 'Where strategy meets delivery.',
   subheading:
-    'The useful work usually happens where technical execution meets business reality.',
+    'A cross-functional profile built for work that has to satisfy governance, technical, and commercial realities at the same time.',
 }
 
 const defaultContent: AboutContentSection[] = [
   {
-    heading: 'Focus',
+    heading: 'Advisory focus',
     subheading:
-      'The areas where my work naturally overlaps: security, privacy, web, automation, energy, and education.',
-    image: '/assets/skills.svg',
+      'Mandates where clear controls, sound judgment, and practical follow-through matter.',
     items: profile.focusAreas,
   },
   {
-    heading: 'What I Like Building',
+    heading: 'Systems I deliver',
     subheading:
-      'Products and systems that can be shipped, tested, improved, and used by actual people.',
-    image: '/assets/hobbies.svg',
+      'Digital systems designed to be useful, measurable, maintainable, and ready for real operations.',
     items: [
-      'Clean, fast websites for real businesses',
-      'Landing pages designed to generate qualified leads',
-      'MVPs that test business ideas quickly',
-      'Local-first apps with simple privacy models',
-      'Educational tools for children and parents',
-      'Automation systems for small teams and founders',
+      'High-trust websites and digital service platforms',
+      'Conversion journeys and qualified-lead systems',
+      'MVPs that validate commercial assumptions',
+      'Privacy-aware, local-first applications',
+      'Operational automation and internal tools',
+      'Education products for families and schools',
     ],
   },
   {
-    heading: 'Stack',
+    heading: 'Capabilities and tools',
     subheading:
-      'A practical mix of security thinking, web implementation, deployment, automation, and AI-assisted workflows.',
-    image: '/assets/skills.svg',
+      'The disciplines and technologies I use to move from assessment to implementation.',
     items: profile.stack,
   },
 ]
 
-const isEven = (index: number) => index % 2 === 0
+const sectionIcons = [ShieldCheckIcon, LightningBoltIcon, TerminalIcon]
 
 interface Props {
   intro?: typeof defaultIntro
@@ -56,40 +56,45 @@ interface Props {
 }
 
 const About = ({ intro = defaultIntro, content = defaultContent }: Props) => (
-  <section className="container section-spacing">
-    <Intro heading={intro.heading} subheading={intro.subheading} />
-    {content.map((section, index) => (
-      <div
-        key={section.heading}
-        className="mt-16 grid items-center gap-8 grid-cols-1 md:mt-32 md:grid-cols-2 md:gap-24"
-      >
-        <div className={!isEven(index) ? 'order-1 md:order-2' : ''}>
-          <Image
-            className="w-2/3 mx-auto md:w-full"
-            src={section.image}
-            alt={`${section.heading} illustration.`}
-            height={360}
-            width={480}
-          />
-        </div>
-        <div className={!isEven(index) ? 'order-2 md:order-1' : ''}>
-          <h3 className="text-2xl md:text-3xl font-bold">{section.heading}</h3>
-          <Text
-            content={section.subheading}
-            className="mt-2 text-lg md:text-xl"
-            tag="p"
-          />
-          <ul className="mt-4 flex flex-col gap-2">
-            {section.items.map((item) => (
-              <li className="flex items-center gap-2 md:text-lg" key={item}>
-                <CheckCircleIcon className="w-5 h-5 flex-shrink-0 text-emerald-600" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
+  <section
+    className="border-y border-gray-200 bg-white"
+    data-testid="capability-overview"
+  >
+    <div className="container section-spacing">
+      <Intro heading={intro.heading} subheading={intro.subheading} />
+      <div className="mt-10 grid gap-10 lg:mt-14 lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-gray-200">
+        {content.map((section, index) => {
+          const SectionIcon = sectionIcons[index] ?? CheckCircleIcon
+
+          return (
+            <article
+              key={section.heading}
+              className="border-t-4 border-emerald-600 pt-5 lg:border-t-0 lg:px-8 lg:first:pl-0 lg:last:pr-0"
+            >
+              <div className="flex items-center gap-3">
+                <SectionIcon className="h-7 w-7 flex-none text-emerald-700" />
+                <h3 className="text-xl font-extrabold leading-tight md:text-2xl">
+                  {section.heading}
+                </h3>
+              </div>
+              <Text
+                content={section.subheading}
+                className="mt-3 text-gray-700"
+                tag="p"
+              />
+              <ul className="mt-5 grid grid-cols-2 gap-x-5 gap-y-3 text-sm sm:text-base lg:grid-cols-1 xl:grid-cols-2">
+                {section.items.map((item) => (
+                  <li className="flex items-start gap-2" key={item}>
+                    <CheckCircleIcon className="mt-0.5 h-4 w-4 flex-none text-emerald-700" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          )
+        })}
       </div>
-    ))}
+    </div>
   </section>
 )
 

@@ -28,7 +28,7 @@ export type ServicePage = {
     items: {
       name: string
       slug: string
-      price: string
+      investment: string
       duration: string
       description: string
       bullets: string[]
@@ -60,47 +60,48 @@ export type ServicePage = {
 export const servicePages: Record<'instruction' | 'consulting', ServicePage> = {
   instruction: {
     seo: {
-      title: 'Instruction',
+      title: 'Mentoring',
       description:
-        'Personalized web development mentoring for practical frontend, tooling, and AI-assisted workflows.',
+        'Private technical mentoring for developers and founders working through real web, tooling, and AI-assisted delivery challenges.',
     },
     hero: {
-      heading: 'Learn practical web development by working on real problems.',
+      heading:
+        'Build stronger technical judgment by working on a real challenge.',
       paragraph: [
-        'I offer focused mentoring for developers, founders, and curious builders who want clearer React, Next.js, TypeScript, tooling, deployment, and AI-assisted development workflows.',
-        'The goal is not another generic tutorial. We look at your project, your blockers, and the exact habits that help you ship better work.',
+        'Private mentoring for developers and founders who want to improve a real React, Next.js, TypeScript, deployment, or AI-assisted delivery workflow.',
+        'We work from your codebase and decisions, not a generic curriculum, so every session produces clearer reasoning and practical next steps.',
       ],
     },
     overview: {
       heading:
-        'Modern web development is easier to start than ever, but harder to organize well.',
+        'Modern tools accelerate delivery, but they do not replace sound engineering judgment.',
       paragraphs: [
-        'Frameworks, libraries, hosting platforms, and AI tools move quickly. That speed is useful, but it can also leave projects messy, fragile, or difficult to improve.',
-        'A good session gives you a thinking partner while you work. We can review your project structure, debug a concrete issue, improve a feature, or design a cleaner workflow for shipping.',
-        'I focus on practical decisions: readable code, sensible abstractions, maintainable UI, secure defaults, deployment basics, and automation that actually saves time.',
+        'Frameworks, hosting platforms, and AI tools evolve quickly. Without a clear delivery model, that speed can create fragile architecture, inconsistent code, and avoidable operational risk.',
+        'A focused session gives you a senior thinking partner for one concrete challenge: architecture, debugging, feature design, deployment, code quality, or workflow improvement.',
+        'The emphasis is on transferable judgment: readable code, proportionate abstractions, maintainable interfaces, secure defaults, reliable releases, and automation that creates measurable leverage.',
       ],
     },
     offerings: {
-      heading: 'What We Can Cover',
+      heading: 'Areas We Can Address',
       description:
         'Sessions are shaped around your current level and the project you want to improve.',
       items: [
         {
-          heading: 'Frontend Foundations',
+          heading: 'Frontend Architecture',
           description:
-            'Build confidence with the pieces that make modern interfaces reliable.',
+            'Make deliberate choices that keep modern interfaces reliable and maintainable.',
           bullets: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
         },
         {
-          heading: 'Project Workflow',
+          heading: 'Delivery Workflow',
           description:
-            'Make your day-to-day development loop clearer and less repetitive.',
-          bullets: ['Git', 'NPM', 'Netlify/Vercel', 'Code review habits'],
+            'Improve the path from local development to review, release, and iteration.',
+          bullets: ['Git', 'npm', 'Netlify/Vercel', 'Code review practice'],
         },
         {
           heading: 'AI-assisted Development',
           description:
-            'Use AI tools as practical development help without losing control of the code.',
+            'Use AI as a disciplined accelerator while retaining technical ownership and review quality.',
           bullets: [
             'Prompting for implementation',
             'Refactoring',
@@ -111,154 +112,189 @@ export const servicePages: Record<'instruction' | 'consulting', ServicePage> = {
       ],
     },
     packages: {
-      heading: 'Simple Session Options',
+      heading: 'Mentoring Formats',
       description:
-        'Start small, then book a focused working session if it makes sense.',
+        'Begin with a short fit conversation, then define the right working format for the challenge.',
+      ctaLabel: 'Choose This Format',
       items: [
         {
-          name: 'Intro Call',
+          name: 'Fit Conversation',
           slug: 'intro',
-          price: '0',
-          duration: '15 min',
+          investment: 'No fee',
+          duration: '20 minutes',
           description:
-            'A quick call to understand your goals, current project, and where a session would help most.',
+            'A short conversation to understand the project, the decision at hand, and whether I am the right person to help.',
           bullets: [
-            'Free fit check',
-            'Clarify goals',
-            'Choose the right topic',
+            'Clarify the outcome',
+            'Assess fit',
+            'Define the next step',
           ],
         },
         {
-          name: 'Working Session',
+          name: 'Private Working Session',
           slug: 'session',
-          price: '49',
-          duration: '45 min',
+          investment: 'By scope',
+          duration: '60–90 minutes',
           description:
-            'A practical, personalized session around your code, workflow, or learning goal.',
+            'A prepared, one-to-one working session focused on a concrete technical or delivery challenge.',
           bullets: [
             'Personalized agenda',
-            'Live review',
-            'Concrete next steps',
+            'Live analysis',
+            'Documented next steps',
           ],
         },
       ],
     },
     form: {
-      heading: "Let's Work Through It",
+      heading: 'Bring a Real Challenge',
       description:
-        'Share what you are building or trying to learn, and I will suggest the most useful next step.',
+        'Share the context, the decision you are facing, and what a useful outcome would look like.',
       name: 'instruction',
       defaultType: 'intro',
       options: [
-        { value: 'intro', label: 'Intro Call (15 min)' },
-        { value: 'session', label: 'Working Session (45 min)' },
+        { value: 'intro', label: 'Fit Conversation (20 minutes)' },
+        { value: 'session', label: 'Private Working Session' },
       ],
       infoLabel: 'What would you like to learn or improve?',
+      labels: {
+        name: 'Name',
+        email: 'Email',
+        type: 'Mentoring format',
+        submit: 'Send inquiry',
+        honeypot: "Don't fill this out if you're human:",
+      },
     },
   },
   consulting: {
     seo: {
       title: 'Consulting',
       description:
-        'Security, privacy, GRC, web, automation, and digital product consulting for founders and growing teams.',
+        'Security, privacy, GRC, digital systems, and automation advisory for organizations that need clear decisions and accountable delivery.',
     },
     hero: {
       heading:
-        'Tighten your web product, privacy posture, and digital systems.',
+        'Turn security, privacy, and digital delivery risk into an executable mandate.',
       paragraph: [
-        'I help founders and small teams inspect, plan, and improve websites, landing pages, automations, security-oriented flows, privacy-aware systems, and AI-assisted product ideas.',
-        'The work is practical: understand the risk, simplify the system, improve the user path, and make the next implementation step obvious.',
+        'I help leaders and delivery teams assess risk, clarify priorities, strengthen controls, and structure the next stage of a digital system or transformation initiative.',
+        'The engagement connects governance with implementation: decision-ready findings, clear ownership, proportionate controls, and a plan teams can execute and evidence.',
       ],
     },
     overview: {
       heading:
-        'Most small digital systems do not need more noise. They need a clearer risk map and a better execution path.',
+        'A polished digital experience is not the same as a well-governed, resilient system.',
       paragraphs: [
-        'A site can look finished while lead capture, analytics, privacy notices, forms, automations, and operational handoffs are quietly working against the business.',
-        'I review both the technical and business surface: what users see, what data is collected, how the system is deployed, what evidence exists, and where security or privacy assumptions may be weak.',
-        'The result is a practical improvement plan that a founder, internal team, or implementation partner can actually use.',
+        'Risk often sits between functions: requirements are vague, evidence is fragmented, data flows are poorly understood, or operational handoffs depend on assumptions no one owns.',
+        'I examine the governance, technical, and commercial surfaces together: what the system must achieve, what data it handles, which controls matter, how delivery works, and where decisions lack evidence.',
+        'The result is a prioritized mandate with traceable findings, named decisions, and a realistic path from assessment to implementation.',
       ],
     },
     offerings: {
-      heading: 'Consulting Focus',
+      heading: 'Advisory Focus',
       description:
-        'Useful for founders, service businesses, and teams that need practical digital execution.',
+        'Designed for leaders and teams that need clarity across governance, risk, digital delivery, and operational execution.',
       items: [
         {
-          heading: 'Security & Privacy Review',
+          heading: 'Security, Privacy & Control Assurance',
           description:
-            'Find weak points in forms, data flows, tracking, access, evidence, and operational habits.',
+            'Assess material risks, control expectations, evidence quality, data handling, and remediation priorities.',
           bullets: [
-            'Risk review',
-            'Privacy-aware UX',
-            'GRC basics',
-            'Action plan',
+            'Risk and control review',
+            'Secure/privacy-by-design',
+            'Audit readiness',
+            'Prioritized remediation',
           ],
         },
         {
-          heading: 'Web & Lead Systems',
+          heading: 'Digital Systems & Conversion Architecture',
           description:
-            'Improve websites, landing pages, forms, conversion paths, and analytics hygiene.',
+            'Align user journeys, data collection, analytics, trust signals, and technical delivery with commercial goals.',
           bullets: [
-            'Landing pages',
-            'SEO structure',
-            'Lead capture',
-            'Tracking setup',
+            'Journey architecture',
+            'SEO and discoverability',
+            'Conversion systems',
+            'Measurement design',
           ],
         },
         {
-          heading: 'Automation & AI Workflows',
+          heading: 'Automation & AI-enabled Operations',
           description:
-            'Design small automations and AI-assisted workflows that reduce manual work.',
+            'Design accountable workflows and internal tools that reduce manual effort without sacrificing oversight.',
           bullets: [
-            'Founder workflows',
+            'Process mapping',
+            'Human-in-the-loop controls',
             'Internal tools',
-            'Local-first ideas',
-            'MVP planning',
+            'Implementation roadmap',
           ],
         },
       ],
     },
     packages: {
-      heading: 'Consulting Options',
+      heading: 'Engagement Models',
       description:
-        'Use a short diagnostic call first, or book a focused review when you already know the area.',
+        'The scope follows the risk, decision, and outcome required—not an arbitrary hourly package.',
+      ctaLabel: 'Discuss This Model',
       items: [
         {
-          name: 'Diagnostic Call',
+          name: 'Executive Scoping Conversation',
           slug: 'diagnostic',
-          price: '0',
-          duration: '15 min',
+          investment: 'No fee',
+          duration: '20 minutes',
           description:
-            'A short conversation to understand the business, the system, and the highest-value review area.',
-          bullets: ['Free fit check', 'Surface the main risk', 'Define scope'],
+            'A focused conversation to understand the mandate, material risk, stakeholders, and decision deadline.',
+          bullets: [
+            'Assess fit',
+            'Clarify the decision',
+            'Define a useful scope',
+          ],
         },
         {
-          name: 'Focused Review',
+          name: 'Advisory Sprint',
           slug: 'review',
-          price: '99',
-          duration: '60 min',
+          investment: 'By scope',
+          duration: '1–2 weeks',
           description:
-            'A practical review of one website, product flow, automation, or security/privacy concern.',
+            'A time-boxed assessment that converts one material problem into findings, decisions, and a prioritized action plan.',
           bullets: [
-            'Structured review',
-            'Prioritized findings',
-            'Next-step plan',
+            'Structured discovery',
+            'Decision-ready findings',
+            'Prioritized roadmap',
+          ],
+        },
+        {
+          name: 'Ongoing Advisory Partnership',
+          slug: 'partnership',
+          investment: 'Monthly',
+          duration: '3+ months',
+          description:
+            'Embedded advisory support for leaders and teams managing recurring governance, risk, and delivery decisions.',
+          bullets: [
+            'Regular decision support',
+            'Control and remediation oversight',
+            'Stakeholder alignment',
           ],
         },
       ],
     },
     form: {
-      heading: 'Start With The System',
+      heading: 'Start With the Mandate',
       description:
-        'Tell me what you want reviewed and what outcome would make the engagement useful.',
+        'Describe the decision, risk, or delivery constraint—and what must be different when the engagement is complete.',
       name: 'consulting',
       defaultType: 'diagnostic',
       options: [
-        { value: 'diagnostic', label: 'Diagnostic Call (15 min)' },
-        { value: 'review', label: 'Focused Review (60 min)' },
+        { value: 'diagnostic', label: 'Executive Scoping Conversation' },
+        { value: 'review', label: 'Advisory Sprint' },
+        { value: 'partnership', label: 'Ongoing Advisory Partnership' },
       ],
-      infoLabel: 'What should we review or improve?',
+      infoLabel:
+        'What decision, risk, or outcome should the engagement address?',
+      labels: {
+        name: 'Name',
+        email: 'Email',
+        type: 'Engagement model',
+        submit: 'Submit inquiry',
+        honeypot: "Don't fill this out if you're human:",
+      },
     },
   },
 }
@@ -269,50 +305,50 @@ export const servicePagesRo: Record<'instruction' | 'consulting', ServicePage> =
       seo: {
         title: 'Mentorat',
         description:
-          'Mentorat practic pentru dezvoltare web, frontend, instrumente tehnice și fluxuri de lucru asistate de AI.',
+          'Mentorat tehnic privat pentru dezvoltatori și fondatori care lucrează la provocări reale de dezvoltare web, instrumente tehnice și livrare asistată de AI.',
       },
       hero: {
-        heading: 'Învață dezvoltare web lucrând la probleme reale.',
+        heading: 'Dezvoltă-ți judecata tehnică lucrând la o provocare reală.',
         paragraph: [
-          'Ofer mentorat pentru dezvoltatori, fondatori și persoane curioase care doresc mai multă claritate în React, Next.js, TypeScript, instrumente tehnice, publicare și fluxuri de lucru asistate de AI.',
-          'Nu repetăm încă un tutorial generic. Analizăm proiectul tău, blocajele reale și practicile care te ajută să livrezi mai bine.',
+          'Mentorat privat pentru dezvoltatori și fondatori care doresc să îmbunătățească un proiect real în React, Next.js, TypeScript, publicare sau livrare asistată de AI.',
+          'Lucrăm direct cu proiectul și deciziile tale, nu cu o programă generică, astfel încât fiecare sesiune să producă un raționament mai clar și pași practici.',
         ],
       },
       overview: {
         heading:
-          'Dezvoltarea web modernă este ușor de început, dar mai greu de organizat bine.',
+          'Instrumentele moderne accelerează livrarea, dar nu înlocuiesc judecata tehnică solidă.',
         paragraphs: [
-          'Frameworkurile, platformele de găzduire și instrumentele bazate pe AI evoluează rapid. Această viteză este utilă, dar poate produce proiecte greu de întreținut în lipsa unui mod clar de lucru.',
-          'O sesiune bună îți oferă un partener de analiză în timp ce lucrezi: putem evalua structura proiectului, depana o problemă concretă, îmbunătăți o funcționalitate sau proiecta un flux de livrare mai curat.',
-          'Accentul cade pe decizii practice: cod lizibil, abstracții justificate, interfețe ușor de întreținut, configurări implicite sigure, publicare și automatizări care economisesc timp.',
+          'Frameworkurile, platformele de găzduire și instrumentele bazate pe AI evoluează rapid. Fără un model clar de livrare, această viteză poate produce arhitectură fragilă, cod inconsecvent și riscuri operaționale evitabile.',
+          'O sesiune concentrată îți oferă un partener cu experiență pentru o provocare concretă: arhitectură, depanare, proiectarea unei funcționalități, publicare, calitatea codului sau îmbunătățirea fluxului de lucru.',
+          'Accentul cade pe judecată transferabilă: cod lizibil, abstracții proporționale, interfețe ușor de întreținut, configurări implicite sigure, procese de publicare fiabile și automatizări care creează valoare măsurabilă.',
         ],
       },
       offerings: {
-        heading: 'Ce putem aborda',
+        heading: 'Domenii pe care le putem aborda',
         description:
           'Sesiunile se adaptează nivelului tău și proiectului pe care vrei să-l îmbunătățești.',
         items: [
           {
-            heading: 'Fundamente frontend',
+            heading: 'Arhitectură frontend',
             description:
-              'Construim încredere în piesele care fac interfețele moderne mai stabile.',
+              'Luăm decizii deliberate care păstrează interfețele moderne fiabile și ușor de întreținut.',
             bullets: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
           },
           {
-            heading: 'Fluxul de lucru al proiectului',
+            heading: 'Fluxul de livrare',
             description:
-              'Facem bucla de lucru zilnică mai clară și mai puțin repetitivă.',
+              'Îmbunătățim traseul de la dezvoltarea locală la verificare, publicare și iterație.',
             bullets: [
               'Git',
               'npm',
               'Netlify/Vercel',
-              'Practici de revizuire a codului',
+              'Practici pentru verificarea codului',
             ],
           },
           {
             heading: 'Dezvoltare asistată de AI',
             description:
-              'Folosești inteligența artificială drept sprijin practic, păstrând controlul asupra codului.',
+              'Folosești inteligența artificială drept accelerator disciplinat, păstrând controlul tehnic și calitatea verificării.',
             bullets: [
               'Instrucțiuni pentru implementare',
               'Refactorizare',
@@ -323,57 +359,56 @@ export const servicePagesRo: Record<'instruction' | 'consulting', ServicePage> =
         ],
       },
       packages: {
-        heading: 'Opțiuni simple',
+        heading: 'Formate de mentorat',
         description:
-          'Începem mic, apoi programăm o sesiune de lucru dacă are sens.',
-        durationLabel: 'pentru',
-        ctaLabel: 'Începe aici',
+          'Începem cu o scurtă discuție inițială, apoi definim formatul potrivit pentru provocarea ta.',
+        ctaLabel: 'Alege formatul',
         items: [
           {
-            name: 'Discuție introductivă',
+            name: 'Discuție inițială',
             slug: 'intro',
-            price: '0',
-            duration: '15 min',
+            investment: 'Fără cost',
+            duration: '20 de minute',
             description:
-              'O discuție scurtă pentru a înțelege obiectivele, proiectul și zona în care o sesiune ar fi cea mai utilă.',
+              'O discuție scurtă pentru a înțelege proiectul, decizia de luat și dacă sunt persoana potrivită pentru a te ajuta.',
             bullets: [
-              'Evaluare inițială gratuită',
-              'Clarificăm obiectivele',
-              'Alegem tema potrivită',
+              'Clarificăm rezultatul',
+              'Evaluăm potrivirea',
+              'Definim pasul următor',
             ],
           },
           {
-            name: 'Sesiune de lucru',
+            name: 'Sesiune privată de lucru',
             slug: 'session',
-            price: '49',
-            duration: '45 min',
+            investment: 'În funcție de scop',
+            duration: '60–90 de minute',
             description:
-              'O sesiune practică și personalizată, concentrată pe codul, fluxul de lucru sau obiectivul tău de învățare.',
+              'O sesiune individuală, pregătită în avans și concentrată pe o provocare tehnică sau de livrare concretă.',
             bullets: [
               'Agendă personalizată',
               'Analiză în direct',
-              'Pași concreți',
+              'Pași următori documentați',
             ],
           },
         ],
       },
       form: {
-        heading: 'Hai să rezolvăm blocajul',
+        heading: 'Vino cu o provocare reală',
         description:
-          'Spune-mi ce construiești sau ce vrei să înveți, iar eu îți propun următorul pas util.',
+          'Descrie contextul, decizia pe care trebuie să o iei și cum ar arăta un rezultat util.',
         name: 'mentorat',
         action: '/ro?contact=true',
         defaultType: 'intro',
         options: [
-          { value: 'intro', label: 'Discuție introductivă (15 min)' },
-          { value: 'session', label: 'Sesiune de lucru (45 min)' },
+          { value: 'intro', label: 'Discuție inițială (20 de minute)' },
+          { value: 'session', label: 'Sesiune privată de lucru' },
         ],
         infoLabel: 'Ce vrei să înveți sau să îmbunătățești?',
         labels: {
           name: 'Nume',
           email: 'Email',
-          type: 'Tip sesiune',
-          submit: 'Trimite',
+          type: 'Format de mentorat',
+          submit: 'Trimite solicitarea',
           honeypot: 'Nu completa acest câmp:',
         },
       },
@@ -382,117 +417,134 @@ export const servicePagesRo: Record<'instruction' | 'consulting', ServicePage> =
       seo: {
         title: 'Consultanță',
         description:
-          'Consultanță practică în securitate, protecția datelor, GRC, web, automatizări și produse digitale pentru fondatori și echipe mici.',
+          'Consultanță în securitate, protecția datelor, GRC, sisteme digitale și automatizare pentru organizații care au nevoie de decizii clare și livrare responsabilă.',
       },
       hero: {
         heading:
-          'Clarifică produsul web, practicile de protecție a datelor și sistemele digitale.',
+          'Transformă riscul de securitate, protecția datelor și livrare digitală într-un mandat executabil.',
         paragraph: [
-          'Ajut fondatorii și echipele mici să analizeze, să planifice și să îmbunătățească site-uri, pagini de prezentare, automatizări, fluxuri sensibile la securitate și protecția datelor, precum și idei de produs asistate de AI.',
-          'Abordarea este pragmatică: înțelegem riscul, simplificăm sistemul, îmbunătățim parcursul utilizatorului și clarificăm următorul pas de implementare.',
+          'Ajut liderii și echipele de livrare să evalueze riscurile, să clarifice prioritățile, să consolideze controalele și să structureze următoarea etapă a unui sistem digital sau a unei inițiative de transformare.',
+          'Colaborarea conectează guvernanța cu implementarea: constatări pregătite pentru decizie, responsabilități clare, controale proporționale și un plan pe care echipele îl pot executa și demonstra.',
         ],
       },
       overview: {
         heading:
-          'Un sistem digital de mici dimensiuni nu are nevoie de mai mult zgomot. Are nevoie de o hartă clară a riscurilor și de un plan bun de execuție.',
+          'O experiență digitală bine finisată nu este același lucru cu un sistem bine guvernat și rezilient.',
         paragraphs: [
-          'Un site poate părea finalizat, în timp ce formularele, analiza traficului, informările de confidențialitate, colectarea solicitărilor, automatizările și transferurile operaționale lucrează împotriva companiei.',
-          'Analizez atât componenta tehnică, cât și pe cea de afaceri: ce vede utilizatorul, ce date sunt colectate, cum este publicat sistemul, ce dovezi există și unde presupunerile privind securitatea sau protecția datelor pot fi fragile.',
-          'Rezultatul este un plan practic de îmbunătățire, pe care un fondator, o echipă internă sau un partener de implementare îl poate folosi imediat.',
+          'Riscul apare adesea între funcții: cerințele sunt vagi, dovezile sunt fragmentate, fluxurile de date nu sunt înțelese complet sau transferurile operaționale depind de presupuneri pe care nu și le asumă nimeni.',
+          'Analizez împreună dimensiunile de guvernanță, tehnică și comercială: ce trebuie să obțină sistemul, ce date gestionează, ce controale contează, cum funcționează livrarea și unde deciziile nu sunt susținute de dovezi.',
+          'Rezultatul este un mandat prioritizat, cu constatări trasabile, decizii explicite și un traseu realist de la evaluare la implementare.',
         ],
       },
       offerings: {
-        heading: 'Domenii de consultanță',
+        heading: 'Domenii de consultanță strategică',
         description:
-          'Potrivită pentru fondatori, companii de servicii și echipe care au nevoie de o execuție digitală clară.',
+          'Pentru lideri și echipe care au nevoie de claritate la intersecția dintre guvernanță, risc, livrare digitală și operațiuni.',
         items: [
           {
-            heading: 'Evaluare de securitate și protecția datelor',
+            heading: 'Securitate, protecția datelor și asigurarea controalelor',
             description:
-              'Identificăm punctele slabe din formulare, fluxuri de date, monitorizare, acces, dovezi și practici operaționale.',
+              'Evaluăm riscurile materiale, cerințele de control, calitatea dovezilor, gestionarea datelor și prioritățile de remediere.',
             bullets: [
-              'Evaluarea riscurilor',
-              'Experiențe care respectă viața privată',
-              'Fundamente GRC',
-              'Plan de acțiune',
+              'Evaluarea riscurilor și controalelor',
+              'Secure/privacy-by-design',
+              'Pregătire pentru audit',
+              'Remediere prioritizată',
             ],
           },
           {
-            heading: 'Sisteme web și atragerea clienților',
+            heading: 'Arhitectura sistemelor digitale și a conversiei',
             description:
-              'Îmbunătățim site-uri, pagini de prezentare, formulare, trasee de conversie și configurarea analizei traficului.',
+              'Aliniem parcursurile utilizatorilor, colectarea datelor, măsurarea, elementele de încredere și livrarea tehnică la obiectivele comerciale.',
             bullets: [
-              'Pagini de prezentare',
-              'Structură SEO',
-              'Colectarea solicitărilor',
-              'Configurarea monitorizării',
+              'Arhitectura parcursului',
+              'SEO și vizibilitate',
+              'Sisteme de conversie',
+              'Proiectarea măsurării',
             ],
           },
           {
-            heading: 'Automatizări și fluxuri asistate de AI',
+            heading: 'Automatizare și operațiuni asistate de AI',
             description:
-              'Proiectăm automatizări compacte și fluxuri asistate de AI care reduc munca manuală.',
+              'Proiectăm fluxuri de lucru responsabile și instrumente interne care reduc efortul manual fără a pierde controlul.',
             bullets: [
-              'Fluxuri de lucru pentru fondatori',
+              'Modelarea proceselor',
+              'Controale cu validare umană',
               'Instrumente interne',
-              'Idei local-first',
-              'Planificare MVP',
+              'Foaie de parcurs pentru implementare',
             ],
           },
         ],
       },
       packages: {
-        heading: 'Opțiuni de consultanță',
+        heading: 'Modele de colaborare',
         description:
-          'Începem cu o scurtă discuție de diagnostic sau cu o evaluare concentrată, dacă ai identificat deja domeniul.',
-        durationLabel: 'pentru',
-        ctaLabel: 'Începe aici',
+          'Scopul colaborării urmează riscul, decizia și rezultatul necesar, nu un pachet arbitrar de ore.',
+        ctaLabel: 'Discută acest format',
         items: [
           {
-            name: 'Discuție de diagnostic',
+            name: 'Discuție executivă de clarificare',
             slug: 'diagnostic',
-            price: '0',
-            duration: '15 min',
+            investment: 'Fără cost',
+            duration: '20 de minute',
             description:
-              'O discuție scurtă pentru a înțelege compania, sistemul și domeniul cu cel mai mare impact.',
+              'O discuție concentrată pentru a înțelege mandatul, riscul material, părțile implicate și termenul deciziei.',
             bullets: [
-              'Evaluare inițială gratuită',
-              'Identificăm riscul principal',
-              'Definim scopul',
+              'Evaluăm potrivirea',
+              'Clarificăm decizia',
+              'Definim un scop util',
             ],
           },
           {
-            name: 'Evaluare concentrată',
+            name: 'Sprint de consultanță',
             slug: 'review',
-            price: '99',
-            duration: '60 min',
+            investment: 'În funcție de scop',
+            duration: '1–2 săptămâni',
             description:
-              'O evaluare practică a unui site, flux de produs, proces automatizat sau aspect privind securitatea ori protecția datelor.',
+              'O evaluare cu durată definită, care transformă o problemă materială în constatări, decizii și un plan de acțiune prioritizat.',
             bullets: [
-              'Analiză structurată',
-              'Constatări prioritizate',
-              'Plan pentru pașii următori',
+              'Descoperire structurată',
+              'Constatări pregătite pentru decizie',
+              'Foaie de parcurs prioritizată',
+            ],
+          },
+          {
+            name: 'Parteneriat de consultanță continuă',
+            slug: 'partnership',
+            investment: 'Lunar',
+            duration: 'Minimum 3 luni',
+            description:
+              'Sprijin de consultanță integrat pentru lideri și echipe care gestionează recurent decizii de guvernanță, risc și livrare.',
+            bullets: [
+              'Sprijin periodic pentru decizii',
+              'Supravegherea controalelor și remedierii',
+              'Alinierea părților implicate',
             ],
           },
         ],
       },
       form: {
-        heading: 'Începem cu sistemul',
+        heading: 'Începem cu mandatul',
         description:
-          'Spune-mi ce vrei să analizăm și ce rezultat ar face colaborarea utilă.',
+          'Descrie decizia, riscul sau constrângerea de livrare și ce trebuie să fie diferit la finalul colaborării.',
         name: 'consultanta',
         action: '/ro?contact=true',
         defaultType: 'diagnostic',
         options: [
-          { value: 'diagnostic', label: 'Discuție de diagnostic (15 min)' },
-          { value: 'review', label: 'Evaluare concentrată (60 min)' },
+          { value: 'diagnostic', label: 'Discuție executivă de clarificare' },
+          { value: 'review', label: 'Sprint de consultanță' },
+          {
+            value: 'partnership',
+            label: 'Parteneriat de consultanță continuă',
+          },
         ],
-        infoLabel: 'Ce ar trebui să analizăm sau să îmbunătățim?',
+        infoLabel:
+          'Ce decizie, risc sau rezultat trebuie să abordeze colaborarea?',
         labels: {
           name: 'Nume',
           email: 'Email',
-          type: 'Tip sesiune',
-          submit: 'Trimite',
+          type: 'Model de colaborare',
+          submit: 'Trimite solicitarea',
           honeypot: 'Nu completa acest câmp:',
         },
       },

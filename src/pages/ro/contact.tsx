@@ -7,15 +7,15 @@ import Image from 'next/image'
 const seo = {
   title: 'Contact',
   description:
-    'Contactează-l pe Ionuț Francisc pentru securitate, protecția datelor, web, automatizări și produse asistate de AI.',
+    'Contactează-l pe Ionuț Francisc pentru un mandat de securitate, protecția datelor, GRC, sisteme digitale sau consultanță.',
 }
 
 const heroProps = {
   eyebrow: 'București, România · colaborare preponderent la distanță',
-  heading: 'Hai să vorbim despre ce vrei să construiești sau să îmbunătățești.',
+  heading: 'Hai să clarificăm mandatul și rezultatul care contează.',
   paragraph: [
-    'Folosește formularul pentru consultanță, proiecte web, experimente de produs, mentorat sau colaborări practice.',
-    'Un prim mesaj util include obiectivul, starea actuală, calendarul estimat și orice link pe care ar trebui să-l verific.',
+    'Folosește formularul pentru un mandat de consultanță, un rol în securitate sau protecția datelor, un proiect de sisteme digitale ori o colaborare tehnică bine definită.',
+    'Un mesaj inițial valoros include decizia sau rezultatul necesar, constrângerile actuale, părțile implicate, calendarul estimat și orice material pe care ar trebui să-l analizez.',
   ],
 }
 
@@ -31,7 +31,7 @@ export default function ContactRo() {
           labels={{
             name: 'Nume',
             email: 'Email',
-            message: 'La ce ar trebui să lucrăm?',
+            message: 'Ce mandat sau rezultat trebuie să abordăm?',
             submit: 'Trimite mesaj',
             honeypot: 'Nu completa acest câmp:',
             privacy:

@@ -83,9 +83,7 @@ test('public profiles are visible and no direct email address is exposed', async
   await page.goto('/contact/')
 
   await expect(
-    page.locator(
-      'a[href="https://www.linkedin.com/in/ionut-iulian-francisc"]'
-    )
+    page.locator('a[href="https://www.linkedin.com/in/ionut-iulian-francisc"]')
   ).toHaveCount(3)
   await expect(page.locator('a[href="https://github.com/joahn3"]')).toHaveCount(
     2
@@ -128,9 +126,39 @@ test('work attribution separates ownership from launch contributions', async ({
 }) => {
   await page.goto('/work/')
 
-  await expect(page.getByText('Founder & owner · Strategic partnership with Earthlink / SolarLink')).toBeVisible()
-  await expect(page.getByText('Launch contributor · Earthlink partner ecosystem')).toBeVisible()
-  await expect(page.getByText('Launch contributor · Earthlink venture')).toBeVisible()
+  await expect(
+    page.getByText(
+      'Founder & Owner · Strategic partnership with Earthlink / SolarLink'
+    )
+  ).toBeVisible()
+  await expect(
+    page.getByText('Launch contributor · Earthlink partner ecosystem')
+  ).toBeVisible()
+  await expect(
+    page.getByText('Launch contributor · Earthlink venture')
+  ).toBeVisible()
   await expect(page.locator('a[href="https://solarlink.ro"]')).toHaveCount(3)
   await expect(page.locator('a[href="https://www.tsty.ro"]')).toHaveCount(3)
+})
+
+test('homepage capabilities are compact and consulting uses premium engagement models', async ({
+  page,
+}) => {
+  await page.goto('/')
+  const capabilities = page.getByTestId('capability-overview')
+  await expect(capabilities.locator('article')).toHaveCount(3)
+  await expect(capabilities.locator('img')).toHaveCount(0)
+
+  await page.goto('/consulting/')
+  const engagementModels = page.locator('#packages')
+  await expect(
+    engagementModels.getByText('Executive Scoping Conversation')
+  ).toBeVisible()
+  await expect(
+    engagementModels.getByText('Advisory Sprint', { exact: true })
+  ).toBeVisible()
+  await expect(
+    engagementModels.getByText('Ongoing Advisory Partnership')
+  ).toBeVisible()
+  await expect(page.getByText('$99')).toHaveCount(0)
 })

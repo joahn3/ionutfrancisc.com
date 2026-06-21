@@ -1,7 +1,5 @@
 import {
-  AcademicCapIcon,
   CogIcon,
-  LightningBoltIcon,
   ShieldCheckIcon,
   TemplateIcon,
   TerminalIcon,
@@ -9,115 +7,115 @@ import {
 
 export const skillsEn = [
   {
-    name: 'Security & Privacy',
+    name: 'Security, Privacy & GRC Advisory',
     description:
-      'Practical GRC, secure-by-design, audit readiness, forms, data flows, tracking, access, and privacy-aware product reviews.',
+      'Risk, governance, secure-by-design, privacy-by-design, and control reviews translated into prioritized decisions and accountable actions.',
     icon: <ShieldCheckIcon />,
     color: 'text-emerald-700',
     link: '/consulting',
-    linkText: 'Plan a Review',
+    linkText: 'Discuss an Advisory Mandate',
   },
   {
-    name: 'Web Products',
+    name: 'Control Assurance',
     description:
-      'Fast, clean websites, landing pages, MVPs, and lead-generation systems for real businesses.',
-    icon: <TerminalIcon />,
+      'Audit readiness, evidence quality, control interpretation, remediation tracking, and decision-ready documentation.',
+    icon: <ShieldCheckIcon />,
     color: 'text-indigo-600',
-    link: '/work',
-    linkText: 'View Work',
+    link: '/security-privacy',
+    linkText: 'View Security Profile',
   },
   {
-    name: 'Automation',
+    name: 'Incident Governance',
     description:
-      'Small operational systems, AI-assisted workflows, and handoffs that reduce manual work for founders and teams.',
+      'Structured intake, stakeholder coordination, action ownership, closure criteria, and lessons learned across technical teams.',
     icon: <CogIcon />,
     color: 'text-sky-700',
     link: '/consulting',
-    linkText: 'Improve Systems',
+    linkText: 'Explore Experience',
   },
   {
-    name: 'Education Tools',
-    icon: <AcademicCapIcon />,
+    name: 'Digital Systems & Automation',
+    icon: <CogIcon />,
     description:
-      'Child-friendly tools, routines, typing practice, progress systems, and parent-facing learning flows.',
+      'Operational workflows, internal tools, and AI-assisted systems designed to reduce friction and improve traceability.',
     color: 'text-amber-700',
-    link: '/work',
-    linkText: 'Explore Projects',
+    link: '/consulting',
+    linkText: 'Improve a System',
   },
   {
-    name: 'AI-assisted Development',
+    name: 'Web Products & Conversion',
     description:
-      'Using AI as a disciplined development partner for research, refactoring, testing, and product iteration.',
-    icon: <LightningBoltIcon />,
+      'High-trust websites, digital services, SEO, analytics, and conversion paths built around measurable business goals.',
+    icon: <TerminalIcon />,
     color: 'text-violet-600',
-    link: '/instruction',
-    linkText: 'Learn the Workflow',
+    link: '/work',
+    linkText: 'View Selected Work',
   },
   {
-    name: 'Implementation',
+    name: 'Technical Delivery',
     description:
-      'SEO structure, analytics, deployment, WordPress, React, Next.js, Netlify, Vercel, and GitHub workflows.',
+      'Hands-on implementation across modern web platforms, Linux, deployment, automation, and maintainable delivery workflows.',
     icon: <TemplateIcon />,
     color: 'text-rose-600',
     link: '/contact',
-    linkText: 'Start a Project',
+    linkText: 'Discuss an Engagement',
   },
 ]
 
 export const skillsRo = [
   {
-    name: 'Securitate și protecția datelor',
+    name: 'Consultanță în securitate, protecția datelor și GRC',
     description:
-      'Evaluări practice pentru GRC, secure-by-design, pregătire pentru audit, formulare, fluxuri de date, monitorizare, acces și decizii de produs care respectă viața privată.',
+      'Risc, guvernanță și evaluări secure-by-design și privacy-by-design, transformate în decizii prioritizate și acțiuni cu responsabilități clare.',
     icon: <ShieldCheckIcon />,
     color: 'text-emerald-700',
     link: '/ro/consultanta',
-    linkText: 'Planifică o evaluare',
+    linkText: 'Discută un mandat de consultanță',
   },
   {
-    name: 'Produse web',
+    name: 'Asigurarea controalelor',
     description:
-      'Site-uri rapide, pagini de prezentare, produse minime viabile și sisteme de atragere a clienților, construite pentru companii reale.',
-    icon: <TerminalIcon />,
+      'Pregătire pentru audit, calitatea dovezilor, interpretarea controalelor, urmărirea remedierii și documentație pentru decizii.',
+    icon: <ShieldCheckIcon />,
     color: 'text-indigo-600',
-    link: '/ro/work',
-    linkText: 'Vezi proiectele',
+    link: '/ro/securitate-confidentialitate',
+    linkText: 'Vezi profilul de securitate',
   },
   {
-    name: 'Automatizări',
+    name: 'Guvernanța incidentelor',
     description:
-      'Sisteme operaționale compacte, fluxuri de lucru asistate de AI și transferuri clare între etape, care reduc munca manuală pentru fondatori și echipe.',
+      'Înregistrare structurată, coordonarea părților implicate, responsabilitatea acțiunilor, criterii de închidere și lecții învățate.',
     icon: <CogIcon />,
     color: 'text-sky-700',
     link: '/ro/consultanta',
-    linkText: 'Îmbunătățește sistemele',
+    linkText: 'Explorează experiența',
   },
   {
-    name: 'Educație',
-    icon: <AcademicCapIcon />,
+    name: 'Sisteme digitale și automatizare',
+    icon: <CogIcon />,
     description:
-      'Instrumente pentru copii, rutine, tastare, progres, jocuri educaționale și fluxuri utile pentru părinți.',
+      'Fluxuri operaționale, instrumente interne și sisteme asistate de AI, proiectate pentru mai puțină fricțiune și trasabilitate mai bună.',
     color: 'text-amber-700',
-    link: '/ro/work',
-    linkText: 'Explorează proiectele',
+    link: '/ro/consultanta',
+    linkText: 'Îmbunătățește un sistem',
   },
   {
-    name: 'Dezvoltare asistată de AI',
+    name: 'Produse web și conversie',
     description:
-      'Folosirea disciplinată a inteligenței artificiale pentru documentare, refactorizare, testare și îmbunătățirea iterativă a produselor.',
-    icon: <LightningBoltIcon />,
+      'Site-uri de încredere, servicii digitale, SEO, analizarea traficului și parcursuri de conversie construite în jurul obiectivelor comerciale.',
+    icon: <TerminalIcon />,
     color: 'text-violet-600',
-    link: '/ro/mentorat',
-    linkText: 'Învață fluxul de lucru',
+    link: '/ro/work',
+    linkText: 'Vezi proiectele selectate',
   },
   {
-    name: 'Implementare',
+    name: 'Livrare tehnică',
     description:
-      'Structură SEO, analizarea traficului, publicare, WordPress, React, Next.js, Netlify, Vercel și fluxuri de lucru în GitHub.',
+      'Implementare practică pe platforme web moderne, Linux, publicare, automatizare și fluxuri de livrare ușor de întreținut.',
     icon: <TemplateIcon />,
     color: 'text-rose-600',
     link: '/ro/contact',
-    linkText: 'Pornește un proiect',
+    linkText: 'Discută o colaborare',
   },
 ]
 

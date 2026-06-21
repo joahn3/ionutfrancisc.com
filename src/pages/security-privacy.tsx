@@ -18,10 +18,10 @@ const seo = {
 const heroProps = {
   eyebrow: 'For recruiters and security leaders',
   heading:
-    'Security, privacy, and governance experience for complex, regulated environments.',
+    'Security, privacy, and GRC experience that connects governance with delivery.',
   paragraph: [
-    'I bring more than 10 years of experience across security risk, privacy-by-design, secure-by-design reviews, control evidence, incident governance, PKI, and HSM contexts.',
-    'My hands-on experience building systems and companies helps me connect governance requirements with what delivery teams can implement and demonstrate in practice.',
+    'More than 10 years across security risk, privacy-by-design, secure-by-design reviews, control assurance, incident governance, PKI, and HSM-related delivery in complex environments.',
+    'I translate governance expectations into proportionate controls, defensible evidence, clear ownership, and actions that technical teams can implement.',
   ],
   actions: [
     { href: profile.resume.href, label: 'Open CV' },
@@ -36,21 +36,21 @@ export default function SecurityPrivacy() {
       <RecruiterOverview />
       <Credentials
         heading="Evidence behind the profile"
-        subheading="Selected areas where governance, delivery, controls, and technical context meet."
+        subheading="Selected experience and credentials across governance, controls, regulated delivery, and technical operations."
         items={credentialHighlights}
         linkLabel="View Credly profile"
       />
       <Journey
-        heading="A career built across operations, consulting, and ownership"
-        subheading="The common thread is regulated work, operational accountability, and practical system thinking."
+        heading="A career spanning operations, consulting, and ownership"
+        subheading="The common thread is accountability: understand the system, make the risk explicit, align the people involved, and follow through."
         items={journey}
       />
       <Resume />
       <ContactCTA
-        heading="Looking for security, privacy, or GRC experience with implementation context?"
-        paragraph="Use the contact form for a role, project, or focused conversation. A useful message includes the role, team context, work model, and expected timeline."
+        heading="Need security, privacy, or GRC expertise grounded in delivery?"
+        paragraph="For a role or advisory mandate, share the decision context, team, work model, expected outcomes, and timeline. I will respond with a clear view of fit and next steps."
         linkHref="/contact"
-        linkText="Start a conversation"
+        linkText="Discuss the mandate"
       />
     </Page>
   )
