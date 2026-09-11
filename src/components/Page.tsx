@@ -46,7 +46,7 @@ export default function Page(props: Props) {
     name: profile.name,
     url: profile.siteUrl,
     image: `${profile.siteUrl}/assets/profile-ionut-francisc.webp`,
-    jobTitle: 'Security & Privacy (GRC) Consultant',
+    jobTitle: 'Senior Cybersecurity GRC & Privacy Consultant',
     sameAs: [
       profile.github,
       profile.linkedin,
