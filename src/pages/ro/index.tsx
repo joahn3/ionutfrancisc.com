@@ -16,17 +16,16 @@ import Resume from 'sections/Resume'
 const seo = {
   title: 'Ionuț Francisc',
   description:
-    'Consultanță în securitate, protecția datelor și GRC, cu experiență în medii reglementate, control assurance și implementarea sistemelor digitale.',
+    'Senior Cybersecurity GRC & Privacy Consultant cu peste 10 ani de experiență în security assurance, risc și controale, pregătire pentru audit, guvernanța incidentelor și Security & Privacy by Design.',
 }
 
 const heroProps = {
-  eyebrow:
-    'Consultant în securitate, protecția datelor și GRC · Guvernanță · Risc · Sisteme digitale sigure',
+  eyebrow: 'Senior Cybersecurity GRC & Privacy Consultant',
   heading:
-    'Transform cerințele de securitate, protecția datelor și guvernanță în livrare practică.',
+    'Conectez guvernanța de securitate cu sistemele pe care echipele trebuie să le construiască, opereze și demonstreze.',
   paragraph: [
-    'Ajut organizațiile să clarifice riscurile, să consolideze controalele, să pregătească dovezi solide și să avanseze proiecte complexe în medii reglementate.',
-    'Peste 10 ani în IBM Consulting, completați de experiența de fondator și de livrare tehnică, mă ajută să conectez cerințele de guvernanță cu sisteme pe care echipele le pot opera, îmbunătăți și demonstra.',
+    'Ajut organizațiile să transforme cerințele de securitate și protecția datelor în controale practice, dovezi solide și decizii de livrare în medii reglementate.',
+    'Activitatea mea acoperă Security Assurance, Risk & Controls, Audit Readiness, Incident Governance și Security & Privacy by Design, cu profunzime tehnică în PKI, X.509, HSM, TLS, Cloud/AI Security și Secure Architecture.',
   ],
   image: '/assets/profile-ionut-francisc.webp',
   imageAlt: `${profile.name} portret`,
@@ -49,12 +48,12 @@ const aboutContentRo = [
     subheading:
       'Mandate în care sunt esențiale controalele clare, judecata profesională și urmărirea consecventă a acțiunilor.',
     items: [
-      'Guvernanța securității, protecția datelor, GRC și risc',
-      'Evaluări secure-by-design și privacy-by-design',
-      'Asigurarea controalelor și pregătirea pentru audit',
-      'Guvernanța incidentelor și remediere',
+      'Security Assurance',
+      'Risk & Controls',
+      'Audit Readiness',
+      'Incident Governance',
+      'Security & Privacy by Design',
       'PKI, ciclul de viață al certificatelor și HSM',
-      'Livrare reglementată și colaborare interdisciplinară',
     ],
   },
   {
