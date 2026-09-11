@@ -81,4 +81,6 @@ This keeps the site easy to update without editing page markup for every content
 
 ## Original Credit
 
-This site started as a fork of [mattwaler/mattwaler.com](https://github.com/mattwaler/mattwaler.com) and has since been refactored around the current Ionuț Francisc profile and portfolio.
+This site started as a fork of [mattwaler/mattwaler.com](https://github.com/mattwaler/mattwaler.com) and has since been substantially refactored around the current Ionuț Francisc profile and portfolio.
+
+The original upstream copyright and MIT permission notice are preserved in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md).
