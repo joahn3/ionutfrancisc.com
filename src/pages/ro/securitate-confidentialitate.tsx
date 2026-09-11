@@ -12,16 +12,16 @@ import Resume from 'sections/Resume'
 const seo = {
   title: 'Securitate și protecția datelor',
   description:
-    'Experiența lui Ionuț Francisc în securitate, protecția datelor, GRC, risc, controale, guvernanța incidentelor, PKI și contexte reglementate.',
+    'Ionuț Francisc este Senior Cybersecurity GRC & Privacy Consultant, cu experiență în Security Assurance, Risk & Controls, Audit Readiness, Incident Governance, Security & Privacy by Design, PKI și livrare în medii reglementate.',
 }
 
 const heroProps = {
-  eyebrow: 'Pentru recrutori și lideri din securitate',
+  eyebrow: 'Senior Cybersecurity GRC & Privacy Consultant',
   heading:
-    'Experiență în securitate, protecția datelor și GRC care conectează guvernanța cu livrarea.',
+    'Guvernanță de securitate susținută de assurance, dovezi și profunzime tehnică.',
   paragraph: [
-    'Am peste 10 ani de experiență în riscuri de securitate, evaluări privacy-by-design și secure-by-design, asigurarea controalelor, guvernanța incidentelor, PKI și livrare asociată HSM în medii complexe.',
-    'Transform așteptările de guvernanță în controale proporționale, dovezi solide, responsabilități clare și acțiuni pe care echipele tehnice le pot implementa.',
+    'Am peste 10 ani de experiență în Security Assurance, Risk & Controls, Audit Readiness, Incident Governance și Security & Privacy by Design în medii complexe și reglementate.',
+    'Profunzimea tehnică în PKI, X.509, HSM, TLS, Cloud/AI Security și Secure Architecture mă ajută să conectez cerințele de guvernanță cu sisteme pe care echipele le pot implementa, opera, demonstra și îmbunătăți.',
   ],
   actions: [
     { href: profile.resume.href, label: 'Deschide CV' },
