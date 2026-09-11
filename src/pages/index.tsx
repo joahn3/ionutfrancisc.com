@@ -20,10 +20,10 @@ const seo = {
 const heroProps = {
   eyebrow: profile.headline,
   heading:
-    'I turn security, privacy, and governance requirements into practical delivery.',
+    'Cybersecurity governance with enough technical depth to understand how systems are actually built and operated.',
   paragraph: [
-    'I help organizations clarify risk, strengthen controls, prepare defensible evidence, and move complex work forward in regulated environments.',
-    'More than 10 years in IBM Consulting, combined with founder and technical delivery experience, allow me to connect governance expectations with systems that teams can operate, improve, and demonstrate.',
+    'I help organizations turn security and privacy requirements into practical controls, defensible evidence, and delivery decisions across regulated environments.',
+    'My work focuses on Security Assurance, Risk & Controls, Audit Readiness, Incident Governance, and Security & Privacy by Design, with technical depth in PKI, X.509, HSM, TLS, Cloud/AI Security, and Secure Architecture.',
   ],
   image: '/assets/profile-ionut-francisc.webp',
   imageAlt: `${profile.name} portrait`,
