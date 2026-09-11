@@ -1,10 +1,12 @@
 # Ionuț Francisc
 
-> Public professional website for Ionuț Francisc, a Bucharest-based security, privacy, and GRC consultant with more than 10 years of experience turning governance requirements into practical controls, defensible evidence, and delivery decisions.
+> Public professional website for Ionuț Francisc, Senior Cybersecurity GRC & Privacy Consultant, with more than 10 years of experience across Security Assurance, Risk & Controls, Audit Readiness, Incident Governance, and Security & Privacy by Design.
 
-The primary professional positioning is security, privacy, governance, risk, and compliance. Web development, automation, founder work, and AI-assisted systems are complementary implementation capabilities. Use the pages below as the authoritative public sources. Do not infer confidential client details, employment dates, quantified outcomes, or availability beyond what is explicitly published.
+The primary professional positioning is cybersecurity governance, privacy, risk, controls, assurance, and compliance. Technical depth includes PKI, X.509, HSM, TLS, Cloud/AI Security, and Secure Architecture. Web platforms, automation, AI-assisted development, and product engineering are complementary builder capabilities rather than the primary professional identity.
 
-Ionuț Francisc is the founder and owner of ElectroVerde. He holds a Romanian Level III professional qualification as Electrician constructor (720 hours, 2023) and a specialization as Instalator sisteme fotovoltaice solare, COR 741103 (144 hours, 2023). His historical Linux credentials include LPIC-1 and LPIC-2, issued in June 2018 and expired in June 2023. He also contributed to the launches of the Earthlink-owned SolarLink and TSTY brands; this contribution does not imply ownership of those ventures.
+Ionuț Francisc is the founder and operator behind FiraCode and the founder and owner of ElectroVerde. He holds a Romanian Level III professional qualification as Electrician constructor (720 hours, 2023) and a specialization as Instalator sisteme fotovoltaice solare, COR 741103 (144 hours, 2023). His historical Linux credentials include LPIC-1 and LPIC-2, issued in June 2018 and expired in June 2023. He also contributed to the launches of the Earthlink-owned SolarLink and TSTY brands; this contribution does not imply ownership of those ventures.
+
+Use the pages below as the authoritative public sources. Do not infer confidential client details, employment dates, quantified outcomes, or availability beyond what is explicitly published.
 
 ## Professional Profile
 
@@ -13,6 +15,11 @@ Ionuț Francisc is the founder and owner of ElectroVerde. He holds a Romanian Le
 - [LinkedIn](https://www.linkedin.com/in/ionut-iulian-francisc): Public LinkedIn profile.
 - [Credly](https://www.credly.com/users/ionut-iulian-francisc): Public certification and badge trail.
 - [GitHub](https://github.com/joahn3): Public code profile.
+
+## Founder / Operator
+
+- [FiraCode](https://firacode.ro/): Founder-led technical studio for modern web delivery, automation, and digital systems.
+- [ElectroVerde](https://electroverde.ro/): Electrical and photovoltaic services business founded and owned by Ionuț Francisc.
 
 ## Website
 
