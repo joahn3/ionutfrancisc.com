@@ -12,16 +12,16 @@ import Resume from 'sections/Resume'
 const seo = {
   title: 'Security & Privacy',
   description:
-    'An overview of Ionuț Francisc’s experience in security, privacy, GRC, risk, controls, incident governance, PKI, and regulated delivery.',
+    'Ionuț Francisc is a Senior Cybersecurity GRC & Privacy Consultant focused on Security Assurance, Risk & Controls, Audit Readiness, Incident Governance, Security & Privacy by Design, PKI, and regulated delivery.',
 }
 
 const heroProps = {
-  eyebrow: 'For recruiters and security leaders',
+  eyebrow: profile.headline,
   heading:
-    'Security, privacy, and GRC experience that connects governance with delivery.',
+    'Cybersecurity governance grounded in assurance, evidence, and technical delivery.',
   paragraph: [
-    'More than 10 years across security risk, privacy-by-design, secure-by-design reviews, control assurance, incident governance, PKI, and HSM-related delivery in complex environments.',
-    'I translate governance expectations into proportionate controls, defensible evidence, clear ownership, and actions that technical teams can implement.',
+    'More than 10 years across Security Assurance, Risk & Controls, Audit Readiness, Incident Governance, and Security & Privacy by Design in complex and regulated environments.',
+    'Technical depth in PKI, X.509, HSM, TLS, Cloud/AI Security, and Secure Architecture helps me connect governance expectations with systems teams can implement, operate, evidence, and improve.',
   ],
   actions: [
     { href: profile.resume.href, label: 'Open CV' },
