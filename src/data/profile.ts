@@ -12,22 +12,22 @@ export const profile = {
     href: '/cv/ionut-francisc-cv-en.pdf',
     updated: 'June 2026',
   },
-  headline:
-    'Security, Privacy & GRC Consultant · Governance · Risk · Secure Digital Systems',
+  headline: 'Senior Cybersecurity GRC & Privacy Consultant',
   description:
-    'Security, privacy, and GRC consultant with more than 10 years of experience turning governance requirements into practical controls, defensible evidence, and delivery decisions.',
+    'Senior Cybersecurity GRC & Privacy Consultant with more than 10 years of experience across security assurance, risk and controls, audit readiness, incident governance, and Security & Privacy by Design.',
   focusAreas: [
-    'Security governance, privacy, GRC, and risk',
-    'Secure-by-design and privacy-by-design reviews',
-    'Control assurance and audit readiness',
-    'Incident governance and remediation',
+    'Security Assurance',
+    'Risk & Controls',
+    'Audit Readiness',
+    'Incident Governance',
+    'Security & Privacy by Design',
     'PKI, certificate lifecycle, and HSM',
-    'Regulated and cross-functional delivery',
   ],
   stack: [
     'GRC · DPIA/PIA · SPbD',
     'CSIRT · BISO · incident governance',
-    'PKI · HSM · Zero Trust · DORA',
+    'PKI · X.509 · HSM · TLS',
+    'Cloud/AI Security · Secure Architecture',
     'Linux and infrastructure operations',
     'TypeScript · React · Next.js · Node.js',
     'WordPress · Netlify · Vercel · GitHub',
@@ -45,12 +45,12 @@ export const profile = {
       href: 'https://www.linkedin.com/in/ionut-iulian-francisc',
     },
     {
-      label: 'ElectroVerde',
-      href: 'https://electroverde.ro',
+      label: 'FiraCode',
+      href: 'https://firacode.ro',
     },
     {
-      label: 'FiraWeb',
-      href: 'https://firaweb.ro',
+      label: 'ElectroVerde',
+      href: 'https://electroverde.ro',
     },
     {
       label: 'Credly',
