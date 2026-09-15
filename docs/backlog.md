@@ -44,3 +44,23 @@ This file tracks content and professional-profile work that is intentionally pla
 ### Definition of done
 
 All six posts are drafted, reviewed, approved and published at roughly weekly intervals, with their URLs recorded and the next content cycle decided from actual feedback rather than posting volume alone.
+
+## Personal email consolidation into Gmail
+
+**Status:** Planned  
+**Priority:** High  
+**Goal:** Consolidate personal email visibility into the connected Gmail account so ChatGPT can monitor personal mail through the Gmail connector.
+
+### Migration backlog
+
+- [ ] Migrate or import relevant historical mail from **ionut.francisc@icloud.com** into Gmail.
+- [ ] Configure automatic forwarding of new mail from **ionut.francisc@icloud.com** to **iif.ionut@gmail.com**.
+- [ ] Migrate or import relevant historical mail from **ionut.francisc@yahoo.com** into Gmail.
+- [ ] Configure automatic forwarding of new mail from **ionut.francisc@yahoo.com** to **iif.ionut@gmail.com**.
+- [ ] Decide whether to configure Gmail **Send mail as** for the iCloud and Yahoo addresses so replies can preserve the original identity when needed.
+- [ ] Validate that forwarded/imported mail is searchable and visible through the connected Gmail account in ChatGPT.
+- [ ] After validation, document any filters/labels needed to distinguish **iCloud**, **Yahoo**, and native **iif.ionut@gmail.com** mail.
+
+### Definition of done
+
+New personal mail arriving at the iCloud and Yahoo addresses is visible in the connected Gmail account, relevant historical mail is available where useful, origin can be distinguished reliably, and ChatGPT can include all three personal mail streams in Gmail hygiene and monitoring workflows.
