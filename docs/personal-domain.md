@@ -127,8 +127,14 @@ explicitly selected because this Mac still cached an old/failed DNS answer.
 The published artefact was also rendered in a browser on the provider alias.
 Do not describe this as universal DNS propagation or new-host browser acceptance.
 
-Open gates: ordinary hostname resolution on affected cached clients; the
-explicitly approved synthetic form submission and actual notification receipt;
+One explicitly approved synthetic contact submission was sent once to the
+new hostname, stored by Netlify, and its notification was independently found
+in the intended Gmail Inbox by its unique marker. Name/email/message/consent
+matched. No second submission or notification-route change was made. The test
+used a current explicit DNS answer with normal TLS; the new-host browser submit
+is not claimed verified on the Mac while its resolver cache is stale.
+
+Open gates: ordinary hostname resolution on affected cached clients; personal
 alias incoming delivery; owner login for editing LinkedIn. Existing form
 notification configuration is unchanged. The task handoff contains private
 operational details and the exact approval/verification state.
