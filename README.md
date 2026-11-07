@@ -13,8 +13,10 @@ under `/ro` for all primary pages.
 The selected personal and family domain is `francisc.pro`, with the website
 target `https://ionut.francisc.pro/` and personal email `ionut@francisc.pro`.
 See [the domain decision, uses and migration checklist](docs/personal-domain.md).
-DNS/HTTPS and incoming email acceptance are pending; this target is not yet a
-verified replacement for the existing public Netlify URL.
+The website migration is in Production at `df14b7b`, including SEO URLs,
+host redirects and the public CV website string. Netlify HTTPS is issued and
+Cloudflare incoming routing is configured; some DNS caches and actual inbox
+delivery checks remain open. See the dated verification state in the plan.
 
 ## Stack
 

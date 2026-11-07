@@ -67,6 +67,7 @@ New personal mail arriving at the iCloud and Yahoo addresses is visible in the c
 
 ## Personal domain migration and future acquisition
 
-- [ ] Complete migration to `https://ionut.francisc.pro/`: source reconciliation, SEO, host redirects, CV PDF, DNS/HTTPS and form validation.
+- [x] Publish migration to `https://ionut.francisc.pro/`: source reconciliation, SEO, host redirects and CV PDF (`df14b7b`); local form contracts and hosted HTTPS/metadata verified.
+- [ ] Confirm ordinary DNS resolution on clients with stale caches and complete the approved synthetic form storage/email test.
 - [ ] After live acceptance, update the website contact URL on LinkedIn and the active identity contract surface.
 - [ ] Evaluate a future purchase of `francisc.net` for the personal/family domain portfolio. This is an option requested for the backlog, not a purchase authorization, reservation, availability check or accepted price. Check availability, first-year and renewal costs, ownership and intended redirect/canonical role at decision time. Keep `francisc.pro` as the current migration target.

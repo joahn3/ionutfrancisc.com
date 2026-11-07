@@ -31,7 +31,7 @@ Priorities: finish website and incoming email; prepare the RO/EN CV/portfolio;
 then align the website address in CV, LinkedIn, GitHub and email signatures.
 These ideas do not authorize automatic provisioning, public exposure or spending.
 
-## Verified state on 2026-11-07
+## Initial provisioning snapshot on 2026-11-07 (historical; superseded below)
 
 - `francisc.pro` is registered in Vercel team `firacode--projects`; auto-renew
   was observed OFF. The user selected the free first-year Pro benefit. Renewal
@@ -101,3 +101,37 @@ Cloudflare delegation and Email Routing alias are now configured. Netlify has
 an issued certificate for the new hostname. DNS caches may still hold earlier
 answers. Notification destination for the existing site forms is unchanged;
 configured routing or form registration does not prove actual inbox delivery.
+
+## Published release and remaining gates — 2026-11-07
+
+GitHub main application commit `df14b7be911df246c0aff9ccd8d8f7ae4288f893` is
+Netlify Production deployment `6aeea227c6b7d8c21f18706a`, published
+2026-11-07 04:00:04 UTC. The provider build took 28 seconds; the local build
+took 6.536 seconds. The previous Production deployment
+`6aa98f9d3cafe000083e8d71` remains the rollback target.
+
+Verification: 14 RO/EN routes with correct canonical, alternate and Open Graph
+URLs; robots, sitemap index, sitemap contents and llms.txt; two old-host 301
+samples including preserved path/query; hosted PDF SHA-256 matching the reviewed
+local artefact. The PDF text differs only in its website address, and both pages
+were visually reviewed. Local checks also covered six form contracts and reflow
+at 320/375/768/1024/1440 CSS pixels on the RO contact page.
+
+Cloudflare delegation is verified at the .pro parent; the personal alias is
+Active and mail MX/SPF are present. Netlify certificate is issued. The old
+Vercel zone temporarily also has the ionut CNAME to Netlify with TTL 60, for
+cached old delegations. Existing records were not removed.
+
+HTTPS checks used normal certificate validation with the current Netlify IP
+explicitly selected because this Mac still cached an old/failed DNS answer.
+The published artefact was also rendered in a browser on the provider alias.
+Do not describe this as universal DNS propagation or new-host browser acceptance.
+
+Open gates: ordinary hostname resolution on affected cached clients; the
+explicitly approved synthetic form submission and actual notification receipt;
+alias incoming delivery; owner login for editing LinkedIn. Existing form
+notification configuration is unchanged. The task handoff contains private
+operational details and the exact approval/verification state.
+
+A subsequent documentation-only commit uses Netlify's documented
+`[skip netlify]` marker to avoid rebuilding unchanged application inputs.
