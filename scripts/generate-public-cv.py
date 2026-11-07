@@ -63,7 +63,7 @@ def draw_page(canvas, doc):
         canvas.drawCentredString(
             width / 2,
             height - 37 * mm,
-            "linkedin.com/in/ionut-iulian-francisc | github.com/joahn3 | ionut-francisc.netlify.app",
+            "linkedin.com/in/ionut-iulian-francisc | github.com/joahn3 | ionut.francisc.pro",
         )
 
     canvas.setStrokeColor(LINE)

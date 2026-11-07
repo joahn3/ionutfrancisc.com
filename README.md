@@ -8,6 +8,14 @@ automation, and founder-led projects. It includes recruiter-focused pages at
 `/security-privacy` and `/ro/securitate-confidentialitate`, plus Romanian routes
 under `/ro` for all primary pages.
 
+## Personal domain
+
+The selected personal and family domain is `francisc.pro`, with the website
+target `https://ionut.francisc.pro/` and personal email `ionut@francisc.pro`.
+See [the domain decision, uses and migration checklist](docs/personal-domain.md).
+DNS/HTTPS and incoming email acceptance are pending; this target is not yet a
+verified replacement for the existing public Netlify URL.
+
 ## Stack
 
 - Next.js 16

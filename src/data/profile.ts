@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Ionuț Francisc',
   siteName: 'Ionuț Francisc',
-  siteUrl: 'https://ionut-francisc.netlify.app',
+  siteUrl: 'https://ionut.francisc.pro',
   location: 'Bucharest, Romania',
   phone: '+40725969006',
   github: 'https://github.com/joahn3',

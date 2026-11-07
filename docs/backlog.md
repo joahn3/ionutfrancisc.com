@@ -64,3 +64,9 @@ All six posts are drafted, reviewed, approved and published at roughly weekly in
 ### Definition of done
 
 New personal mail arriving at the iCloud and Yahoo addresses is visible in the connected Gmail account, relevant historical mail is available where useful, origin can be distinguished reliably, and ChatGPT can include all three personal mail streams in Gmail hygiene and monitoring workflows.
+
+## Personal domain migration and future acquisition
+
+- [ ] Complete migration to `https://ionut.francisc.pro/`: source reconciliation, SEO, host redirects, CV PDF, DNS/HTTPS and form validation.
+- [ ] After live acceptance, update the website contact URL on LinkedIn and the active identity contract surface.
+- [ ] Evaluate a future purchase of `francisc.net` for the personal/family domain portfolio. This is an option requested for the backlog, not a purchase authorization, reservation, availability check or accepted price. Check availability, first-year and renewal costs, ownership and intended redirect/canonical role at decision time. Keep `francisc.pro` as the current migration target.

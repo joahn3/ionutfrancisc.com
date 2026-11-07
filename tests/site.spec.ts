@@ -17,7 +17,7 @@ const routes = [
   '/ro/confidentialitate/',
 ]
 
-const productionUrl = 'https://ionut-francisc.netlify.app'
+const productionUrl = 'https://ionut.francisc.pro'
 
 for (const route of routes) {
   test(`${route} renders without overflow or console errors`, async ({
@@ -64,7 +64,7 @@ test('public CV, WhatsApp, canonical, and language links are present', async ({
 
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     'href',
-    'https://ionut-francisc.netlify.app/'
+    'https://ionut.francisc.pro/'
   )
   await expect(
     page.locator('a[download][href$="ionut-francisc-cv-en.pdf"]')

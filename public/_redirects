@@ -1,3 +1,7 @@
+# Canonical hostname migration; preserve path and query string.
+https://ionut-francisc.netlify.app/* https://ionut.francisc.pro/:splat 301!
+http://ionut.francisc.pro/* https://ionut.francisc.pro/:splat 301!
+
 /about/                        /work/
 /blog/my-site-redesign/       /work/                              301
 /contact                      /contact/
